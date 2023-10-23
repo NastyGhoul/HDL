@@ -1,0 +1,255 @@
+\documentclass[12pt]{article}
+\usepackage[left=16mm,right=16mm,top=20mm,bottom=20mm,nohead]{geometry}
+
+\usepackage[%
+    extended=true,
+    themecolor=black, 
+    titlepage=sprawozdanie, 
+    titlepagePlaceholder=false,
+]{mypackages/MyStyle}
+
+\usepackage{mypackages/proofpackage}
+
+
+% *section font override
+% \DeclareFixedFont{\sectionfont}{T1}{ppl}{b}{n}{0.65cm}
+% \DeclareFixedFont{\subsectionfont}{T1}{ppl}{b}{n}{0.55cm}
+% \DeclareFixedFont{\subsubsectionfont}{T1}{ppl}{m}{n}{0.43cm}
+
+% \pagestyle{fancy}
+% \fancyhead{}
+% \renewcommand{\headrulewidth}{0pt} 
+% \fancyhead[LO]{%
+% \ensureascii{\fontfamily{phv}\selectfont \footnotesize \vspace{-3cm} \\ \tsp \textcolor{black!80!white}{Lorem ipsum dolor sit amet \hfill \leftmark \\ \vspace{-0.25cm} {\rule{\textwidth}{0.04cm}}  \vspace{0.4cm} }} 
+% } 
+
+
+\title{Sprawozdanie}
+\renewcommand{\titlepageSubtitle}{Język opisu sprzętu (HDL)}
+\renewcommand{\titlepageSubsubtitle}{Ćwiczenie 1: Projekt licznika rewersyjnego i symulacja}
+\date{\today}
+\renewcommand{\titlepageDateAnnotation}{Politechnika Łódzka -- }
+\renewcommand{\titlepageAuthors}{%
+    Miłosz Stasiak & 240471 \\
+    Filip Grzymski & 240410 \\
+}
+
+% \setlength{\arrayrulewidth}{0.5mm}
+% \setlength{\tabcolsep}{18pt}
+% \renewcommand{\arraystretch}{1.5}
+
+
+\newlength\tindent
+\setlength{\tindent}{\parindent}
+\setlength{\parindent}{0pt}
+\renewcommand{\indent}{\hspace*{\tindent}}
+
+
+
+
+
+
+
+
+\begin{document}
+% \input{./mypackages/playground.tex}
+
+% == Metadata ==
+% \ifpdf
+%     \pdfinfo{
+%         /Author (Name Surmane)
+%         /Title  (Title)
+%         /CreationDate (D:20230926) %YYYYMMDD
+%     }
+% \fi
+
+
+% == Title Page ==
+\MyTitlePage
+% == Title Page ==
+
+
+
+
+
+\input{./main.tex}
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+% ================================================================
+% ================================================================
+
+
+
+% \begin{COPY}
+
+
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics[height=9cm]{./images/photo.png}
+%     \caption{description here or leave blank or delete command}
+%     \label{fig:1111}
+% \end{figure}
+
+% =====================================
+
+% \begin{multicols}{2}
+%     [
+%     \section{First Section}
+%     sdfsdfst esdfsdsf dsfsf 
+%     ] 
+%     sdfsdfsfsff dgfgd fgf dgfhfghgdf fghhf hg
+% \end{multicols}
+
+% =====================================
+
+% \begin{minipage}{3cm}
+%     Text sdfsf sdf sdf sdsfsdfsf ssdfdf sdsdff sdsdfsf sdsdff ssdfdf sdsdfsf sdf sdf sdsf  sfs
+% \end{minipage}
+
+% =====================================
+
+
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%     \begin{center}
+%       \includegraphics[width=0.48\textwidth]{./images/1.png}
+%     \end{center}
+%   \end{wrapfigure}
+
+% =====================================
+
+
+% \begin{figure}[!htb]
+%     \begin{Large}
+%         TYTUŁ WYKRESU
+%     \end{Large}
+%     \centering
+%     \begin{tikzpicture}[]
+    
+
+%     \pgfplotsset{
+%         ymin=-1e+2, ymax=1e+2,
+%         xmin=-20, xmax=20,
+%     }
+    
+%     \begin{axis}[
+%         %enlargelimits=false,
+%         height = 13cm,
+%         width = 17.5cm,
+%         xlabel = {x label $x$},
+%         ylabel = {y label $f(x)$},
+%         grid=major,
+%      ]
+    
+%         \addplot [
+%             mark size=3pt,
+%             blue,
+%             only marks,
+%             point meta=explicit symbolic,
+%             ] coordinates {
+%                 (1, -20)
+%                 (2, 0)
+%                 (3, 20)
+%             };
+
+%         \addplot[
+%             mark = none,
+%             line width=1.7pt,
+%             red,
+%             /pgfplots/error bars/.cd,
+%             ]
+%             table [
+%                 header=true,
+%                 col sep=comma,
+%                 ignore chars=\%,
+%                 x=t,
+%                 y=w,
+%             ]{dir/csv.csv};
+                    
+%         \addplot [
+%                 mark size=5pt,
+%                 dashed,
+%                 point meta=explicit symbolic,
+%                 nodes near coords
+%                 ] coordinates {
+%                     (-3, 10400)
+%                     (3, 10400)
+%                 };
+    
+%         \addplot [
+%                 mark size=5pt,
+%                 green,
+%                 line width=1.3pt,
+%                 point meta=explicit symbolic,
+%                 nodes near coords
+%                 ] coordinates {
+%                     (-100, 30)
+%                     (100, 20)
+%                 };
+
+%         \addplot [
+%             mark size=4pt,
+%             mark=x,
+%             solid,
+%             line width=2pt,
+%             black,
+%             point meta=explicit symbolic,
+%             nodes near coords
+%             ] coordinates {
+%                 (1, 10400)
+%                 (10, 10400)
+%             };
+
+%         \node[] at (axis cs: 10, 10) {\Large $napis$};
+    
+%     \addlegendentry{legenda1}
+%     \addlegendentry{legenda2}
+%     \addlegendentry{legenda3}
+%     \addlegendentry{legenda4}
+% \end{axis}
+% \end{tikzpicture}
+% \end{figure}
+
+
+
+% =====================================
+
+
+
+% \begin{table}[!htb]
+%     \setlength{\arrayrulewidth}{0.5mm}
+%     \setlength{\tabcolsep}{20pt}
+%     \renewcommand{\arraystretch}{1.7}
+%     \begin{tabular}{ |p{5.5cm}|p{2.5cm}|  }
+%     \hline
+%     \multicolumn{2}{|c|}{0000000} \\
+%     \hline
+%     111 & 222 \\
+%     \hline
+%     $111$ & $222$ \\
+%     \hline
+%     \end{tabular}
+% \end{table}
+    
+
+
+% =====================================
+
+
+
+% \end{COPY}
