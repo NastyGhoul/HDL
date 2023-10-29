@@ -1,0 +1,139 @@
+MDF Database:  version 1.0
+MDF_INFO | main | XC2C256-6-TQ144
+MACROCELL | 0 | 2 | out<0>_MC
+ATTRIBUTES | 2206499650 | 0
+OUTPUTMC | 5 | 0 | 14 | 0 | 15 | 0 | 10 | 0 | 9 | 0 | 8
+INPUTS | 2 | next_value<0>  | CE
+INPUTMC | 1 | 0 | 8
+INPUTP | 1 | 211
+LCT | 2 | 1 | Internal_Name | 4 | Internal_Name
+EQ | 5 | 
+   out<0> := next_value<0>;	// (1 pt, 1 inp)
+   out<0>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+    out<0>.CE = CE;	// (1 pt, 1 inp)
+    out<0>.AP = CD & !SV;	// CTS	(1 pt, 2 inp)
+    out<0>.AR = !CD & !SV;	// CTR	(1 pt, 2 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 8 | next_value<0>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 2 | out<0>  | N_PZ_28
+INPUTMC | 2 | 0 | 2 | 0 | 9
+LCT | 1 | 2 | Internal_Name
+EQ | 2 | 
+   next_value<0>.D = !out<0> & N_PZ_28;	// (1 pt, 2 inp)
+    next_value<0>.LH = N_PZ_28;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 9 | N_PZ_28_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 15 | 0 | 10 | 0 | 8
+INPUTS | 4 | out<3>  | out<2>  | out<0>  | out<1>
+INPUTMC | 4 | 0 | 11 | 0 | 5 | 0 | 2 | 0 | 3
+EQ | 4 | 
+   N_PZ_28 = out<3> & out<2>
+	# !out<3> & !out<2>
+	# out<0> & out<1> & !out<2>
+	# !out<0> & !out<1> & out<2>;	// (4 pt, 4 inp)
+
+MACROCELL | 0 | 3 | out<1>_MC
+ATTRIBUTES | 2206499650 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 15 | 0 | 10 | 0 | 9
+INPUTS | 2 | next_value<1>  | CE
+INPUTMC | 1 | 0 | 10
+INPUTP | 1 | 211
+LCT | 2 | 1 | Internal_Name | 4 | Internal_Name
+EQ | 5 | 
+   out<1> := next_value<1>;	// (1 pt, 1 inp)
+   out<1>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+    out<1>.CE = CE;	// (1 pt, 1 inp)
+    out<1>.AP = CD & !SV;	// CTS	(1 pt, 2 inp)
+    out<1>.AR = !CD & !SV;	// CTR	(1 pt, 2 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 10 | next_value<1>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 6 | N_PZ_28  | out<3>  | out<2>  | out<0>  | out<1>  | CD
+INPUTMC | 5 | 0 | 9 | 0 | 11 | 0 | 5 | 0 | 2 | 0 | 3
+INPUTP | 1 | 212
+LCT | 1 | 2 | Internal_Name
+EQ | 8 | 
+   !next_value<1>.D = !N_PZ_28
+	# out<3> & !out<2>
+	# out<0> & out<1> & !CD
+	# out<0> & !out<1> & CD
+	# !out<0> & out<1> & CD
+	# !out<0> & !out<1> & !CD & !out<2>
+	# !out<0> & !out<1> & !CD & out<3> & out<2>;	// (7 pt, 6 inp)
+    next_value<1>.LH = N_PZ_28;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 11 | out<3>_MC
+ATTRIBUTES | 2206499650 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 15 | 0 | 10 | 0 | 9
+INPUTS | 2 | next_value<3>  | CE
+INPUTMC | 1 | 0 | 15
+INPUTP | 1 | 211
+LCT | 2 | 1 | Internal_Name | 4 | Internal_Name
+EQ | 5 | 
+   out<3> := next_value<3>;	// (1 pt, 1 inp)
+   out<3>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+    out<3>.CE = CE;	// (1 pt, 1 inp)
+    out<3>.AP = CD & !SV;	// CTS	(1 pt, 2 inp)
+    out<3>.AR = !CD & !SV;	// CTR	(1 pt, 2 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 15 | next_value<3>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 6 | out<0>  | N_PZ_28  | out<3>  | CD  | out<2>  | out<1>
+INPUTMC | 5 | 0 | 2 | 0 | 9 | 0 | 11 | 0 | 5 | 0 | 3
+INPUTP | 1 | 212
+LCT | 1 | 2 | Internal_Name
+EQ | 6 | 
+   next_value<3>.D = !out<0> & N_PZ_28 & out<3>
+	# CD & out<3> & out<2>
+	# N_PZ_28 & !out<1> & !CD & out<2>
+	# N_PZ_28 & !CD & out<3> & !out<2>
+	# !out<0> & N_PZ_28 & !out<1> & CD & !out<2>;	// (5 pt, 6 inp)
+    next_value<3>.LH = N_PZ_28;	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 5 | out<2>_MC
+ATTRIBUTES | 2206499650 | 0
+OUTPUTMC | 4 | 0 | 14 | 0 | 15 | 0 | 10 | 0 | 9
+INPUTS | 2 | next_value<2>  | CE
+INPUTMC | 1 | 0 | 14
+INPUTP | 1 | 211
+LCT | 2 | 1 | Internal_Name | 4 | Internal_Name
+EQ | 5 | 
+   out<2> := next_value<2>;	// (1 pt, 1 inp)
+   out<2>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+    out<2>.CE = CE;	// (1 pt, 1 inp)
+    out<2>.AP = CD & !SV;	// CTS	(1 pt, 2 inp)
+    out<2>.AR = !CD & !SV;	// CTR	(1 pt, 2 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 14 | next_value<2>_MC
+ATTRIBUTES | 2282226432 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 6 | N_PZ_28  | out<0>  | out<1>  | out<3>  | CD  | out<2>
+INPUTMC | 5 | 0 | 9 | 0 | 2 | 0 | 3 | 0 | 11 | 0 | 5
+INPUTP | 1 | 212
+LCT | 1 | 2 | Internal_Name
+EQ | 7 | 
+   !next_value<2>.D = !N_PZ_28
+	# out<0> & !out<1> & !out<3>
+	# !out<0> & !CD & !out<3>
+	# out<1> & CD & !out<3>
+	# out<0> & out<1> & !CD & out<2>
+	# !out<0> & !out<1> & CD & out<2>;	// (6 pt, 6 inp)
+    next_value<2>.LH = N_PZ_28;	// CTC	(1 pt, 1 inp)
+
+PIN | CD | 64 | 16 | LVCMOS18 | 212 | 3 | 0 | 14 | 0 | 15 | 0 | 10
+PIN | CE | 64 | 16 | LVCMOS18 | 211 | 4 | 0 | 5 | 0 | 11 | 0 | 3 | 0 | 2
+PIN | CLK | 8192 | 16 | LVCMOS18 | 50 | 4 | 0 | 5 | 0 | 11 | 0 | 3 | 0 | 2
+PIN | SV | 64 | 16 | LVCMOS18 | 1 | 0
+PIN | out<0> | 536871040 | 0 | LVCMOS18 | 218
+PIN | out<1> | 536871040 | 0 | LVCMOS18 | 217
+PIN | out<2> | 536871040 | 0 | LVCMOS18 | 214
+PIN | out<3> | 536871040 | 0 | LVCMOS18 | 213

@@ -1,0 +1,71 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_28 <= ((out(3) AND out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(3) AND NOT out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND out(1) AND NOT out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND NOT out(1) AND out(2)));
+</td></tr><tr><td>
+LDCP_next_value0: LDCP port map (next_value(0),next_value_D(0),N_PZ_28,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_value_D(0) <= (NOT out(0) AND N_PZ_28);
+</td></tr><tr><td>
+LDCP_next_value1: LDCP port map (next_value(1),next_value_D(1),N_PZ_28,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_value_D(1) <= NOT (((NOT N_PZ_28)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(3) AND NOT out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND out(1) AND NOT CD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND NOT out(1) AND CD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND out(1) AND CD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND NOT out(1) AND NOT CD AND NOT out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND NOT out(1) AND NOT CD AND out(3) AND out(2))));
+</td></tr><tr><td>
+LDCP_next_value2: LDCP port map (next_value(2),next_value_D(2),N_PZ_28,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_value_D(2) <= NOT (((NOT N_PZ_28)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND NOT out(1) AND NOT out(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND NOT CD AND NOT out(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(1) AND CD AND NOT out(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (out(0) AND out(1) AND NOT CD AND out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND NOT out(1) AND CD AND out(2))));
+</td></tr><tr><td>
+LDCP_next_value3: LDCP port map (next_value(3),next_value_D(3),N_PZ_28,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;next_value_D(3) <= ((NOT out(0) AND N_PZ_28 AND out(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CD AND out(3) AND out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_28 AND NOT out(1) AND NOT CD AND out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_28 AND NOT CD AND out(3) AND NOT out(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT out(0) AND N_PZ_28 AND NOT out(1) AND CD AND NOT out(2)));
+</td></tr><tr><td>
+FDCPE_out0: FDCPE port map (out(0),next_value(0),CLK,out_CLR(0),out_PRE(0),CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_CLR(0) <= (NOT CD AND NOT SV);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_PRE(0) <= (CD AND NOT SV);
+</td></tr><tr><td>
+FDCPE_out1: FDCPE port map (out(1),next_value(1),CLK,out_CLR(1),out_PRE(1),CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_CLR(1) <= (NOT CD AND NOT SV);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_PRE(1) <= (CD AND NOT SV);
+</td></tr><tr><td>
+FDCPE_out2: FDCPE port map (out(2),next_value(2),CLK,out_CLR(2),out_PRE(2),CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_CLR(2) <= (NOT CD AND NOT SV);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_PRE(2) <= (CD AND NOT SV);
+</td></tr><tr><td>
+FDCPE_out3: FDCPE port map (out(3),next_value(3),CLK,out_CLR(3),out_PRE(3),CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_CLR(3) <= (NOT CD AND NOT SV);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out_PRE(3) <= (CD AND NOT SV);
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

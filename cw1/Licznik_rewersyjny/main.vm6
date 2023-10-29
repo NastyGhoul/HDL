@@ -1,0 +1,667 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | main | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | CD_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CD | 1826 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | CE_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CE | 1827 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLK_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLK | 1828 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | SV_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | SV | 1829 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | SV_II/UIM | 1881 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | SV_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | out<0>_MC | main_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<0> | 1833 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<0>_MC.Q | next_value<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out<0>_MC.Q | 1886 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out<0>_MC.SI | out<0>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<0> | 1833 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<0>_MC.Q | next_value<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out<0>_MC.D1 | 1832 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out<0>_MC.D2 | 1831 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_value<0>
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | out<0>_MC.CE | 1885 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+
+SRFF_INSTANCE | out<0>_MC.REG | out<0>_MC | 0 | 5 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out<0>_MC.D | 1830 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | out<0>_MC.CE | 1885 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out<0>_MC.Q | 1838 | ? | 0 | 0 | out<0>_MC | NULL | NULL | out<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Latch+PrldLow | next_value<0>_MC | main_COPY_0_COPY_0 | 1088 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_value<0> | 1833 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<0>_MC.Q | next_value<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_value<0>_MC.SI | next_value<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_value<0>_MC.D1 | 1836 | ? | 0 | 0 | next_value<0>_MC | NULL | NULL | next_value<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_value<0>_MC.D2 | 1837 | ? | 0 | 0 | next_value<0>_MC | NULL | NULL | next_value<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | next_value<0>_MC.REG | next_value<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_value<0>_MC.D | 1835 | ? | 0 | 0 | next_value<0>_MC | NULL | NULL | next_value<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_value<0>_MC.Q | 1834 | ? | 0 | 0 | next_value<0>_MC | NULL | NULL | next_value<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_28_MC | main_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_28_MC.SI | N_PZ_28_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_28_MC.D1 | 1844 | ? | 0 | 0 | N_PZ_28_MC | NULL | NULL | N_PZ_28_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_28_MC.D2 | 1843 | ? | 0 | 0 | N_PZ_28_MC | NULL | NULL | N_PZ_28_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+SPPTERM | 2 | IV_FALSE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+
+SRFF_INSTANCE | N_PZ_28_MC.REG | N_PZ_28_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_28_MC.D | 1842 | ? | 0 | 0 | N_PZ_28_MC | NULL | NULL | N_PZ_28_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_28_MC.Q | 1841 | ? | 0 | 0 | N_PZ_28_MC | NULL | NULL | N_PZ_28_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | out<1>_MC | main_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<1> | 1848 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<1>_MC.Q | next_value<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out<1>_MC.Q | 1888 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out<1>_MC.SI | out<1>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<1> | 1848 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<1>_MC.Q | next_value<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out<1>_MC.D1 | 1847 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out<1>_MC.D2 | 1846 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_value<1>
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | out<1>_MC.CE | 1884 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+
+SRFF_INSTANCE | out<1>_MC.REG | out<1>_MC | 0 | 5 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out<1>_MC.D | 1845 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | out<1>_MC.CE | 1884 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out<1>_MC.Q | 1853 | ? | 0 | 0 | out<1>_MC | NULL | NULL | out<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Latch+Inv+PrldLow | next_value<1>_MC | main_COPY_0_COPY_0 | 1344 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_value<1> | 1848 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<1>_MC.Q | next_value<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_value<1>_MC.SI | next_value<1>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_value<1>_MC.D1 | 1852 | ? | 0 | 0 | next_value<1>_MC | NULL | NULL | next_value<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_value<1>_MC.D2 | 1851 | ? | 0 | 0 | next_value<1>_MC | NULL | NULL | next_value<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | N_PZ_28
+SPPTERM | 2 | IV_TRUE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM
+SPPTERM | 4 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_FALSE | out<2>_MC.UIM
+SPPTERM | 5 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+
+SRFF_INSTANCE | next_value<1>_MC.REG | next_value<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_value<1>_MC.D | 1850 | ? | 0 | 0 | next_value<1>_MC | NULL | NULL | next_value<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_value<1>_MC.Q | 1849 | ? | 0 | 0 | next_value<1>_MC | NULL | NULL | next_value<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | out<3>_MC | main_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<3> | 1859 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<3>_MC.Q | next_value<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out<3>_MC.Q | 1892 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out<3>_MC.SI | out<3>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<3> | 1859 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<3>_MC.Q | next_value<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out<3>_MC.D1 | 1858 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out<3>_MC.D2 | 1857 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_value<3>
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | out<3>_MC.CE | 1883 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+
+SRFF_INSTANCE | out<3>_MC.REG | out<3>_MC | 0 | 5 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out<3>_MC.D | 1856 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | out<3>_MC.CE | 1883 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out<3>_MC.Q | 1864 | ? | 0 | 0 | out<3>_MC | NULL | NULL | out<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Latch+PrldLow | next_value<3>_MC | main_COPY_0_COPY_0 | 1088 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_value<3> | 1859 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<3>_MC.Q | next_value<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_value<3>_MC.SI | next_value<3>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_value<3>_MC.D1 | 1863 | ? | 0 | 0 | next_value<3>_MC | NULL | NULL | next_value<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_value<3>_MC.D2 | 1862 | ? | 0 | 0 | next_value<3>_MC | NULL | NULL | next_value<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28 | IV_TRUE | out<3>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+SPPTERM | 4 | IV_TRUE | N_PZ_28 | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+SPPTERM | 4 | IV_TRUE | N_PZ_28 | IV_FALSE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+SPPTERM | 5 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28 | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_FALSE | out<2>_MC.UIM
+
+SRFF_INSTANCE | next_value<3>_MC.REG | next_value<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_value<3>_MC.D | 1861 | ? | 0 | 0 | next_value<3>_MC | NULL | NULL | next_value<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_value<3>_MC.Q | 1860 | ? | 0 | 0 | next_value<3>_MC | NULL | NULL | next_value<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | out<2>_MC | main_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<2> | 1869 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<2>_MC.Q | next_value<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | out<2>_MC.Q | 1890 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | out<2>_MC.SI | out<2>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | next_value<2> | 1869 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<2>_MC.Q | next_value<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CE_II/UIM | 1878 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CE_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out<2>_MC.D1 | 1868 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | out<2>_MC.D2 | 1867 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | next_value<2>
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | out<2>_MC.CE | 1877 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+
+SRFF_INSTANCE | out<2>_MC.REG | out<2>_MC | 0 | 5 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | out<2>_MC.D | 1866 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 1879 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | out<2>_MC.CE | 1877 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | out<2>_MC.Q | 1874 | ? | 0 | 0 | out<2>_MC | NULL | NULL | out<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Latch+Inv+PrldLow | next_value<2>_MC | main_COPY_0_COPY_0 | 1344 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | next_value<2> | 1869 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | next_value<2>_MC.Q | next_value<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | next_value<2>_MC.SI | next_value<2>_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<0>_MC.UIM | 1839 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<1>_MC.UIM | 1854 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<3>_MC.UIM | 1865 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | out<2>_MC.UIM | 1875 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | next_value<2>_MC.D1 | 1873 | ? | 0 | 0 | next_value<2>_MC | NULL | NULL | next_value<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | next_value<2>_MC.D2 | 1872 | ? | 0 | 0 | next_value<2>_MC | NULL | NULL | next_value<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | N_PZ_28
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | out<3>_MC.UIM
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | CD_II/UIM | IV_FALSE | out<3>_MC.UIM
+SPPTERM | 3 | IV_TRUE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_FALSE | out<3>_MC.UIM
+SPPTERM | 4 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+SPPTERM | 4 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+
+SRFF_INSTANCE | next_value<2>_MC.REG | next_value<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | next_value<2>_MC.D | 1871 | ? | 0 | 0 | next_value<2>_MC | NULL | NULL | next_value<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | next_value<2>_MC.Q | 1870 | ? | 0 | 0 | next_value<2>_MC | NULL | NULL | next_value<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | out<0> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out<0>_MC.Q | 1886 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<0>_MC.Q | out<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<0> | 1887 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | out<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<1> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out<1>_MC.Q | 1888 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<1>_MC.Q | out<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<1> | 1889 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | out<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<2> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out<2>_MC.Q | 1890 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<2>_MC.Q | out<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<2> | 1891 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | out<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | out<3> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | out<3>_MC.Q | 1892 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | out<3>_MC.Q | out<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | out<3> | 1893 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | out<3> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 3 | out<0>_MC | 1 | NULL | 0 | out<0> | 1 | 143 | 51200
+FBPIN | 4 | out<1>_MC | 1 | NULL | 0 | out<1> | 1 | 142 | 49152
+FBPIN | 6 | out<2>_MC | 1 | NULL | 0 | out<2> | 1 | 140 | 49152
+FBPIN | 9 | next_value<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | N_PZ_28_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | next_value<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | out<3>_MC | 1 | NULL | 0 | out<3> | 1 | 139 | 49152
+FBPIN | 13 | NULL | 0 | CD_II | 1 | NULL | 0 | 138 | 49152
+FBPIN | 14 | NULL | 0 | CE_II | 1 | NULL | 0 | 137 | 49152
+FBPIN | 15 | next_value<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | next_value<3>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | SV_II | 1 | NULL | 0 | 2 | 53248
+
+FB_INSTANCE | FOOBAR3_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | NULL | 0 | CLK_II | 1 | NULL | 0 | 32 | 57344
+
+FB_INSTANCE | FOOBAR6_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | main_COPY_0_COPY_0 | 0 | 3 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_28 | 1840 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_28_MC.Q | N_PZ_28_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CD_II/UIM | 1855 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | CD_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | SV_II/UIM | 1881 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | SV_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 1876 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+OUTPUT_NODE_TYPE | 5 | 12 | CT_SI5
+SIGNAL | NODE | FOOBAR1__ctinst/5 | 1880 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 5 | 12 | CT_SI5
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+OUTPUT_NODE_TYPE | 6 | 12 | CT_SI6
+SIGNAL | NODE | FOOBAR1__ctinst/6 | 1882 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 33
+PLA_TERM | 0 | 
+SPPTERM | 1 | IV_TRUE | next_value<0>
+PLA_TERM | 1 | 
+SPPTERM | 1 | IV_TRUE | next_value<1>
+PLA_TERM | 2 | 
+SPPTERM | 1 | IV_TRUE | next_value<2>
+PLA_TERM | 3 | 
+SPPTERM | 1 | IV_TRUE | next_value<3>
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_28
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_FALSE | CD_II/UIM | IV_FALSE | SV_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 2 | IV_TRUE | CD_II/UIM | IV_FALSE | SV_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_TRUE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 8 | 
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28 | IV_TRUE | out<3>_MC.UIM
+PLA_TERM | 9 | 
+SPPTERM | 4 | IV_TRUE | N_PZ_28 | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 10 | 
+SPPTERM | 5 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28 | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 11 | 
+SPPTERM | 4 | IV_TRUE | N_PZ_28 | IV_FALSE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 12 | 
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | out<3>_MC.UIM
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_TRUE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_FALSE | out<3>_MC.UIM
+PLA_TERM | 14 | 
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | CD_II/UIM | IV_FALSE | out<3>_MC.UIM
+PLA_TERM | 15 | 
+SPPTERM | 4 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 16 | 
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+PLA_TERM | 17 | 
+SPPTERM | 4 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 18 | 
+SPPTERM | 1 | IV_FALSE | N_PZ_28
+PLA_TERM | 19 | 
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | CD_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM
+PLA_TERM | 23 | 
+SPPTERM | 5 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 24 | 
+SPPTERM | 2 | IV_TRUE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 25 | 
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+PLA_TERM | 26 | 
+SPPTERM | 4 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_FALSE | CD_II/UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 27 | 
+SPPTERM | 3 | IV_FALSE | out<0>_MC.UIM | IV_FALSE | out<1>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 28 | 
+SPPTERM | 2 | IV_TRUE | out<3>_MC.UIM | IV_TRUE | out<2>_MC.UIM
+PLA_TERM | 29 | 
+SPPTERM | 3 | IV_TRUE | out<0>_MC.UIM | IV_TRUE | out<1>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 30 | 
+SPPTERM | 2 | IV_FALSE | out<3>_MC.UIM | IV_FALSE | out<2>_MC.UIM
+PLA_TERM | 34 | 
+SPPTERM | 2 | IV_FALSE | out<0>_MC.UIM | IV_TRUE | N_PZ_28
+PLA_TERM | 43 | 
+SPPTERM | 1 | IV_TRUE | CE_II/UIM
+
+BUSINFO | OUT<3:0> | 4 | 0 | 1 | out<0> | 3 | out<1> | 2 | out<2> | 1 | out<3> | 0
+
+IOSTD | LVCMOS18
+CD | LVCMOS18
+CE | LVCMOS18
+CLK | LVCMOS18
+SV | LVCMOS18
+out<0> | LVCMOS18
+out<1> | LVCMOS18
+out<2> | LVCMOS18
+out<3> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | N_PZ_28 | NULL | 1 | out<1>_MC.UIM | NULL | 2 | next_value<2> | NULL | 4 | out<3>_MC.UIM | NULL | 6 | next_value<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 7 | CD | 138 | 8 | CE | 137 | 9 | next_value<3> | NULL | 10 | next_value<0> | NULL | 13 | SV | 2
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 14 | out<0>_MC.UIM | NULL | 18 | out<2>_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 193 | 187 | 198 | -1 | 195 | -1 | 194 | 7 | 8 | 199 | 192 | -1 | -1 | 11 | 186 | -1 | -1 | -1 | 189 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | CLK | 1 | 1
