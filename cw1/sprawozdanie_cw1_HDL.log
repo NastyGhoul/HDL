@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.22)  2 NOV 2023 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.22)  2 NOV 2023 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1048,7 +1048,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmss on input line 11
  (C:\Users\48661\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<./mypackages/titlepage_background_black.png, id=50, 1505.625pt x 1963.335pt>
+<./mypackages/titlepage_background_black.png, id=54, 1505.625pt x 1963.335pt>
 File: ./mypackages/titlepage_background_black.png Graphic file (type png)
 <use ./mypackages/titlepage_background_black.png>
 Package pdftex.def Info: ./mypackages/titlepage_background_black.png  used on input line 116.
@@ -1060,7 +1060,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5.
  (C:\Users\48661\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<./images/Counter.jpg, id=62, 1008.76875pt x 587.19376pt>
+<./images/Counter.jpg, id=66, 1008.76875pt x 587.19376pt>
 File: ./images/Counter.jpg Graphic file (type jpg)
 <use ./images/Counter.jpg>
 Package pdftex.def Info: ./images/Counter.jpg  used on input line 15.
@@ -1076,26 +1076,59 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1.
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [2
 
-]) (Verilog_sym.tex [3] [4])) [5] (sprawozdanie_cw1_HDL.aux)
+]) (Verilog_sym.tex [3] [4]) [5]
+<./images/ss1.png, id=284, 1081.03876pt x 157.33781pt>
+File: ./images/ss1.png Graphic file (type png)
+<use ./images/ss1.png>
+Package pdftex.def Info: ./images/ss1.png  used on input line 33.
+(pdftex.def)             Requested size: 526.37598pt x 76.61124pt.
+<./images/ss2.png, id=285, 1081.79156pt x 120.45pt>
+File: ./images/ss2.png Graphic file (type png)
+<use ./images/ss2.png>
+Package pdftex.def Info: ./images/ss2.png  used on input line 34.
+(pdftex.def)             Requested size: 526.37598pt x 58.60931pt.
+<./images/ss3.png, id=286, 1081.79156pt x 134.00063pt>
+File: ./images/ss3.png Graphic file (type png)
+<use ./images/ss3.png>
+Package pdftex.def Info: ./images/ss3.png  used on input line 35.
+(pdftex.def)             Requested size: 526.37598pt x 65.20285pt.
+
+Overfull \hbox (3.12978pt too wide) in paragraph at lines 33--36
+ [][] 
+ []
+
+
+Overfull \hbox (3.12978pt too wide) in paragraph at lines 33--36
+ [] 
+ []
+
+
+Overfull \hbox (3.12978pt too wide) in paragraph at lines 33--36
+ [] 
+ []
+
+) [6
+
+ <./images/ss1.png> <./images/ss2.png> <./images/ss3.png>] (sprawozdanie_cw1_HDL.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-10-10>
  ***********
 Package rerunfilecheck Info: File `sprawozdanie_cw1_HDL.out' has not changed.
-(rerunfilecheck)             Checksum: AED7E3E713EE82E564BF280D750A12B2;225.
+(rerunfilecheck)             Checksum: 519737CBEFDAAB630DFF3F9EDD6D3F4A;425.
  ) 
 Here is how much of TeX's memory you used:
- 44859 strings out of 474824
- 1033490 string characters out of 5750976
+ 44884 strings out of 474824
+ 1034012 string characters out of 5750976
  1997043 words of memory out of 5000000
- 65811 multiletter control sequences out of 15000+600000
+ 65833 multiletter control sequences out of 15000+600000
  606788 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,110p,767b,2184s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/48661/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb>
-Output written on sprawozdanie_cw1_HDL.pdf (6 pages, 264779 bytes).
+Output written on sprawozdanie_cw1_HDL.pdf (7 pages, 307359 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 200 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
