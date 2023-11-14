@@ -1,0 +1,1854 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | main | 0 | 0 | 1073758214 | 0
+
+MACROCELL_INSTANCE | NULL | C_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | C_MC.Q | 6062 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | C_MC.Q | C_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | C_MC.SI | C_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | C_MC.D1 | 5956 | ? | 0 | 0 | C_MC | NULL | NULL | C_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | C_MC.D2 | 5957 | ? | 0 | 0 | C_MC | NULL | NULL | C_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | N_PZ_40
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+
+SRFF_INSTANCE | C_MC.REG | C_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | C_MC.D | 5955 | ? | 0 | 0 | C_MC | NULL | NULL | C_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | C_MC.Q | 6061 | ? | 0 | 0 | C_MC | NULL | NULL | C_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | wybor<1>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | wybor<1> | 5958 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<7>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<7> | 5960 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | wybor<0>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | wybor<0> | 5962 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<7>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<7> | 5964 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | _or0006_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | _or0006_MC.SI | _or0006_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | _or0006_MC.D1 | 5970 | ? | 0 | 0 | _or0006_MC | NULL | NULL | _or0006_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | _or0006_MC.D2 | 5969 | ? | 0 | 0 | _or0006_MC | NULL | NULL | _or0006_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<6>_II/UIM | IV_TRUE | N_PZ_33
+SPPTERM | 2 | IV_FALSE | liczbaA<6>_II/UIM | IV_TRUE | N_PZ_33
+
+SRFF_INSTANCE | _or0006_MC.REG | _or0006_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | _or0006_MC.D | 5968 | ? | 0 | 0 | _or0006_MC | NULL | NULL | _or0006_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | _or0006_MC.Q | 5967 | ? | 0 | 0 | _or0006_MC | NULL | NULL | _or0006_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<6>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<6> | 5971 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<6>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<6> | 5973 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_33_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_33_MC.SI | N_PZ_33_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_33_MC.D1 | 5979 | ? | 0 | 0 | N_PZ_33_MC | NULL | NULL | N_PZ_33_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_33_MC.D2 | 5978 | ? | 0 | 0 | N_PZ_33_MC | NULL | NULL | N_PZ_33_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | N_PZ_93
+SPPTERM | 2 | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+
+SRFF_INSTANCE | N_PZ_33_MC.REG | N_PZ_33_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_33_MC.D | 5977 | ? | 0 | 0 | N_PZ_33_MC | NULL | NULL | N_PZ_33_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_33_MC.Q | 5976 | ? | 0 | 0 | N_PZ_33_MC | NULL | NULL | N_PZ_33_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<5>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<5> | 5980 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<5>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<5> | 5982 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_93_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_93_MC.SI | N_PZ_93_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_93_MC.D1 | 5988 | ? | 0 | 0 | N_PZ_93_MC | NULL | NULL | N_PZ_93_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_93_MC.D2 | 5987 | ? | 0 | 0 | N_PZ_93_MC | NULL | NULL | N_PZ_93_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | N_PZ_32
+SPPTERM | 2 | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | N_PZ_32
+
+SRFF_INSTANCE | N_PZ_93_MC.REG | N_PZ_93_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_93_MC.D | 5986 | ? | 0 | 0 | N_PZ_93_MC | NULL | NULL | N_PZ_93_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_93_MC.Q | 5985 | ? | 0 | 0 | N_PZ_93_MC | NULL | NULL | N_PZ_93_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<4>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<4> | 5989 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<4>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<4> | 5991 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_32_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_32_MC.SI | N_PZ_32_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_32_MC.D1 | 5997 | ? | 0 | 0 | N_PZ_32_MC | NULL | NULL | N_PZ_32_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_32_MC.D2 | 5996 | ? | 0 | 0 | N_PZ_32_MC | NULL | NULL | N_PZ_32_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | _or0002
+SPPTERM | 2 | IV_FALSE | liczbaA<3>_II/UIM | IV_TRUE | _or0002
+
+SRFF_INSTANCE | N_PZ_32_MC.REG | N_PZ_32_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_32_MC.D | 5995 | ? | 0 | 0 | N_PZ_32_MC | NULL | NULL | N_PZ_32_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_32_MC.Q | 5994 | ? | 0 | 0 | N_PZ_32_MC | NULL | NULL | N_PZ_32_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<3>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<3> | 5998 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<3>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<3> | 6000 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | _or0002_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | _or0002_MC.SI | _or0002_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | _or0002_MC.D1 | 6006 | ? | 0 | 0 | _or0002_MC | NULL | NULL | _or0002_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | _or0002_MC.D2 | 6005 | ? | 0 | 0 | _or0002_MC | NULL | NULL | _or0002_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | N_PZ_37
+SPPTERM | 2 | IV_FALSE | liczbaA<2>_II/UIM | IV_TRUE | N_PZ_37
+
+SRFF_INSTANCE | _or0002_MC.REG | _or0002_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | _or0002_MC.D | 6004 | ? | 0 | 0 | _or0002_MC | NULL | NULL | _or0002_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | _or0002_MC.Q | 6003 | ? | 0 | 0 | _or0002_MC | NULL | NULL | _or0002_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<2>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<2> | 6007 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<2>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<2> | 6009 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_37_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_37_MC.SI | N_PZ_37_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_37_MC.D1 | 6015 | ? | 0 | 0 | N_PZ_37_MC | NULL | NULL | N_PZ_37_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_37_MC.D2 | 6014 | ? | 0 | 0 | N_PZ_37_MC | NULL | NULL | N_PZ_37_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | N_PZ_120 | IV_FALSE | liczbaA<1>_II/UIM
+SPPTERM | 3 | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_TRUE | N_PZ_120
+SPPTERM | 3 | IV_TRUE | N_PZ_120 | IV_FALSE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+
+SRFF_INSTANCE | N_PZ_37_MC.REG | N_PZ_37_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_37_MC.D | 6013 | ? | 0 | 0 | N_PZ_37_MC | NULL | NULL | N_PZ_37_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_37_MC.Q | 6012 | ? | 0 | 0 | N_PZ_37_MC | NULL | NULL | N_PZ_37_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | bitP_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | bitP | 6016 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<0>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<0> | 6018 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_120_MC | main_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<1>_II/UIM | 6026 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_120_MC.SI | N_PZ_120_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<1>_II/UIM | 6026 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_120_MC.D1 | 6024 | ? | 0 | 0 | N_PZ_120_MC | NULL | NULL | N_PZ_120_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_120_MC.D2 | 6023 | ? | 0 | 0 | N_PZ_120_MC | NULL | NULL | N_PZ_120_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | liczbaB<1>_II/UIM | IV_FALSE | liczbaA<1>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<1>_II/UIM | IV_TRUE | liczbaA<1>_II/UIM
+
+SRFF_INSTANCE | N_PZ_120_MC.REG | N_PZ_120_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_120_MC.D | 6022 | ? | 0 | 0 | N_PZ_120_MC | NULL | NULL | N_PZ_120_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_120_MC.Q | 6021 | ? | 0 | 0 | N_PZ_120_MC | NULL | NULL | N_PZ_120_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaB<1>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaB<1> | 6025 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaB<1>_II/UIM | 6026 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<1>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<1> | 6027 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | liczbaA<0>_II | main_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | liczbaA<0> | 6029 | PI | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | N_PZ_75_MC | main_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_75_MC.SI | N_PZ_75_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_75_MC.D1 | 6034 | ? | 0 | 0 | N_PZ_75_MC | NULL | NULL | N_PZ_75_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | bitP_II/UIM | IV_TRUE | liczbaB<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_75_MC.D2 | 6035 | ? | 0 | 0 | N_PZ_75_MC | NULL | NULL | N_PZ_75_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_75_MC.REG | N_PZ_75_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_75_MC.D | 6033 | ? | 0 | 0 | N_PZ_75_MC | NULL | NULL | N_PZ_75_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_75_MC.Q | 6032 | ? | 0 | 0 | N_PZ_75_MC | NULL | NULL | N_PZ_75_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_40_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_40_MC.SI | N_PZ_40_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_40_MC.D1 | 6040 | ? | 0 | 0 | N_PZ_40_MC | NULL | NULL | N_PZ_40_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_40_MC.D2 | 6039 | ? | 0 | 0 | N_PZ_40_MC | NULL | NULL | N_PZ_40_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+SPPTERM | 2 | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | _or0012
+SPPTERM | 2 | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | _or0012
+
+SRFF_INSTANCE | N_PZ_40_MC.REG | N_PZ_40_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_40_MC.D | 6038 | ? | 0 | 0 | N_PZ_40_MC | NULL | NULL | N_PZ_40_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_40_MC.Q | 6037 | ? | 0 | 0 | N_PZ_40_MC | NULL | NULL | N_PZ_40_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | _or0012_MC | main_COPY_0_COPY_0 | 0 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | _or0012_MC.SI | _or0012_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | _or0012_MC.D1 | 6044 | ? | 0 | 0 | _or0012_MC | NULL | NULL | _or0012_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | _or0012_MC.D2 | 6045 | ? | 0 | 0 | _or0012_MC | NULL | NULL | _or0012_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | _or0010
+SPPTERM | 2 | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | _or0010
+
+SRFF_INSTANCE | _or0012_MC.REG | _or0012_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | _or0012_MC.D | 6043 | ? | 0 | 0 | _or0012_MC | NULL | NULL | _or0012_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | _or0012_MC.Q | 6042 | ? | 0 | 0 | _or0012_MC | NULL | NULL | _or0012_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | _or0010_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_122 | 6051 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_122_MC.Q | N_PZ_122_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | _or0010_MC.SI | _or0010_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_122 | 6051 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_122_MC.Q | N_PZ_122_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | _or0010_MC.D1 | 6050 | ? | 0 | 0 | _or0010_MC | NULL | NULL | _or0010_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | _or0010_MC.D2 | 6049 | ? | 0 | 0 | _or0010_MC | NULL | NULL | _or0010_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | N_PZ_122
+SPPTERM | 2 | IV_TRUE | liczbaA<3>_II/UIM | IV_FALSE | N_PZ_122
+
+SRFF_INSTANCE | _or0010_MC.REG | _or0010_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | _or0010_MC.D | 6048 | ? | 0 | 0 | _or0010_MC | NULL | NULL | _or0010_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | _or0010_MC.Q | 6047 | ? | 0 | 0 | _or0010_MC | NULL | NULL | _or0010_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_122_MC | main_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_122 | 6051 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_122_MC.Q | N_PZ_122_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_122_MC.SI | N_PZ_122_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_122_MC.D1 | 6055 | ? | 0 | 0 | N_PZ_122_MC | NULL | NULL | N_PZ_122_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_122_MC.D2 | 6054 | ? | 0 | 0 | N_PZ_122_MC | NULL | NULL | N_PZ_122_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+SPPTERM | 2 | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | _or0008
+SPPTERM | 2 | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | _or0008
+
+SRFF_INSTANCE | N_PZ_122_MC.REG | N_PZ_122_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_122_MC.D | 6053 | ? | 0 | 0 | N_PZ_122_MC | NULL | NULL | N_PZ_122_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_122_MC.Q | 6052 | ? | 0 | 0 | N_PZ_122_MC | NULL | NULL | N_PZ_122_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | _or0008_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | _or0008_MC.SI | _or0008_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | _or0008_MC.D1 | 6060 | ? | 0 | 0 | _or0008_MC | NULL | NULL | _or0008_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | _or0008_MC.D2 | 6059 | ? | 0 | 0 | _or0008_MC | NULL | NULL | _or0008_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | N_PZ_120 | IV_TRUE | liczbaA<1>_II/UIM
+SPPTERM | 3 | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_120
+SPPTERM | 3 | IV_FALSE | N_PZ_120 | IV_TRUE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+
+SRFF_INSTANCE | _or0008_MC.REG | _or0008_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | _or0008_MC.D | 6058 | ? | 0 | 0 | _or0008_MC | NULL | NULL | _or0008_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | _or0008_MC.Q | 6057 | ? | 0 | 0 | _or0008_MC | NULL | NULL | _or0008_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | C | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | C_MC.Q | 6062 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | C_MC.Q | C_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | C | 6063 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | C | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | EVEN_MC | main_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<4>_MC.UIM | 6071 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_98 | 6072 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_98_MC.Q | N_PZ_98_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<5>_MC.UIM | 6111 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | EVEN_MC.Q | 6118 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | EVEN_MC.Q | EVEN_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | EVEN_MC.SI | EVEN_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<4>_MC.UIM | 6071 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_98 | 6072 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_98_MC.Q | N_PZ_98_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<5>_MC.UIM | 6111 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | EVEN_MC.D1 | 6065 | ? | 0 | 0 | EVEN_MC | NULL | NULL | EVEN_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | wynik<4>_MC.UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | EVEN_MC.D2 | 6066 | ? | 0 | 0 | EVEN_MC | NULL | NULL | EVEN_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | N_PZ_98 | IV_TRUE | wynik<5>_MC.UIM | IV_TRUE | wynik<6>_BUFR
+SPPTERM | 3 | IV_TRUE | N_PZ_98 | IV_FALSE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+SPPTERM | 3 | IV_FALSE | N_PZ_98 | IV_TRUE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+SPPTERM | 3 | IV_FALSE | N_PZ_98 | IV_FALSE | wynik<5>_MC.UIM | IV_TRUE | wynik<6>_BUFR
+
+SRFF_INSTANCE | EVEN_MC.REG | EVEN_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | EVEN_MC.D | 6064 | ? | 0 | 0 | EVEN_MC | NULL | NULL | EVEN_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | EVEN_MC.Q | 6117 | ? | 0 | 0 | EVEN_MC | NULL | NULL | EVEN_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | wynik<4>_MC | main_COPY_0_COPY_0 | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<4>_MC.Q | 6144 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<4>_MC.UIM | 6071 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<4>_MC.SI | wynik<4>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<4>_MC.D1 | 6068 | ? | 0 | 0 | wynik<4>_MC | NULL | NULL | wynik<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | liczbaB<4>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<4>_MC.D2 | 6069 | ? | 0 | 0 | wynik<4>_MC | NULL | NULL | wynik<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | _or0010
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_FALSE | _or0010
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_93 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_93 | IV_FALSE | liczbaB<4>_II/UIM | IV_FALSE | N_PZ_32
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_93 | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | N_PZ_32
+
+SRFF_INSTANCE | wynik<4>_MC.REG | wynik<4>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<4>_MC.D | 6067 | ? | 0 | 0 | wynik<4>_MC | NULL | NULL | wynik<4>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<4>_MC.Q | 6070 | ? | 0 | 0 | wynik<4>_MC | NULL | NULL | wynik<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_98_MC | main_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<2>_MC.UIM | 6081 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<3>_MC.UIM | 6086 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_96 | 6087 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_96_MC.Q | N_PZ_96_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_98 | 6072 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_98_MC.Q | N_PZ_98_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_98_MC.SI | N_PZ_98_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<2>_MC.UIM | 6081 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<3>_MC.UIM | 6086 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_96 | 6087 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_96_MC.Q | N_PZ_96_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_98_MC.D1 | 6075 | ? | 0 | 0 | N_PZ_98_MC | NULL | NULL | N_PZ_98_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | wynik<2>_MC.UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_98_MC.D2 | 6076 | ? | 0 | 0 | N_PZ_98_MC | NULL | NULL | N_PZ_98_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | wynik<3>_MC.UIM | IV_TRUE | N_PZ_96 | IV_FALSE | wynik<7>_BUFR
+SPPTERM | 3 | IV_TRUE | wynik<3>_MC.UIM | IV_FALSE | N_PZ_96 | IV_TRUE | wynik<7>_BUFR
+SPPTERM | 3 | IV_FALSE | wynik<3>_MC.UIM | IV_TRUE | N_PZ_96 | IV_TRUE | wynik<7>_BUFR
+SPPTERM | 3 | IV_FALSE | wynik<3>_MC.UIM | IV_FALSE | N_PZ_96 | IV_FALSE | wynik<7>_BUFR
+
+SRFF_INSTANCE | N_PZ_98_MC.REG | N_PZ_98_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_98_MC.D | 6074 | ? | 0 | 0 | N_PZ_98_MC | NULL | NULL | N_PZ_98_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_98_MC.Q | 6073 | ? | 0 | 0 | N_PZ_98_MC | NULL | NULL | N_PZ_98_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | wynik<2>_MC | main_COPY_0_COPY_0 | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<2>_MC.Q | 6140 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<2>_MC.UIM | 6081 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<2>_MC.SI | wynik<2>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<2>_II/UIM | 6008 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<2>_II/UIM | 6010 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<2>_MC.D1 | 6078 | ? | 0 | 0 | wynik<2>_MC | NULL | NULL | wynik<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | liczbaB<2>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<2>_MC.D2 | 6079 | ? | 0 | 0 | wynik<2>_MC | NULL | NULL | wynik<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM | IV_TRUE | _or0008
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | _or0008
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | _or0002 | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | _or0002 | IV_TRUE | liczbaB<2>_II/UIM | IV_TRUE | N_PZ_37
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | _or0002 | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | N_PZ_37
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | N_PZ_37
+
+SRFF_INSTANCE | wynik<2>_MC.REG | wynik<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<2>_MC.D | 6077 | ? | 0 | 0 | wynik<2>_MC | NULL | NULL | wynik<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<2>_MC.Q | 6080 | ? | 0 | 0 | wynik<2>_MC | NULL | NULL | wynik<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv | wynik<3>_MC | main_COPY_0_COPY_0 | 256 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_122 | 6051 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_122_MC.Q | N_PZ_122_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<3>_MC.Q | 6142 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<3>_MC.UIM | 6086 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<3>_MC.SI | wynik<3>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<3>_II/UIM | 6001 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<3>_II/UIM | 5999 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0002 | 6002 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0002_MC.Q | _or0002_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_122 | 6051 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_122_MC.Q | N_PZ_122_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_32 | 5993 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_32_MC.Q | N_PZ_32_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<3>_MC.D1 | 6083 | ? | 0 | 0 | wynik<3>_MC | NULL | NULL | wynik<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_FALSE | liczbaA<3>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<3>_MC.D2 | 6084 | ? | 0 | 0 | wynik<3>_MC | NULL | NULL | wynik<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_TRUE | _or0002
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_TRUE | _or0010 | IV_TRUE | N_PZ_122
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_TRUE | _or0010
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0010
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0010 | IV_FALSE | N_PZ_122
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_32 | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0002
+SPPTERM | 6 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_32 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_FALSE | _or0002
+
+SRFF_INSTANCE | wynik<3>_MC.REG | wynik<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<3>_MC.D | 6082 | ? | 0 | 0 | wynik<3>_MC | NULL | NULL | wynik<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<3>_MC.Q | 6085 | ? | 0 | 0 | wynik<3>_MC | NULL | NULL | wynik<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_96_MC | main_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<1>_MC.UIM | 6096 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_96 | 6087 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_96_MC.Q | N_PZ_96_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_96_MC.SI | N_PZ_96_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<1>_MC.UIM | 6096 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_96_MC.D1 | 6091 | ? | 0 | 0 | N_PZ_96_MC | NULL | NULL | N_PZ_96_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_96_MC.D2 | 6090 | ? | 0 | 0 | N_PZ_96_MC | NULL | NULL | N_PZ_96_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | wynik<1>_MC.UIM | IV_TRUE | wynik<0>_BUFR
+SPPTERM | 2 | IV_FALSE | wynik<1>_MC.UIM | IV_FALSE | wynik<0>_BUFR
+
+SRFF_INSTANCE | N_PZ_96_MC.REG | N_PZ_96_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_96_MC.D | 6089 | ? | 0 | 0 | N_PZ_96_MC | NULL | NULL | N_PZ_96_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_96_MC.Q | 6088 | ? | 0 | 0 | N_PZ_96_MC | NULL | NULL | N_PZ_96_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv | wynik<1>_MC | main_COPY_0_COPY_0 | 256 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<1>_MC.Q | 6138 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<1>_MC.UIM | 6096 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<1>_MC.SI | wynik<1>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_120 | 6020 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_120_MC.Q | N_PZ_120_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<1>_II/UIM | 6028 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0008 | 6056 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0008_MC.Q | _or0008_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_37 | 6011 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_37_MC.Q | N_PZ_37_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<1>_MC.D1 | 6093 | ? | 0 | 0 | wynik<1>_MC | NULL | NULL | wynik<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | N_PZ_120
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<1>_MC.D2 | 6094 | ? | 0 | 0 | wynik<1>_MC | NULL | NULL | wynik<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | N_PZ_120 | IV_FALSE | liczbaA<1>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | N_PZ_120 | IV_TRUE | _or0008
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_120 | IV_TRUE | N_PZ_75
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_37 | IV_TRUE | N_PZ_120 | IV_FALSE | N_PZ_75
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_120
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_75
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_120 | IV_FALSE | N_PZ_75 | IV_FALSE | _or0008
+
+SRFF_INSTANCE | wynik<1>_MC.REG | wynik<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<1>_MC.D | 6092 | ? | 0 | 0 | wynik<1>_MC | NULL | NULL | wynik<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<1>_MC.Q | 6095 | ? | 0 | 0 | wynik<1>_MC | NULL | NULL | wynik<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv | wynik<0>_BUFR_MC | main_COPY_0_COPY_0 | 256 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<0>_BUFR_MC.SI | wynik<0>_BUFR_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<0>_II/UIM | 6019 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | bitP_II/UIM | 6017 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | bitP_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<0>_II/UIM | 6030 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_75 | 6031 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_75_MC.Q | N_PZ_75_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<0>_BUFR_MC.D1 | 6100 | ? | 0 | 0 | wynik<0>_BUFR_MC | NULL | NULL | wynik<0>_BUFR_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_FALSE | liczbaB<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<0>_BUFR_MC.D2 | 6101 | ? | 0 | 0 | wynik<0>_BUFR_MC | NULL | NULL | wynik<0>_BUFR_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | bitP_II/UIM | IV_TRUE | liczbaA<0>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_TRUE | liczbaA<0>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM | IV_TRUE | N_PZ_75
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+
+SRFF_INSTANCE | wynik<0>_BUFR_MC.REG | wynik<0>_BUFR_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<0>_BUFR_MC.D | 6099 | ? | 0 | 0 | wynik<0>_BUFR_MC | NULL | NULL | wynik<0>_BUFR_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<0>_BUFR_MC.Q | 6098 | ? | 0 | 0 | wynik<0>_BUFR_MC | NULL | NULL | wynik<0>_BUFR_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | wynik<7>_BUFR_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<7>_BUFR_MC.SI | wynik<7>_BUFR_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<7>_BUFR_MC.D1 | 6105 | ? | 0 | 0 | wynik<7>_BUFR_MC | NULL | NULL | wynik<7>_BUFR_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | liczbaB<7>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<7>_BUFR_MC.D2 | 6106 | ? | 0 | 0 | wynik<7>_BUFR_MC | NULL | NULL | wynik<7>_BUFR_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | N_PZ_40
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+
+SRFF_INSTANCE | wynik<7>_BUFR_MC.REG | wynik<7>_BUFR_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<7>_BUFR_MC.D | 6104 | ? | 0 | 0 | wynik<7>_BUFR_MC | NULL | NULL | wynik<7>_BUFR_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<7>_BUFR_MC.Q | 6103 | ? | 0 | 0 | wynik<7>_BUFR_MC | NULL | NULL | wynik<7>_BUFR_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv | wynik<5>_MC | main_COPY_0_COPY_0 | 256 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<5>_MC.Q | 6146 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<5>_MC.UIM | 6111 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<5>_MC.SI | wynik<5>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<5>_II/UIM | 5981 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<5>_II/UIM | 5983 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_93 | 5984 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_93_MC.Q | N_PZ_93_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<4>_II/UIM | 5990 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<4>_II/UIM | 5992 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0010 | 6046 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0010_MC.Q | _or0010_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<5>_MC.D1 | 6109 | ? | 0 | 0 | wynik<5>_MC | NULL | NULL | wynik<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<5>_MC.D2 | 6108 | ? | 0 | 0 | wynik<5>_MC | NULL | NULL | wynik<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<5>_II/UIM
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | N_PZ_33 | IV_FALSE | N_PZ_93
+SPPTERM | 3 | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | _or0012
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaB<5>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaA<5>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | _or0012
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | _or0012 | IV_FALSE | _or0010
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM | IV_TRUE | _or0012
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | _or0010
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | _or0010
+SPPTERM | 5 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+SPPTERM | 5 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_FALSE | _or0010
+
+SRFF_INSTANCE | wynik<5>_MC.REG | wynik<5>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<5>_MC.D | 6107 | ? | 0 | 0 | wynik<5>_MC | NULL | NULL | wynik<5>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<5>_MC.Q | 6110 | ? | 0 | 0 | wynik<5>_MC | NULL | NULL | wynik<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | wynik<6>_BUFR_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | wynik<6>_BUFR_MC.SI | wynik<6>_BUFR_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<6>_II/UIM | 5972 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<6>_II/UIM | 5974 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0012 | 6041 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0012_MC.Q | _or0012_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_33 | 5975 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_33_MC.Q | N_PZ_33_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<6>_BUFR_MC.D1 | 6115 | ? | 0 | 0 | wynik<6>_BUFR_MC | NULL | NULL | wynik<6>_BUFR_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | liczbaB<6>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<6>_BUFR_MC.D2 | 6116 | ? | 0 | 0 | wynik<6>_BUFR_MC | NULL | NULL | wynik<6>_BUFR_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<6>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM | IV_TRUE | _or0012
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | _or0012
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM | IV_TRUE | N_PZ_33
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | N_PZ_33
+
+SRFF_INSTANCE | wynik<6>_BUFR_MC.REG | wynik<6>_BUFR_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<6>_BUFR_MC.D | 6114 | ? | 0 | 0 | wynik<6>_BUFR_MC | NULL | NULL | wynik<6>_BUFR_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<6>_BUFR_MC.Q | 6113 | ? | 0 | 0 | wynik<6>_BUFR_MC | NULL | NULL | wynik<6>_BUFR_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | EVEN | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | EVEN_MC.Q | 6118 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | EVEN_MC.Q | EVEN_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | EVEN | 6119 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | EVEN | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | OV_MC | main_COPY_0_COPY_0 | 0 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | OV_MC.Q | 6124 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | OV_MC.Q | OV_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | OV_MC.SI | OV_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<1>_II/UIM | 5959 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaB<7>_II/UIM | 5961 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaB<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wybor<0>_II/UIM | 5963 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wybor<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | liczbaA<7>_II/UIM | 5965 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | liczbaA<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_40 | 6036 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | N_PZ_40_MC.Q | N_PZ_40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | _or0006 | 5966 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | _or0006_MC.Q | _or0006_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | OV_MC.D1 | 6122 | ? | 0 | 0 | OV_MC | NULL | NULL | OV_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | OV_MC.D2 | 6121 | ? | 0 | 0 | OV_MC | NULL | NULL | OV_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+
+SRFF_INSTANCE | OV_MC.REG | OV_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | OV_MC.D | 6120 | ? | 0 | 0 | OV_MC | NULL | NULL | OV_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | OV_MC.Q | 6123 | ? | 0 | 0 | OV_MC | NULL | NULL | OV_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | OV | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | OV_MC.Q | 6124 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | OV_MC.Q | OV_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | OV | 6125 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | OV | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | Z_MC | main_COPY_0_COPY_0 | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<4>_MC.UIM | 6071 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<2>_MC.UIM | 6081 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<3>_MC.UIM | 6086 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<1>_MC.UIM | 6096 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<5>_MC.UIM | 6111 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Z_MC.Q | 6130 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | Z_MC.Q | Z_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Z_MC.SI | Z_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<4>_MC.UIM | 6071 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<2>_MC.UIM | 6081 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<3>_MC.UIM | 6086 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<1>_MC.UIM | 6096 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<5>_MC.UIM | 6111 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Z_MC.D1 | 6127 | ? | 0 | 0 | Z_MC | NULL | NULL | Z_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 8 | IV_FALSE | wynik<4>_MC.UIM | IV_FALSE | wynik<2>_MC.UIM | IV_FALSE | wynik<3>_MC.UIM | IV_FALSE | wynik<1>_MC.UIM | IV_FALSE | wynik<0>_BUFR | IV_FALSE | wynik<7>_BUFR | IV_FALSE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Z_MC.D2 | 6128 | ? | 0 | 0 | Z_MC | NULL | NULL | Z_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Z_MC.REG | Z_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Z_MC.D | 6126 | ? | 0 | 0 | Z_MC | NULL | NULL | Z_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Z_MC.Q | 6129 | ? | 0 | 0 | Z_MC | NULL | NULL | Z_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Z | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Z_MC.Q | 6130 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | Z_MC.Q | Z_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Z | 6131 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | Z | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | wynik<0>_MC | main_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<0>_MC.Q | 6136 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_MC.Q | wynik<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | wynik<0>_MC.SI | wynik<0>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<0>_BUFR | 6097 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_BUFR_MC.Q | wynik<0>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<0>_MC.D1 | 6133 | ? | 0 | 0 | wynik<0>_MC | NULL | NULL | wynik<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | wynik<0>_BUFR
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<0>_MC.D2 | 6134 | ? | 0 | 0 | wynik<0>_MC | NULL | NULL | wynik<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | wynik<0>_MC.REG | wynik<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<0>_MC.D | 6132 | ? | 0 | 0 | wynik<0>_MC | NULL | NULL | wynik<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<0>_MC.Q | 6135 | ? | 0 | 0 | wynik<0>_MC | NULL | NULL | wynik<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | wynik<0> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<0>_MC.Q | 6136 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<0>_MC.Q | wynik<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<0> | 6137 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wynik<1> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<1>_MC.Q | 6138 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<1>_MC.Q | wynik<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<1> | 6139 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wynik<2> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<2>_MC.Q | 6140 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<2>_MC.Q | wynik<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<2> | 6141 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wynik<3> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<3>_MC.Q | 6142 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<3>_MC.Q | wynik<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<3> | 6143 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wynik<4> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<4>_MC.Q | 6144 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<4>_MC.Q | wynik<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<4> | 6145 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | wynik<5> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<5>_MC.Q | 6146 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<5>_MC.Q | wynik<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<5> | 6147 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | wynik<6>_MC | main_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<6>_MC.Q | 6152 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_MC.Q | wynik<6>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | wynik<6>_MC.SI | wynik<6>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<6>_BUFR | 6112 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_BUFR_MC.Q | wynik<6>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<6>_MC.D1 | 6149 | ? | 0 | 0 | wynik<6>_MC | NULL | NULL | wynik<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | wynik<6>_BUFR
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<6>_MC.D2 | 6150 | ? | 0 | 0 | wynik<6>_MC | NULL | NULL | wynik<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | wynik<6>_MC.REG | wynik<6>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<6>_MC.D | 6148 | ? | 0 | 0 | wynik<6>_MC | NULL | NULL | wynik<6>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<6>_MC.Q | 6151 | ? | 0 | 0 | wynik<6>_MC | NULL | NULL | wynik<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | wynik<6> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<6>_MC.Q | 6152 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<6>_MC.Q | wynik<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<6> | 6153 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<6> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | wynik<7>_MC | main_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | wynik<7>_MC.Q | 6158 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_MC.Q | wynik<7>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | wynik<7>_MC.SI | wynik<7>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | wynik<7>_BUFR | 6102 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_BUFR_MC.Q | wynik<7>_BUFR_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | wynik<7>_MC.D1 | 6155 | ? | 0 | 0 | wynik<7>_MC | NULL | NULL | wynik<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | wynik<7>_BUFR
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | wynik<7>_MC.D2 | 6156 | ? | 0 | 0 | wynik<7>_MC | NULL | NULL | wynik<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | wynik<7>_MC.REG | wynik<7>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | wynik<7>_MC.D | 6154 | ? | 0 | 0 | wynik<7>_MC | NULL | NULL | wynik<7>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | wynik<7>_MC.Q | 6157 | ? | 0 | 0 | wynik<7>_MC | NULL | NULL | wynik<7>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | wynik<7> | main_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | wynik<7>_MC.Q | 6158 | ? | 0 | 0 | main_COPY_0_COPY_0 | NULL | wynik<7>_MC.Q | wynik<7>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | wynik<7> | 6159 | PO | 0 | 0 | main_COPY_0_COPY_0 | NULL | NULL | wynik<7> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | N_PZ_96_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 2 | N_PZ_120_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 3 | N_PZ_93_MC | 1 | NULL | 0 | NULL | 0 | 143 | 51200
+FBPIN | 4 | N_PZ_33_MC | 1 | liczbaB<7>_II | 1 | NULL | 0 | 142 | 49152
+FBPIN | 5 | wynik<7>_BUFR_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | _or0010_MC | 1 | liczbaB<3>_II | 1 | NULL | 0 | 140 | 49152
+FBPIN | 7 | _or0006_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | N_PZ_40_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | wynik<6>_BUFR_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | _or0008_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | N_PZ_37_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | N_PZ_32_MC | 1 | liczbaB<6>_II | 1 | NULL | 0 | 139 | 49152
+FBPIN | 13 | _or0002_MC | 1 | liczbaB<2>_II | 1 | NULL | 0 | 138 | 49152
+FBPIN | 14 | N_PZ_122_MC | 1 | NULL | 0 | NULL | 0 | 137 | 49152
+FBPIN | 15 | wynik<0>_BUFR_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | N_PZ_75_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | liczbaA<0>_II | 1 | NULL | 0 | 2 | 53248
+FBPIN | 3 | NULL | 0 | liczbaA<4>_II | 1 | NULL | 0 | 3 | 53248
+FBPIN | 4 | NULL | 0 | liczbaA<1>_II | 1 | NULL | 0 | 4 | 49152
+FBPIN | 5 | NULL | 0 | liczbaA<5>_II | 1 | NULL | 0 | 5 | 53248
+FBPIN | 11 | _or0012_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | NULL | 0 | liczbaA<2>_II | 1 | NULL | 0 | 6 | 53248
+FBPIN | 13 | NULL | 0 | liczbaA<6>_II | 1 | NULL | 0 | 7 | 49152
+FBPIN | 14 | NULL | 0 | liczbaA<3>_II | 1 | NULL | 0 | 9 | 49152
+FBPIN | 15 | NULL | 0 | liczbaA<7>_II | 1 | NULL | 0 | 10 | 49152
+FBPIN | 16 | N_PZ_98_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR3_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | liczbaB<5>_II | 1 | NULL | 0 | 136 | 49152
+FBPIN | 2 | NULL | 0 | liczbaB<1>_II | 1 | NULL | 0 | 135 | 49152
+FBPIN | 3 | NULL | 0 | liczbaB<4>_II | 1 | NULL | 0 | 134 | 49152
+FBPIN | 5 | NULL | 0 | liczbaB<0>_II | 1 | NULL | 0 | 133 | 49152
+
+FB_INSTANCE | FOOBAR4_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 12 | NULL | 0 | wybor<1>_II | 1 | NULL | 0 | 39 | 50176
+
+FB_INSTANCE | FOOBAR7_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | wynik<0>_MC | 1 | NULL | 0 | wynik<0> | 1 | 112 | 49152
+FBPIN | 2 | wynik<4>_MC | 1 | NULL | 0 | wynik<4> | 1 | 113 | 49152
+FBPIN | 4 | wynik<1>_MC | 1 | NULL | 0 | wynik<1> | 1 | 114 | 49152
+FBPIN | 6 | wynik<5>_MC | 1 | NULL | 0 | wynik<5> | 1 | 115 | 49152
+FBPIN | 12 | wynik<2>_MC | 1 | NULL | 0 | wynik<2> | 1 | 116 | 49152
+FBPIN | 13 | wynik<6>_MC | 1 | NULL | 0 | wynik<6> | 1 | 117 | 49152
+FBPIN | 14 | wynik<3>_MC | 1 | NULL | 0 | wynik<3> | 1 | 118 | 49152
+FBPIN | 15 | wynik<7>_MC | 1 | NULL | 0 | wynik<7> | 1 | 119 | 49152
+
+FB_INSTANCE | FOOBAR10_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | C_MC | 1 | NULL | 0 | C | 1 | 104 | 49152
+FBPIN | 14 | EVEN_MC | 1 | NULL | 0 | EVEN | 1 | 102 | 49152
+
+FB_INSTANCE | FOOBAR11_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 11 | NULL | 0 | wybor<0>_II | 1 | NULL | 0 | 124 | 50176
+
+FB_INSTANCE | FOOBAR12_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | Z_MC | 1 | NULL | 0 | Z | 1 | 100 | 49152
+FBPIN | 12 | OV_MC | 1 | NULL | 0 | OV | 1 | 97 | 49152
+FBPIN | 15 | NULL | 0 | bitP_II | 1 | NULL | 0 | 94 | 49152
+
+FB_INSTANCE | FOOBAR13_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | main_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 55
+PLA_TERM | 0 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_TRUE | liczbaA<0>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 3 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | bitP_II/UIM | IV_TRUE | liczbaA<0>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM | IV_TRUE | N_PZ_75
+PLA_TERM | 4 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+PLA_TERM | 5 | 
+SPPTERM | 3 | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_TRUE | N_PZ_120
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_TRUE | N_PZ_120 | IV_FALSE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+PLA_TERM | 7 | 
+SPPTERM | 2 | IV_FALSE | N_PZ_120 | IV_FALSE | liczbaA<1>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 2 | IV_TRUE | N_PZ_120 | IV_TRUE | liczbaA<1>_II/UIM
+PLA_TERM | 9 | 
+SPPTERM | 3 | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_120
+PLA_TERM | 10 | 
+SPPTERM | 3 | IV_FALSE | N_PZ_120 | IV_TRUE | liczbaA<0>_II/UIM | IV_FALSE | N_PZ_75
+PLA_TERM | 11 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<6>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM
+PLA_TERM | 12 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM | IV_TRUE | _or0012
+PLA_TERM | 14 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | _or0012
+PLA_TERM | 15 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<6>_II/UIM | IV_TRUE | N_PZ_33
+PLA_TERM | 16 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | N_PZ_33
+PLA_TERM | 17 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+PLA_TERM | 18 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<6>_II/UIM | IV_FALSE | _or0012
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<6>_II/UIM | IV_FALSE | _or0012
+PLA_TERM | 20 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<6>_II/UIM | IV_FALSE | liczbaA<6>_II/UIM
+PLA_TERM | 21 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<6>_II/UIM | IV_TRUE | N_PZ_33
+PLA_TERM | 22 | 
+SPPTERM | 1 | IV_TRUE | liczbaB<7>_II/UIM
+PLA_TERM | 23 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<6>_II/UIM | IV_TRUE | N_PZ_33
+PLA_TERM | 24 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM
+PLA_TERM | 26 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+PLA_TERM | 27 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+PLA_TERM | 28 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | N_PZ_40
+PLA_TERM | 29 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+PLA_TERM | 30 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<1>_II/UIM | IV_TRUE | liczbaA<1>_II/UIM
+PLA_TERM | 31 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<1>_II/UIM | IV_FALSE | liczbaA<1>_II/UIM
+PLA_TERM | 32 | 
+SPPTERM | 2 | IV_TRUE | wynik<1>_MC.UIM | IV_TRUE | wynik<0>_BUFR
+PLA_TERM | 33 | 
+SPPTERM | 2 | IV_FALSE | wynik<1>_MC.UIM | IV_FALSE | wynik<0>_BUFR
+PLA_TERM | 34 | 
+SPPTERM | 1 | IV_TRUE | liczbaB<6>_II/UIM
+PLA_TERM | 35 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+PLA_TERM | 36 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | _or0008
+PLA_TERM | 37 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | _or0008
+PLA_TERM | 38 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+PLA_TERM | 39 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | N_PZ_37
+PLA_TERM | 40 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<2>_II/UIM | IV_TRUE | N_PZ_37
+PLA_TERM | 41 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM
+PLA_TERM | 42 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | _or0002
+PLA_TERM | 43 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<3>_II/UIM | IV_TRUE | _or0002
+PLA_TERM | 44 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM
+PLA_TERM | 45 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | N_PZ_122
+PLA_TERM | 46 | 
+SPPTERM | 2 | IV_TRUE | liczbaA<3>_II/UIM | IV_FALSE | N_PZ_122
+PLA_TERM | 47 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+PLA_TERM | 48 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | N_PZ_93
+PLA_TERM | 49 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+PLA_TERM | 50 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+PLA_TERM | 51 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | N_PZ_32
+PLA_TERM | 52 | 
+SPPTERM | 1 | IV_FALSE | liczbaB<0>_II/UIM
+PLA_TERM | 53 | 
+SPPTERM | 2 | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | N_PZ_32
+PLA_TERM | 55 | 
+SPPTERM | 2 | IV_TRUE | bitP_II/UIM | IV_TRUE | liczbaB<0>_II/UIM
+
+PLA | FOOBAR2_ | 10
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_FALSE | wynik<3>_MC.UIM | IV_TRUE | N_PZ_96 | IV_TRUE | wynik<7>_BUFR
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | wynik<3>_MC.UIM | IV_TRUE | N_PZ_96 | IV_FALSE | wynik<7>_BUFR
+PLA_TERM | 2 | 
+SPPTERM | 3 | IV_TRUE | wynik<3>_MC.UIM | IV_FALSE | N_PZ_96 | IV_TRUE | wynik<7>_BUFR
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_FALSE | wynik<3>_MC.UIM | IV_FALSE | N_PZ_96 | IV_FALSE | wynik<7>_BUFR
+PLA_TERM | 4 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 2 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | _or0010
+PLA_TERM | 7 | 
+SPPTERM | 2 | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | _or0010
+PLA_TERM | 40 | 
+SPPTERM | 2 | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+PLA_TERM | 55 | 
+SPPTERM | 1 | IV_TRUE | wynik<2>_MC.UIM
+
+PLA | FOOBAR9_ | 54
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<5>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 5 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | _or0012
+PLA_TERM | 4 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM | IV_TRUE | _or0012
+PLA_TERM | 5 | 
+SPPTERM | 3 | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | _or0012
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_FALSE | _or0010
+PLA_TERM | 7 | 
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_TRUE | _or0012 | IV_FALSE | _or0010
+PLA_TERM | 8 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<5>_II/UIM | IV_TRUE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+PLA_TERM | 9 | 
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<5>_II/UIM | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | N_PZ_93
+PLA_TERM | 10 | 
+SPPTERM | 1 | IV_TRUE | wynik<0>_BUFR
+PLA_TERM | 11 | 
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | N_PZ_33 | IV_FALSE | N_PZ_93
+PLA_TERM | 12 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaB<5>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 1 | IV_TRUE | liczbaB<4>_II/UIM
+PLA_TERM | 14 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaA<5>_II/UIM
+PLA_TERM | 15 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaB<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | _or0010
+PLA_TERM | 16 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_33 | IV_FALSE | liczbaA<5>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | _or0010
+PLA_TERM | 17 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_75
+PLA_TERM | 18 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_120 | IV_TRUE | N_PZ_75
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | N_PZ_120
+PLA_TERM | 20 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | bitP_II/UIM | IV_FALSE | liczbaB<0>_II/UIM | IV_FALSE | N_PZ_120
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | N_PZ_120 | IV_FALSE | liczbaA<1>_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | N_PZ_120 | IV_TRUE | _or0008
+PLA_TERM | 23 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_120 | IV_FALSE | N_PZ_75 | IV_FALSE | _or0008
+PLA_TERM | 24 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | N_PZ_37 | IV_TRUE | N_PZ_120 | IV_FALSE | N_PZ_75
+PLA_TERM | 25 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM
+PLA_TERM | 26 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM
+PLA_TERM | 27 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_TRUE | _or0002
+PLA_TERM | 28 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_TRUE | _or0010
+PLA_TERM | 29 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaB<3>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0010
+PLA_TERM | 30 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_32 | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0002
+PLA_TERM | 31 | 
+SPPTERM | 6 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_32 | IV_FALSE | liczbaB<3>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_FALSE | _or0002
+PLA_TERM | 32 | 
+SPPTERM | 4 | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<3>_II/UIM | IV_TRUE | _or0010 | IV_TRUE | N_PZ_122
+PLA_TERM | 33 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<3>_II/UIM | IV_FALSE | _or0010 | IV_FALSE | N_PZ_122
+PLA_TERM | 34 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM
+PLA_TERM | 35 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM
+PLA_TERM | 36 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM | IV_TRUE | _or0008
+PLA_TERM | 37 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | _or0008
+PLA_TERM | 38 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<2>_II/UIM | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | N_PZ_37
+PLA_TERM | 39 | 
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | _or0002 | IV_FALSE | liczbaB<2>_II/UIM | IV_TRUE | liczbaA<2>_II/UIM
+PLA_TERM | 40 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | _or0002 | IV_TRUE | liczbaB<2>_II/UIM | IV_TRUE | N_PZ_37
+PLA_TERM | 41 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | _or0002 | IV_FALSE | liczbaA<2>_II/UIM | IV_FALSE | N_PZ_37
+PLA_TERM | 42 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+PLA_TERM | 43 | 
+SPPTERM | 1 | IV_TRUE | liczbaB<2>_II/UIM
+PLA_TERM | 44 | 
+SPPTERM | 4 | IV_TRUE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+PLA_TERM | 45 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | _or0010
+PLA_TERM | 46 | 
+SPPTERM | 1 | IV_TRUE | wynik<6>_BUFR
+PLA_TERM | 47 | 
+SPPTERM | 4 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM | IV_FALSE | _or0010
+PLA_TERM | 48 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM | IV_TRUE | N_PZ_32
+PLA_TERM | 49 | 
+SPPTERM | 1 | IV_FALSE | liczbaA<3>_II/UIM
+PLA_TERM | 50 | 
+SPPTERM | 4 | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_93 | IV_FALSE | liczbaB<4>_II/UIM | IV_TRUE | liczbaA<4>_II/UIM
+PLA_TERM | 51 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | N_PZ_93 | IV_FALSE | liczbaB<4>_II/UIM | IV_FALSE | N_PZ_32
+PLA_TERM | 52 | 
+SPPTERM | 1 | IV_TRUE | wynik<7>_BUFR
+PLA_TERM | 53 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | N_PZ_93 | IV_TRUE | liczbaB<4>_II/UIM | IV_FALSE | liczbaA<4>_II/UIM
+
+PLA | FOOBAR10_ | 10
+PLA_TERM | 0 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+PLA_TERM | 1 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+PLA_TERM | 2 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_TRUE | N_PZ_40
+PLA_TERM | 3 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+PLA_TERM | 4 | 
+SPPTERM | 3 | IV_TRUE | N_PZ_98 | IV_TRUE | wynik<5>_MC.UIM | IV_TRUE | wynik<6>_BUFR
+PLA_TERM | 5 | 
+SPPTERM | 3 | IV_FALSE | N_PZ_98 | IV_FALSE | wynik<5>_MC.UIM | IV_TRUE | wynik<6>_BUFR
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_FALSE | N_PZ_98 | IV_TRUE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_TRUE | N_PZ_98 | IV_FALSE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM
+PLA_TERM | 49 | 
+SPPTERM | 1 | IV_TRUE | wynik<4>_MC.UIM
+
+PLA | FOOBAR12_ | 5
+PLA_TERM | 0 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_TRUE | _or0006
+PLA_TERM | 1 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_FALSE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | _or0006
+PLA_TERM | 2 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_FALSE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_TRUE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+PLA_TERM | 3 | 
+SPPTERM | 5 | IV_FALSE | wybor<1>_II/UIM | IV_TRUE | liczbaB<7>_II/UIM | IV_TRUE | wybor<0>_II/UIM | IV_FALSE | liczbaA<7>_II/UIM | IV_FALSE | N_PZ_40
+PLA_TERM | 13 | 
+SPPTERM | 8 | IV_FALSE | wynik<4>_MC.UIM | IV_FALSE | wynik<2>_MC.UIM | IV_FALSE | wynik<3>_MC.UIM | IV_FALSE | wynik<1>_MC.UIM | IV_FALSE | wynik<0>_BUFR | IV_FALSE | wynik<7>_BUFR | IV_FALSE | wynik<5>_MC.UIM | IV_FALSE | wynik<6>_BUFR
+
+BUSINFO | LICZBAA<7:0> | 8 | 0 | 0 | liczbaA<0> | 7 | liczbaA<1> | 6 | liczbaA<2> | 5 | liczbaA<3> | 4 | liczbaA<4> | 3 | liczbaA<5> | 2 | liczbaA<6> | 1 | liczbaA<7> | 0
+BUSINFO | LICZBAB<7:0> | 8 | 0 | 0 | liczbaB<0> | 7 | liczbaB<1> | 6 | liczbaB<2> | 5 | liczbaB<3> | 4 | liczbaB<4> | 3 | liczbaB<5> | 2 | liczbaB<6> | 1 | liczbaB<7> | 0
+BUSINFO | WYBOR<1:0> | 2 | 0 | 0 | wybor<0> | 1 | wybor<1> | 0
+BUSINFO | WYNIK<7:0> | 8 | 0 | 1 | wynik<0> | 7 | wynik<1> | 6 | wynik<2> | 5 | wynik<3> | 4 | wynik<4> | 3 | wynik<5> | 2 | wynik<6> | 1 | wynik<7> | 0
+
+IOSTD | LVCMOS18
+wybor<1> | LVCMOS18
+liczbaB<7> | LVCMOS18
+wybor<0> | LVCMOS18
+liczbaA<7> | LVCMOS18
+liczbaB<6> | LVCMOS18
+liczbaA<6> | LVCMOS18
+liczbaB<5> | LVCMOS18
+liczbaA<5> | LVCMOS18
+liczbaB<4> | LVCMOS18
+liczbaA<4> | LVCMOS18
+liczbaB<3> | LVCMOS18
+liczbaA<3> | LVCMOS18
+liczbaB<2> | LVCMOS18
+liczbaA<2> | LVCMOS18
+bitP | LVCMOS18
+liczbaB<0> | LVCMOS18
+liczbaB<1> | LVCMOS18
+liczbaA<1> | LVCMOS18
+liczbaA<0> | LVCMOS18
+C | LVCMOS18
+EVEN | LVCMOS18
+OV | LVCMOS18
+Z | LVCMOS18
+wynik<0> | LVCMOS18
+wynik<1> | LVCMOS18
+wynik<2> | LVCMOS18
+wynik<3> | LVCMOS18
+wynik<4> | LVCMOS18
+wynik<5> | LVCMOS18
+wynik<6> | LVCMOS18
+wynik<7> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | _or0008 | NULL | 1 | N_PZ_33 | NULL | 2 | wynik<0>_BUFR | NULL | 3 | _or0002 | NULL | 4 | N_PZ_32 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | _or0012 | NULL | 6 | wynik<1>_MC.UIM | NULL | 7 | N_PZ_40 | NULL | 8 | N_PZ_122 | NULL | 9 | N_PZ_75 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | liczbaB<0> | 133 | 11 | liczbaB<6> | 139 | 12 | liczbaA<2> | 6 | 13 | liczbaA<0> | 2 | 14 | N_PZ_93 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 16 | N_PZ_37 | NULL | 17 | wybor<1> | 39 | 18 | liczbaA<3> | 9 | 21 | liczbaB<4> | 134 | 22 | liczbaA<4> | 3
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 23 | liczbaA<7> | 10 | 24 | liczbaA<1> | 4 | 25 | liczbaB<3> | 140 | 26 | liczbaB<1> | 135 | 29 | bitP | 94
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 30 | liczbaB<5> | 136 | 31 | liczbaB<7> | 142 | 32 | wybor<0> | 124 | 33 | liczbaB<2> | 138 | 34 | liczbaA<5> | 5
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 35 | liczbaA<6> | 7 | 37 | _or0006 | NULL | 38 | N_PZ_120 | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 193 | 187 | 198 | 196 | 195 | 210 | 315 | 191 | 197 | 199 | 26 | 6 | 17 | 11 | 186 | -1 | 194 | 61 | 19 | -1 | -1 | 24 | 13 | 20 | 14 | 5 | 23 | -1 | -1 | 136 | 22 | 3 | 120 | 7 | 15 | 18 | -1 | 190 | 185 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | liczbaB<4> | 134 | 1 | wynik<3>_MC.UIM | NULL | 2 | wynik<7>_BUFR | NULL | 6 | wynik<2>_MC.UIM | NULL | 7 | liczbaB<5> | 136
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 8 | liczbaA<5> | 5 | 9 | _or0010 | NULL | 14 | liczbaA<4> | 3 | 16 | N_PZ_96 | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | 24 | 325 | 188 | -1 | -1 | -1 | 323 | 22 | 15 | 189 | -1 | -1 | -1 | -1 | 13 | -1 | 184 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 0 | _or0008 | NULL | 1 | N_PZ_33 | NULL | 2 | wynik<0>_BUFR | NULL | 3 | _or0002 | NULL | 4 | N_PZ_32 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 5 | liczbaB<3> | 140 | 6 | N_PZ_37 | NULL | 7 | N_PZ_120 | NULL | 8 | N_PZ_122 | NULL | 9 | N_PZ_75 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 10 | wynik<6>_BUFR | NULL | 12 | wybor<0> | 124 | 14 | N_PZ_93 | NULL | 15 | wynik<7>_BUFR | NULL | 16 | bitP | 94
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 17 | wybor<1> | 39 | 18 | _or0010 | NULL | 19 | _or0012 | NULL | 21 | liczbaB<4> | 134 | 22 | liczbaA<4> | 3
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 24 | liczbaA<1> | 4 | 25 | liczbaB<0> | 133 | 26 | liczbaA<2> | 6 | 27 | liczbaA<3> | 9 | 30 | liczbaB<5> | 136
+FB_ORDER_OF_INPUTS | FOOBAR9_ | 32 | liczbaA<5> | 5 | 33 | liczbaB<2> | 138
+
+FB_IMUX_INDEX | FOOBAR9_ | 193 | 187 | 198 | 196 | 195 | 5 | 194 | 185 | 197 | 199 | 192 | -1 | 120 | -1 | 186 | 188 | 136 | 61 | 189 | 210 | -1 | 24 | 13 | -1 | 14 | 26 | 17 | 19 | -1 | -1 | 22 | -1 | 15 | 7 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR10_ | 0 | wybor<0> | 124 | 2 | liczbaA<7> | 10 | 3 | wynik<5>_MC.UIM | NULL | 5 | _or0006 | NULL | 7 | N_PZ_40 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR10_ | 9 | N_PZ_98 | NULL | 10 | wynik<4>_MC.UIM | NULL | 12 | wynik<6>_BUFR | NULL | 16 | liczbaB<7> | 142 | 17 | wybor<1> | 39
+
+FB_IMUX_INDEX | FOOBAR10_ | 120 | -1 | 20 | 317 | -1 | 190 | -1 | 191 | -1 | 215 | 313 | -1 | 192 | -1 | -1 | -1 | 3 | 61 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 0 | wybor<0> | 124 | 1 | wynik<3>_MC.UIM | NULL | 2 | wynik<0>_BUFR | NULL | 3 | wynik<5>_MC.UIM | NULL | 5 | _or0006 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 6 | wynik<2>_MC.UIM | NULL | 7 | N_PZ_40 | NULL | 10 | wynik<4>_MC.UIM | NULL | 12 | wynik<6>_BUFR | NULL | 14 | wynik<1>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR12_ | 15 | wynik<7>_BUFR | NULL | 16 | liczbaA<7> | 10 | 17 | wybor<1> | 39 | 31 | liczbaB<7> | 142
+
+FB_IMUX_INDEX | FOOBAR12_ | 120 | 325 | 198 | 317 | -1 | 190 | 323 | 191 | -1 | -1 | 313 | -1 | 192 | -1 | 315 | 188 | 20 | 61 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 3 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

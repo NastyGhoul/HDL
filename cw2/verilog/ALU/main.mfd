@@ -1,0 +1,421 @@
+MDF Database:  version 1.0
+MDF_INFO | main | XC2C256-6-TQ144
+MACROCELL | 9 | 5 | C_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 6 | wybor<1>  | liczbaB<7>  | wybor<0>  | liczbaA<7>  | N_PZ_40  | _or0006
+INPUTMC | 2 | 0 | 7 | 0 | 6
+INPUTP | 4 | 62 | 217 | 190 | 12
+EQ | 9 | 
+   C = !wybor<1> & liczbaB<7>
+	$ !wybor<1> & liczbaB<7> & wybor<0> & liczbaA<7> & 
+	!N_PZ_40
+	# !wybor<1> & liczbaB<7> & !wybor<0> & !liczbaA<7> & 
+	_or0006
+	# !wybor<1> & !liczbaB<7> & wybor<0> & !liczbaA<7> & 
+	N_PZ_40
+	# !wybor<1> & !liczbaB<7> & !wybor<0> & liczbaA<7> & 
+	!_or0006;	// (5 pt, 6 inp)
+
+MACROCELL | 0 | 6 | _or0006_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 5 | 0 | 4 | 11 | 11
+INPUTS | 3 | liczbaB<6>  | liczbaA<6>  | N_PZ_33
+INPUTMC | 1 | 0 | 3
+INPUTP | 2 | 213 | 8
+EQ | 3 | 
+   _or0006 = !liczbaB<6> & !liczbaA<6>
+	# !liczbaB<6> & N_PZ_33
+	# !liczbaA<6> & N_PZ_33;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 3 | N_PZ_33_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 6 | 8 | 5 | 0 | 8
+INPUTS | 3 | liczbaB<5>  | liczbaA<5>  | N_PZ_93
+INPUTMC | 1 | 0 | 2
+INPUTP | 2 | 208 | 5
+EQ | 3 | 
+   N_PZ_33 = !liczbaB<5> & !liczbaA<5>
+	# !liczbaB<5> & N_PZ_93
+	# !liczbaA<5> & N_PZ_93;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 2 | N_PZ_93_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 3 | 8 | 1 | 8 | 5
+INPUTS | 3 | liczbaB<4>  | liczbaA<4>  | N_PZ_32
+INPUTMC | 1 | 0 | 11
+INPUTP | 2 | 206 | 3
+EQ | 3 | 
+   N_PZ_93 = !liczbaB<4> & !liczbaA<4>
+	# !liczbaB<4> & N_PZ_32
+	# !liczbaA<4> & N_PZ_32;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 11 | N_PZ_32_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 2 | 8 | 1 | 8 | 13
+INPUTS | 3 | liczbaB<3>  | liczbaA<3>  | _or0002
+INPUTMC | 1 | 0 | 12
+INPUTP | 2 | 214 | 10
+EQ | 3 | 
+   N_PZ_32 = !liczbaB<3> & !liczbaA<3>
+	# !liczbaB<3> & _or0002
+	# !liczbaA<3> & _or0002;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 12 | _or0002_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 11 | 8 | 11 | 8 | 13
+INPUTS | 3 | liczbaB<2>  | liczbaA<2>  | N_PZ_37
+INPUTMC | 1 | 0 | 10
+INPUTP | 2 | 212 | 7
+EQ | 3 | 
+   _or0002 = !liczbaB<2> & !liczbaA<2>
+	# !liczbaB<2> & N_PZ_37
+	# !liczbaA<2> & N_PZ_37;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 10 | N_PZ_37_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 12 | 8 | 11 | 8 | 3
+INPUTS | 6 | N_PZ_120  | liczbaA<1>  | bitP  | liczbaB<0>  | liczbaA<0>  | N_PZ_75
+INPUTMC | 2 | 0 | 1 | 0 | 15
+INPUTP | 4 | 4 | 142 | 204 | 1
+EQ | 3 | 
+   N_PZ_37 = !N_PZ_120 & !liczbaA<1>
+	# !bitP & !liczbaB<0> & N_PZ_120
+	# N_PZ_120 & !liczbaA<0> & !N_PZ_75;	// (3 pt, 6 inp)
+
+MACROCELL | 0 | 1 | N_PZ_120_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 10 | 0 | 9 | 8 | 3
+INPUTS | 2 | liczbaB<1>  | liczbaA<1>
+INPUTP | 2 | 207 | 4
+EQ | 2 | 
+   N_PZ_120 = liczbaB<1> & !liczbaA<1>
+	# !liczbaB<1> & liczbaA<1>;	// (2 pt, 2 inp)
+
+MACROCELL | 0 | 15 | N_PZ_75_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 10 | 0 | 9 | 8 | 3 | 0 | 14
+INPUTS | 2 | bitP  | liczbaB<0>
+INPUTP | 2 | 142 | 204
+EQ | 1 | 
+   N_PZ_75 = bitP & liczbaB<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 7 | N_PZ_40_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 5 | 0 | 4 | 11 | 11
+INPUTS | 3 | liczbaB<6>  | liczbaA<6>  | _or0012
+INPUTMC | 1 | 1 | 10
+INPUTP | 2 | 213 | 8
+EQ | 3 | 
+   N_PZ_40 = liczbaB<6> & !liczbaA<6>
+	# liczbaB<6> & !_or0012
+	# !liczbaA<6> & !_or0012;	// (3 pt, 3 inp)
+
+MACROCELL | 1 | 10 | _or0012_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 7 | 8 | 5 | 0 | 8
+INPUTS | 5 | liczbaB<5>  | liczbaA<5>  | liczbaB<4>  | liczbaA<4>  | _or0010
+INPUTMC | 1 | 0 | 5
+INPUTP | 4 | 208 | 5 | 206 | 3
+EQ | 6 | 
+   _or0012 = liczbaB<5> & !liczbaA<5>
+	$ liczbaB<5> & !liczbaA<5>
+	# !liczbaB<5> & liczbaA<5>
+	# !liczbaB<4> & liczbaA<4>
+	# !liczbaB<4> & _or0010
+	# liczbaA<4> & _or0010;	// (6 pt, 5 inp)
+
+MACROCELL | 0 | 5 | _or0010_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 1 | 10 | 8 | 1 | 8 | 13 | 8 | 5
+INPUTS | 3 | liczbaB<3>  | liczbaA<3>  | N_PZ_122
+INPUTMC | 1 | 0 | 13
+INPUTP | 2 | 214 | 10
+EQ | 3 | 
+   _or0010 = !liczbaB<3> & liczbaA<3>
+	# !liczbaB<3> & !N_PZ_122
+	# liczbaA<3> & !N_PZ_122;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 13 | N_PZ_122_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 0 | 5 | 8 | 13
+INPUTS | 3 | liczbaB<2>  | liczbaA<2>  | _or0008
+INPUTMC | 1 | 0 | 9
+INPUTP | 2 | 212 | 7
+EQ | 3 | 
+   N_PZ_122 = liczbaB<2> & !liczbaA<2>
+	# liczbaB<2> & !_or0008
+	# !liczbaA<2> & !_or0008;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 9 | _or0008_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 13 | 8 | 11 | 8 | 3
+INPUTS | 6 | N_PZ_120  | liczbaA<1>  | bitP  | liczbaB<0>  | liczbaA<0>  | N_PZ_75
+INPUTMC | 2 | 0 | 1 | 0 | 15
+INPUTP | 4 | 4 | 142 | 204 | 1
+EQ | 3 | 
+   _or0008 = N_PZ_120 & liczbaA<1>
+	# !bitP & !liczbaB<0> & !N_PZ_120
+	# !N_PZ_120 & liczbaA<0> & !N_PZ_75;	// (3 pt, 6 inp)
+
+MACROCELL | 9 | 13 | EVEN_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | wynik<4>  | N_PZ_98  | wynik<5>  | wynik<6>_BUFR
+INPUTMC | 4 | 8 | 1 | 1 | 15 | 8 | 5 | 0 | 8
+EQ | 5 | 
+   EVEN = wynik<4>
+	$ N_PZ_98 & wynik<5> & wynik<6>_BUFR
+	# N_PZ_98 & !wynik<5> & !wynik<6>_BUFR
+	# !N_PZ_98 & wynik<5> & !wynik<6>_BUFR
+	# !N_PZ_98 & !wynik<5> & wynik<6>_BUFR;	// (5 pt, 4 inp)
+
+MACROCELL | 8 | 1 | wynik<4>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 9 | 13 | 11 | 1
+INPUTS | 7 | liczbaB<4>  | wybor<1>  | wybor<0>  | liczbaA<4>  | _or0010  | N_PZ_93  | N_PZ_32
+INPUTMC | 3 | 0 | 5 | 0 | 2 | 0 | 11
+INPUTP | 4 | 206 | 62 | 190 | 3
+EQ | 12 | 
+   wynik<4> = liczbaB<4>
+	$ wybor<1> & wybor<0> & liczbaB<4> & !liczbaA<4>
+	# wybor<1> & !wybor<0> & !liczbaB<4> & liczbaA<4>
+	# !wybor<1> & wybor<0> & liczbaA<4> & _or0010
+	# !wybor<1> & wybor<0> & !liczbaA<4> & !_or0010
+	# !wybor<0> & N_PZ_93 & !liczbaB<4> & liczbaA<4>
+	# !wybor<1> & !wybor<0> & N_PZ_93 & !liczbaB<4> & 
+	!N_PZ_32
+	# !wybor<1> & !wybor<0> & !N_PZ_93 & liczbaB<4> & 
+	!liczbaA<4>
+	# !wybor<1> & !wybor<0> & liczbaB<4> & liczbaA<4> & 
+	N_PZ_32;	// (9 pt, 7 inp)
+
+MACROCELL | 1 | 15 | N_PZ_98_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 9 | 13
+INPUTS | 4 | wynik<2>  | wynik<3>  | N_PZ_96  | wynik<7>_BUFR
+INPUTMC | 4 | 8 | 11 | 8 | 13 | 0 | 0 | 0 | 4
+EQ | 5 | 
+   N_PZ_98 = wynik<2>
+	$ wynik<3> & N_PZ_96 & !wynik<7>_BUFR
+	# wynik<3> & !N_PZ_96 & wynik<7>_BUFR
+	# !wynik<3> & N_PZ_96 & wynik<7>_BUFR
+	# !wynik<3> & !N_PZ_96 & !wynik<7>_BUFR;	// (5 pt, 4 inp)
+
+MACROCELL | 8 | 11 | wynik<2>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 1 | 15 | 11 | 1
+INPUTS | 7 | liczbaB<2>  | wybor<1>  | wybor<0>  | liczbaA<2>  | _or0008  | _or0002  | N_PZ_37
+INPUTMC | 3 | 0 | 9 | 0 | 12 | 0 | 10
+INPUTP | 4 | 212 | 62 | 190 | 7
+EQ | 12 | 
+   wynik<2> = liczbaB<2>
+	$ wybor<1> & wybor<0> & liczbaB<2> & !liczbaA<2>
+	# wybor<1> & !wybor<0> & !liczbaB<2> & liczbaA<2>
+	# !wybor<1> & wybor<0> & liczbaA<2> & _or0008
+	# !wybor<1> & wybor<0> & !liczbaA<2> & !_or0008
+	# !wybor<0> & _or0002 & !liczbaB<2> & liczbaA<2>
+	# !wybor<1> & !wybor<0> & !_or0002 & liczbaB<2> & 
+	N_PZ_37
+	# !wybor<1> & !wybor<0> & !_or0002 & !liczbaA<2> & 
+	!N_PZ_37
+	# !wybor<1> & !wybor<0> & !liczbaB<2> & !liczbaA<2> & 
+	!N_PZ_37;	// (9 pt, 7 inp)
+
+MACROCELL | 8 | 13 | wynik<3>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 1 | 15 | 11 | 1
+INPUTS | 8 | liczbaA<3>  | wybor<1>  | wybor<0>  | liczbaB<3>  | _or0002  | _or0010  | N_PZ_122  | N_PZ_32
+INPUTMC | 4 | 0 | 12 | 0 | 5 | 0 | 13 | 0 | 11
+INPUTP | 4 | 10 | 62 | 190 | 214
+EQ | 15 | 
+   !wynik<3> = !liczbaA<3>
+	$ wybor<1> & wybor<0> & !liczbaB<3> & liczbaA<3>
+	# wybor<1> & !wybor<0> & liczbaB<3> & !liczbaA<3>
+	# !wybor<1> & !wybor<0> & liczbaB<3> & _or0002
+	# wybor<0> & liczbaA<3> & _or0010 & N_PZ_122
+	# !wybor<1> & wybor<0> & liczbaB<3> & liczbaA<3> & 
+	_or0010
+	# !wybor<1> & wybor<0> & !liczbaB<3> & !liczbaA<3> & 
+	!_or0010
+	# !wybor<1> & wybor<0> & !liczbaA<3> & !_or0010 & 
+	!N_PZ_122
+	# !wybor<1> & !wybor<0> & N_PZ_32 & !liczbaA<3> & 
+	!_or0002
+	# !wybor<1> & !wybor<0> & !N_PZ_32 & !liczbaB<3> & 
+	liczbaA<3> & !_or0002;	// (10 pt, 8 inp)
+
+MACROCELL | 0 | 0 | N_PZ_96_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 1 | 15
+INPUTS | 2 | wynik<1>  | wynik<0>_BUFR
+INPUTMC | 2 | 8 | 3 | 0 | 14
+EQ | 2 | 
+   N_PZ_96 = wynik<1> & wynik<0>_BUFR
+	# !wynik<1> & !wynik<0>_BUFR;	// (2 pt, 2 inp)
+
+MACROCELL | 8 | 3 | wynik<1>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 0 | 0 | 11 | 1
+INPUTS | 9 | wybor<0>  | N_PZ_120  | wybor<1>  | liczbaA<1>  | _or0008  | N_PZ_75  | N_PZ_37  | bitP  | liczbaB<0>
+INPUTMC | 4 | 0 | 1 | 0 | 9 | 0 | 15 | 0 | 10
+INPUTP | 5 | 190 | 62 | 4 | 142 | 204
+EQ | 10 | 
+   !wynik<1> = wybor<0> & N_PZ_120
+	$ wybor<1> & !N_PZ_120 & !liczbaA<1>
+	# !wybor<1> & wybor<0> & !N_PZ_120 & _or0008
+	# !wybor<1> & !wybor<0> & N_PZ_120 & N_PZ_75
+	# !wybor<1> & !N_PZ_37 & N_PZ_120 & !N_PZ_75
+	# !wybor<1> & !bitP & !liczbaB<0> & !N_PZ_120
+	# !wybor<1> & wybor<0> & !bitP & !liczbaB<0> & 
+	!N_PZ_75
+	# !wybor<1> & !wybor<0> & !N_PZ_120 & !N_PZ_75 & 
+	!_or0008;	// (8 pt, 9 inp)
+
+MACROCELL | 0 | 14 | wynik<0>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 0 | 11 | 1 | 8 | 0
+INPUTS | 6 | liczbaB<0>  | wybor<1>  | bitP  | liczbaA<0>  | wybor<0>  | N_PZ_75
+INPUTMC | 1 | 0 | 15
+INPUTP | 5 | 204 | 62 | 142 | 1 | 190
+EQ | 7 | 
+   !wynik<0>_BUFR = !liczbaB<0>
+	$ !wybor<1> & !bitP & liczbaA<0>
+	# wybor<1> & wybor<0> & liczbaB<0> & !liczbaA<0>
+	# wybor<1> & !wybor<0> & !liczbaB<0> & liczbaA<0>
+	# !wybor<1> & liczbaB<0> & !liczbaA<0> & N_PZ_75
+	# !wybor<1> & bitP & !liczbaB<0> & !liczbaA<0> & 
+	!N_PZ_75;	// (6 pt, 6 inp)
+
+MACROCELL | 0 | 4 | wynik<7>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 1 | 15 | 11 | 1 | 8 | 14
+INPUTS | 6 | liczbaB<7>  | wybor<1>  | wybor<0>  | liczbaA<7>  | N_PZ_40  | _or0006
+INPUTMC | 2 | 0 | 7 | 0 | 6
+INPUTP | 4 | 217 | 62 | 190 | 12
+EQ | 7 | 
+   wynik<7>_BUFR = liczbaB<7>
+	$ wybor<1> & liczbaB<7> & wybor<0> & !liczbaA<7>
+	# wybor<1> & !liczbaB<7> & !wybor<0> & liczbaA<7>
+	# !wybor<1> & wybor<0> & liczbaA<7> & !N_PZ_40
+	# !wybor<1> & wybor<0> & !liczbaA<7> & N_PZ_40
+	# !wybor<1> & !wybor<0> & liczbaA<7> & _or0006
+	# !wybor<1> & !wybor<0> & !liczbaA<7> & !_or0006;	// (7 pt, 6 inp)
+
+MACROCELL | 8 | 5 | wynik<5>_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 2 | 9 | 13 | 11 | 1
+INPUTS | 10 | wybor<1>  | wybor<0>  | liczbaB<5>  | liczbaA<5>  | N_PZ_33  | N_PZ_93  | _or0012  | liczbaB<4>  | liczbaA<4>  | _or0010
+INPUTMC | 4 | 0 | 3 | 0 | 2 | 1 | 10 | 0 | 5
+INPUTP | 6 | 62 | 190 | 208 | 5 | 206 | 3
+EQ | 21 | 
+   !wynik<5> = wybor<1> & wybor<0> & !liczbaB<5>
+	# wybor<1> & wybor<0> & !liczbaA<5>
+	# wybor<1> & N_PZ_33 & !N_PZ_93
+	# wybor<0> & !liczbaA<5> & _or0012
+	# !wybor<1> & !wybor<0> & !N_PZ_33 & !liczbaB<5>
+	# !wybor<1> & !wybor<0> & !N_PZ_33 & !liczbaA<5>
+	# wybor<0> & liczbaB<4> & !liczbaA<4> & _or0012
+	# wybor<0> & !liczbaA<4> & _or0012 & !_or0010
+	# !wybor<0> & !liczbaB<5> & !liczbaA<5> & N_PZ_93
+	# !wybor<1> & wybor<0> & liczbaB<5> & liczbaA<5> & 
+	_or0012
+	# !wybor<1> & !wybor<0> & liczbaB<5> & liczbaA<5> & 
+	N_PZ_93
+	# !wybor<1> & !N_PZ_33 & !liczbaB<5> & liczbaB<4> & 
+	!_or0010
+	# !wybor<1> & !N_PZ_33 & !liczbaA<5> & liczbaB<4> & 
+	!_or0010
+	# wybor<0> & liczbaB<5> & !liczbaA<5> & liczbaB<4> & 
+	!liczbaA<4>
+	# wybor<0> & liczbaB<5> & !liczbaA<5> & !liczbaA<4> & 
+	!_or0010;	// (15 pt, 10 inp)
+
+MACROCELL | 0 | 8 | wynik<6>_BUFR_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 9 | 13 | 11 | 1 | 8 | 12
+INPUTS | 6 | liczbaB<6>  | wybor<1>  | wybor<0>  | liczbaA<6>  | _or0012  | N_PZ_33
+INPUTMC | 2 | 1 | 10 | 0 | 3
+INPUTP | 4 | 213 | 62 | 190 | 8
+EQ | 7 | 
+   wynik<6>_BUFR = liczbaB<6>
+	$ wybor<1> & wybor<0> & liczbaB<6> & !liczbaA<6>
+	# wybor<1> & !wybor<0> & !liczbaB<6> & liczbaA<6>
+	# !wybor<1> & wybor<0> & liczbaA<6> & _or0012
+	# !wybor<1> & wybor<0> & !liczbaA<6> & !_or0012
+	# !wybor<1> & !wybor<0> & liczbaA<6> & N_PZ_33
+	# !wybor<1> & !wybor<0> & !liczbaA<6> & !N_PZ_33;	// (7 pt, 6 inp)
+
+MACROCELL | 11 | 11 | OV_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 6 | wybor<1>  | liczbaB<7>  | wybor<0>  | liczbaA<7>  | N_PZ_40  | _or0006
+INPUTMC | 2 | 0 | 7 | 0 | 6
+INPUTP | 4 | 62 | 217 | 190 | 12
+EQ | 8 | 
+   OV = !wybor<1> & liczbaB<7> & wybor<0> & !liczbaA<7> & 
+	!N_PZ_40
+	# !wybor<1> & liczbaB<7> & !wybor<0> & liczbaA<7> & 
+	_or0006
+	# !wybor<1> & !liczbaB<7> & wybor<0> & liczbaA<7> & 
+	!N_PZ_40
+	# !wybor<1> & !liczbaB<7> & !wybor<0> & !liczbaA<7> & 
+	!_or0006;	// (4 pt, 6 inp)
+
+MACROCELL | 11 | 1 | Z_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 8 | wynik<4>  | wynik<2>  | wynik<3>  | wynik<1>  | wynik<0>_BUFR  | wynik<7>_BUFR  | wynik<5>  | wynik<6>_BUFR
+INPUTMC | 8 | 8 | 1 | 8 | 11 | 8 | 13 | 8 | 3 | 0 | 14 | 0 | 4 | 8 | 5 | 0 | 8
+EQ | 2 | 
+   Z = !wynik<4> & !wynik<2> & !wynik<3> & !wynik<1> & 
+	!wynik<0>_BUFR & !wynik<7>_BUFR & !wynik<5> & !wynik<6>_BUFR;	// (1 pt, 8 inp)
+
+MACROCELL | 8 | 0 | wynik<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | wynik<0>_BUFR
+INPUTMC | 1 | 0 | 14
+EQ | 1 | 
+   wynik<0> = wynik<0>_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 8 | 12 | wynik<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | wynik<6>_BUFR
+INPUTMC | 1 | 0 | 8
+EQ | 1 | 
+   wynik<6> = wynik<6>_BUFR;	// (1 pt, 1 inp)
+
+MACROCELL | 8 | 14 | wynik<7>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | wynik<7>_BUFR
+INPUTMC | 1 | 0 | 4
+EQ | 1 | 
+   wynik<7> = wynik<7>_BUFR;	// (1 pt, 1 inp)
+
+PIN | wybor<1> | 64 | 16 | LVCMOS18 | 62 | 10 | 9 | 5 | 8 | 1 | 8 | 11 | 8 | 13 | 8 | 3 | 0 | 14 | 0 | 4 | 8 | 5 | 0 | 8 | 11 | 11
+PIN | liczbaB<7> | 64 | 16 | LVCMOS18 | 217 | 3 | 9 | 5 | 0 | 4 | 11 | 11
+PIN | wybor<0> | 64 | 16 | LVCMOS18 | 190 | 10 | 9 | 5 | 8 | 1 | 8 | 11 | 8 | 13 | 8 | 3 | 0 | 14 | 0 | 4 | 8 | 5 | 0 | 8 | 11 | 11
+PIN | liczbaA<7> | 64 | 16 | LVCMOS18 | 12 | 3 | 9 | 5 | 0 | 4 | 11 | 11
+PIN | liczbaB<6> | 64 | 16 | LVCMOS18 | 213 | 3 | 0 | 6 | 0 | 7 | 0 | 8
+PIN | liczbaA<6> | 64 | 16 | LVCMOS18 | 8 | 3 | 0 | 6 | 0 | 7 | 0 | 8
+PIN | liczbaB<5> | 64 | 16 | LVCMOS18 | 208 | 3 | 0 | 3 | 1 | 10 | 8 | 5
+PIN | liczbaA<5> | 64 | 16 | LVCMOS18 | 5 | 3 | 0 | 3 | 1 | 10 | 8 | 5
+PIN | liczbaB<4> | 64 | 16 | LVCMOS18 | 206 | 4 | 0 | 2 | 1 | 10 | 8 | 1 | 8 | 5
+PIN | liczbaA<4> | 64 | 16 | LVCMOS18 | 3 | 4 | 0 | 2 | 1 | 10 | 8 | 1 | 8 | 5
+PIN | liczbaB<3> | 64 | 16 | LVCMOS18 | 214 | 3 | 0 | 11 | 0 | 5 | 8 | 13
+PIN | liczbaA<3> | 64 | 16 | LVCMOS18 | 10 | 3 | 0 | 11 | 0 | 5 | 8 | 13
+PIN | liczbaB<2> | 64 | 16 | LVCMOS18 | 212 | 3 | 0 | 12 | 0 | 13 | 8 | 11
+PIN | liczbaA<2> | 64 | 16 | LVCMOS18 | 7 | 3 | 0 | 12 | 0 | 13 | 8 | 11
+PIN | bitP | 64 | 16 | LVCMOS18 | 142 | 5 | 0 | 15 | 0 | 10 | 0 | 9 | 8 | 3 | 0 | 14
+PIN | liczbaB<0> | 64 | 16 | LVCMOS18 | 204 | 5 | 0 | 15 | 0 | 10 | 0 | 9 | 8 | 3 | 0 | 14
+PIN | liczbaB<1> | 64 | 16 | LVCMOS18 | 207 | 1 | 0 | 1
+PIN | liczbaA<1> | 64 | 16 | LVCMOS18 | 4 | 4 | 0 | 1 | 0 | 10 | 0 | 9 | 8 | 3
+PIN | liczbaA<0> | 64 | 16 | LVCMOS18 | 1 | 3 | 0 | 10 | 0 | 9 | 0 | 14
+PIN | C | 536871040 | 0 | LVCMOS18 | 160
+PIN | EVEN | 536871040 | 0 | LVCMOS18 | 156
+PIN | OV | 536871040 | 0 | LVCMOS18 | 145
+PIN | Z | 536871040 | 0 | LVCMOS18 | 152
+PIN | wynik<0> | 536871040 | 0 | LVCMOS18 | 168
+PIN | wynik<1> | 536871040 | 0 | LVCMOS18 | 171
+PIN | wynik<2> | 536871040 | 0 | LVCMOS18 | 175
+PIN | wynik<3> | 536871040 | 0 | LVCMOS18 | 177
+PIN | wynik<4> | 536871040 | 0 | LVCMOS18 | 169
+PIN | wynik<5> | 536871040 | 0 | LVCMOS18 | 173
+PIN | wynik<6> | 536871040 | 0 | LVCMOS18 | 176
+PIN | wynik<7> | 536871040 | 0 | LVCMOS18 | 178

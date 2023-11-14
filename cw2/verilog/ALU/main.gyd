@@ -1,0 +1,70 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+bitP S:PIN94
+liczbaA<0> S:PIN2
+liczbaA<1> S:PIN4
+liczbaA<2> S:PIN6
+liczbaA<3> S:PIN9
+liczbaA<4> S:PIN3
+liczbaA<5> S:PIN5
+liczbaA<6> S:PIN7
+liczbaA<7> S:PIN10
+liczbaB<0> S:PIN133
+liczbaB<1> S:PIN135
+liczbaB<2> S:PIN138
+liczbaB<3> S:PIN140
+liczbaB<4> S:PIN134
+liczbaB<5> S:PIN136
+liczbaB<6> S:PIN139
+liczbaB<7> S:PIN142
+wybor<0> S:PIN124
+wybor<1> S:PIN39
+C S:PIN104
+EVEN S:PIN102
+OV S:PIN97
+Z S:PIN100
+wynik<0> S:PIN112
+wynik<1> S:PIN114
+wynik<2> S:PIN116
+wynik<3> S:PIN118
+wynik<4> S:PIN113
+wynik<5> S:PIN115
+wynik<6> S:PIN117
+wynik<7> S:PIN119
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 N_PZ_96 N_PZ_120 N_PZ_93 N_PZ_33
+		 wynik<7>_BUFR _or0010 _or0006 N_PZ_40
+		 wynik<6>_BUFR _or0008 N_PZ_37 N_PZ_32
+		 _or0002 N_PZ_122 wynik<0>_BUFR N_PZ_75
+		
+PARTITION FB2_11 _or0012
+PARTITION FB2_16 N_PZ_98
+
+
+
+
+
+
+PARTITION FB9_1 wynik<0> wynik<4>
+PARTITION FB9_4 wynik<1>
+PARTITION FB9_6 wynik<5>
+PARTITION FB9_12 wynik<2> wynik<6> wynik<3> wynik<7>
+		
+
+PARTITION FB10_6 C
+PARTITION FB10_14 EVEN
+
+
+PARTITION FB12_2 Z
+PARTITION FB12_12 OV
+
+
+
+
+
+

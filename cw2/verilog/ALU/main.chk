@@ -1,0 +1,130 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+----------------- B l o c k 0 ------------------
+PLApt(55/56), Fanin(33/38), Clk(0/3), Bct(0/4), Pin(4/6), Mcell(16/16)
+PLApts[55/56] 3 4 6 66 68 70 75 80 73 77 84 43 45 58 64 156 164 44 61 63 46 155 47 158 52 53 168 176 180 182 10 11 186 187 40 16 91 93 18 99 100 24 109 111 20 142 143 39 149 151 31 134 1 136 () 0
+Fanins[33] wynik<1>.n N_PZ_120.n N_PZ_122.n N_PZ_32.n N_PZ_33.n N_PZ_37.n N_PZ_40.n N_PZ_75.n N_PZ_93.n _or0002.n _or0006.n _or0008.n _or0012.n wynik<0>_BUFR.n bitP.p liczbaA<0>.p liczbaA<1>.p liczbaA<2>.p liczbaA<3>.p liczbaA<4>.p liczbaA<5>.p liczbaA<6>.p liczbaA<7>.p liczbaB<0>.p liczbaB<1>.p liczbaB<2>.p liczbaB<3>.p liczbaB<4>.p liczbaB<5>.p liczbaB<6>.p liczbaB<7>.p wybor<0>.p wybor<1>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[20] [liczbaB<2>(138)] [liczbaB<3>(140)] [liczbaB<6>(139)] [liczbaB<7>(142)] [N_PZ_75(160)]  
+           [wynik<0>_BUFR(159)] [N_PZ_37(155)] [_or0008(154)] [wynik<6>_BUFR(153)] [N_PZ_40(152)]  
+           [_or0006(151)] [wynik<7>_BUFR(149)] [N_PZ_120(146)] [N_PZ_96(145)] [N_PZ_122(158)] [_or0002(157)]  
+           [N_PZ_32(156)] [_or0010(150)] [N_PZ_33(148)] [N_PZ_93(147)] 
+Signal[20] [ 0: N_PZ_96(145)  ][ 1: N_PZ_120(146)  ][ 2: N_PZ_93(147) (143)  ][ 3: N_PZ_33(148)  
+           liczbaB<7>(142)  ][ 4: wynik<7>_BUFR(149)  ][ 5: _or0010(150) liczbaB<3>(140)  ][ 6: _or0006(151)  
+            ][ 7: N_PZ_40(152)  ][ 8: wynik<6>_BUFR(153)  ][ 9: _or0008(154)  ][ 10: N_PZ_37(155)  ][ 11:  
+           N_PZ_32(156) liczbaB<6>(139)  ][ 12: _or0002(157) liczbaB<2>(138)  ][ 13: N_PZ_122(158) (137)  ] 
+           [ 14: wynik<0>_BUFR(159)  ][ 15: N_PZ_75(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(10/56), Fanin(9/38), Clk(0/3), Bct(0/4), Pin(8/8), Mcell(2/16)
+PLApts[10/56] 204 206 209 213 28 35 117 118 () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 37 () () () () () () () () () () () () () () 188
+Fanins[ 9] wynik<2>.n wynik<3>.n N_PZ_96.n _or0010.n wynik<7>_BUFR.n liczbaA<4>.p liczbaA<5>.p liczbaB<4>.p liczbaB<5>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [liczbaA<0>(2)] [liczbaA<1>(4)] [liczbaA<2>(6)] [liczbaA<3>(9)] [liczbaA<4>(3)] [liczbaA<5>(5)]  
+           [liczbaA<6>(7)] [liczbaA<7>(10)] [N_PZ_98(176)] [_or0012(171)] 
+Signal[10] [ 0: liczbaA<0>(2)  ][ 1:  ][ 2: liczbaA<4>(3)  ][ 3: liczbaA<1>(4)  ][ 4: liczbaA<5>(5)  ][ 5:  ] 
+           [ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: _or0012(171)  ][ 11: liczbaA<2>(6)  ][ 12: liczbaA<6>(7)  ] 
+           [ 13: liczbaA<3>(9)  ][ 14: liczbaA<7>(10)  ][ 15: N_PZ_98(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(4/6), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [liczbaB<0>(133)] [liczbaB<1>(135)] [liczbaB<4>(134)] [liczbaB<5>(136)] 
+Signal[ 4] [ 0: liczbaB<5>(136)  ][ 1: liczbaB<1>(135)  ][ 2: liczbaB<4>(134)  ][ 3:  ][ 4: liczbaB<0>(133)  
+            ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (132)  ][ 14:  ][ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [wybor<1>(39)] 
+Signal[ 1] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: (38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: wybor<1>(39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+PLApt(54/56), Fanin(27/38), Clk(0/3), Bct(0/4), Pin(8/8), Mcell(8/16)
+PLApts[54/54] 32 36 38 55 56 57 132 133 150 152 217 160 161 25 162 166 167 69 74 71 78 81 88 98 104 21 23 108 116 128 138 140 141 146 15 17 85 94 103 107 114 115 29 12 30 119 215 130 135 22 147 153 216 154
+Fanins[27] N_PZ_120.n N_PZ_122.n N_PZ_32.n N_PZ_33.n N_PZ_37.n N_PZ_75.n N_PZ_93.n _or0002.n _or0008.n _or0010.n _or0012.n wynik<6>_BUFR.n wynik<7>_BUFR.n wynik<0>_BUFR.n bitP.p liczbaA<1>.p liczbaA<2>.p liczbaA<3>.p liczbaA<4>.p liczbaA<5>.p liczbaB<0>.p liczbaB<2>.p liczbaB<3>.p liczbaB<4>.p liczbaB<5>.p wybor<0>.p wybor<1>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 8] [wynik<5>(278),wynik<5>(115)] [wynik<1>(276),wynik<1>(114)] [wynik<3>(286),wynik<3>(118)]  
+           [wynik<2>(284),wynik<2>(116)] [wynik<4>(274),wynik<4>(113)] [wynik<6>(285),wynik<6>(117)]  
+           [wynik<7>(287),wynik<7>(119)] [wynik<0>(273),wynik<0>(112)] 
+Signal[ 8] [ 0: wynik<0>(273) wynik<0>(112)  ][ 1: wynik<4>(274) wynik<4>(113)  ][ 2:  ][ 3: wynik<1>(276)  
+           wynik<1>(114)  ][ 4:  ][ 5: wynik<5>(278) wynik<5>(115)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: wynik<2>(284) wynik<2>(116)  ][ 12: wynik<6>(285) wynik<6>(117)  ][ 13: wynik<3>(286)  
+           wynik<3>(118)  ][ 14: wynik<7>(287) wynik<7>(119)  ][ 15:  ]
+----------------- B l o c k 9 ------------------
+PLApt(10/56), Fanin(10/38), Clk(0/3), Bct(0/4), Pin(2/9), Mcell(2/16)
+PLApts[10/50] 172 175 181 183 190 191 196 197 () () () () () () () () () () () () () () () () () 49 () () () () () () () () () () () () () () () () () () () () () () () 189
+Fanins[10] wynik<4>.n wynik<5>.n N_PZ_40.n N_PZ_98.n _or0006.n wynik<6>_BUFR.n liczbaA<7>.p liczbaB<7>.p wybor<0>.p wybor<1>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [C(294),C(104)] [EVEN(302),EVEN(102)] 
+Signal[ 2] [ 0: (111)  ][ 1: (110)  ][ 2: (107)  ][ 3: (106)  ][ 4: (105)  ][ 5: C(294) C(104)  ][ 6:  ][ 7:  
+            ][ 8:  ][ 9:  ][ 10:  ][ 11: (103)  ][ 12:  ][ 13: EVEN(302) EVEN(102)  ][ 14:  ][ 15: (101)  ]
+----------------- B l o c k 10 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [wybor<0>(124)] 
+Signal[ 1] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           wybor<0>(124)  ][ 11: (125)  ][ 12: (126)  ][ 13: (128)  ][ 14: (129)  ][ 15: (130)  ]
+----------------- B l o c k 11 ------------------
+PLApt(5/56), Fanin(14/38), Clk(0/3), Bct(0/4), Pin(3/6), Mcell(2/16)
+PLApts[5/14] 169 177 184 185 () () () () () () () () () 202
+Fanins[14] wynik<1>.n wynik<2>.n wynik<3>.n wynik<4>.n wynik<5>.n N_PZ_40.n _or0006.n wynik<6>_BUFR.n wynik<7>_BUFR.n wynik<0>_BUFR.n liczbaA<7>.p liczbaB<7>.p wybor<0>.p wybor<1>.p
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 3] [Z(322),Z(100)] [OV(332),OV(97)] [bitP(94)] 
+Signal[ 3] [ 0:  ][ 1: Z(322) Z(100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (98)  ] 
+           [ 11: OV(332) OV(97)  ][ 12: (96)  ][ 13: (95)  ][ 14: bitP(94)  ][ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

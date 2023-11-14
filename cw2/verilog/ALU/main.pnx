@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (LVTTL|SSTL3_I|LVCMOS33|LVCMOS25|SSTL2_I|LVCMOS18|LVCMOS15|HSTL_I|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part arch="xbr" device="XC2C256" pkg="TQ144" spg="-6"/><pin dir="input" iostd="LVCMOS18" nm="wybor&lt;1&gt;" no="39"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;7&gt;" no="142"/><pin dir="input" iostd="LVCMOS18" nm="wybor&lt;0&gt;" no="124"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;7&gt;" no="10"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;6&gt;" no="139"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;6&gt;" no="7"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;5&gt;" no="136"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;5&gt;" no="5"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;4&gt;" no="134"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;4&gt;" no="3"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;3&gt;" no="140"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;3&gt;" no="9"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;2&gt;" no="138"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;2&gt;" no="6"/><pin dir="input" iostd="LVCMOS18" nm="bitP" no="94"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;0&gt;" no="133"/><pin dir="input" iostd="LVCMOS18" nm="liczbaB&lt;1&gt;" no="135"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;1&gt;" no="4"/><pin dir="input" iostd="LVCMOS18" nm="liczbaA&lt;0&gt;" no="2"/><pin dir="output" iostd="LVCMOS18" nm="C" no="104" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="EVEN" no="102" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="OV" no="97" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="Z" no="100" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;0&gt;" no="112" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;1&gt;" no="114" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;2&gt;" no="116" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;3&gt;" no="118" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;4&gt;" no="113" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;5&gt;" no="115" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;6&gt;" no="117" sr="fast"/><pin dir="output" iostd="LVCMOS18" nm="wynik&lt;7&gt;" no="119" sr="fast"/></ibis>

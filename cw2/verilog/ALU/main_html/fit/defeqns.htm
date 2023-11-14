@@ -1,0 +1,246 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+C <= (NOT wybor(1) AND liczbaB(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT wybor(1) AND liczbaB(7) AND wybor(0) AND liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND liczbaB(7) AND NOT wybor(0) AND NOT liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	_or0006)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT liczbaB(7) AND wybor(0) AND NOT liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT liczbaB(7) AND NOT wybor(0) AND liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0006));
+</td></tr><tr><td>
+</td></tr><tr><td>
+EVEN <= wynik(4)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((N_PZ_98 AND wynik(5) AND wynik(6)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_98 AND NOT wynik(5) AND NOT wynik(6)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_98 AND wynik(5) AND NOT wynik(6)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_98 AND NOT wynik(5) AND wynik(6)_BUFR));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_120 <= ((liczbaB(1) AND NOT liczbaA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(1) AND liczbaA(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_122 <= ((liczbaB(2) AND NOT liczbaA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (liczbaB(2) AND NOT _or0008)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(2) AND NOT _or0008));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_32 <= ((NOT liczbaB(3) AND NOT liczbaA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(3) AND _or0002)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(3) AND _or0002));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_33 <= ((NOT liczbaB(5) AND NOT liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(5) AND N_PZ_93)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(5) AND N_PZ_93));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_37 <= ((NOT N_PZ_120 AND NOT liczbaA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bitP AND NOT liczbaB(0) AND N_PZ_120)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_120 AND NOT liczbaA(0) AND NOT N_PZ_75));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_40 <= ((liczbaB(6) AND NOT liczbaA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (liczbaB(6) AND NOT _or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(6) AND NOT _or0012));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_75 <= (bitP AND liczbaB(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_93 <= ((NOT liczbaB(4) AND NOT liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(4) AND N_PZ_32)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(4) AND N_PZ_32));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_96 <= ((wynik(1) AND wynik(0)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wynik(1) AND NOT wynik(0)_BUFR));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_98 <= wynik(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wynik(3) AND N_PZ_96 AND NOT wynik(7)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wynik(3) AND NOT N_PZ_96 AND wynik(7)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wynik(3) AND N_PZ_96 AND wynik(7)_BUFR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wynik(3) AND NOT N_PZ_96 AND NOT wynik(7)_BUFR));
+</td></tr><tr><td>
+</td></tr><tr><td>
+OV <= ((NOT wybor(1) AND liczbaB(7) AND wybor(0) AND NOT liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND liczbaB(7) AND NOT wybor(0) AND liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	_or0006)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT liczbaB(7) AND wybor(0) AND liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT liczbaB(7) AND NOT wybor(0) AND NOT liczbaA(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0006));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Z <= (NOT wynik(4) AND NOT wynik(2) AND NOT wynik(3) AND NOT wynik(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT wynik(0)_BUFR AND NOT wynik(7)_BUFR AND NOT wynik(5) AND NOT wynik(6)_BUFR);
+</td></tr><tr><td>
+</td></tr><tr><td>
+_or0002 <= ((NOT liczbaB(2) AND NOT liczbaA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(2) AND N_PZ_37)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(2) AND N_PZ_37));
+</td></tr><tr><td>
+</td></tr><tr><td>
+_or0006 <= ((NOT liczbaB(6) AND NOT liczbaA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(6) AND N_PZ_33)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaA(6) AND N_PZ_33));
+</td></tr><tr><td>
+</td></tr><tr><td>
+_or0008 <= ((N_PZ_120 AND liczbaA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT bitP AND NOT liczbaB(0) AND NOT N_PZ_120)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_120 AND liczbaA(0) AND NOT N_PZ_75));
+</td></tr><tr><td>
+</td></tr><tr><td>
+_or0010 <= ((NOT liczbaB(3) AND liczbaA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(3) AND NOT N_PZ_122)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (liczbaA(3) AND NOT N_PZ_122));
+</td></tr><tr><td>
+</td></tr><tr><td>
+_or0012 <= (liczbaB(5) AND NOT liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((liczbaB(5) AND NOT liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(5) AND liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(4) AND liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT liczbaB(4) AND _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (liczbaA(4) AND _or0010));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(0) <= wynik(0)_BUFR;
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(0)_BUFR <= NOT (NOT liczbaB(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT wybor(1) AND NOT bitP AND liczbaA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND wybor(0) AND liczbaB(0) AND NOT liczbaA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT wybor(0) AND NOT liczbaB(0) AND liczbaA(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND liczbaB(0) AND NOT liczbaA(0) AND N_PZ_75)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND bitP AND NOT liczbaB(0) AND NOT liczbaA(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_75)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(1) <= NOT ((wybor(0) AND N_PZ_120)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND NOT N_PZ_120 AND NOT liczbaA(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT N_PZ_120 AND _or0008)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND N_PZ_120 AND N_PZ_75)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT N_PZ_37 AND N_PZ_120 AND NOT N_PZ_75)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT bitP AND NOT liczbaB(0) AND NOT N_PZ_120)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT bitP AND NOT liczbaB(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_75)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT N_PZ_120 AND NOT N_PZ_75 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0008)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(2) <= liczbaB(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND wybor(0) AND liczbaB(2) AND NOT liczbaA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT wybor(0) AND NOT liczbaB(2) AND liczbaA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaA(2) AND _or0008)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaA(2) AND NOT _or0008)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(0) AND _or0002 AND NOT liczbaB(2) AND liczbaA(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT _or0002 AND liczbaB(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_37)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT _or0002 AND NOT liczbaA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_37)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT liczbaB(2) AND NOT liczbaA(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_37));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(3) <= NOT (NOT liczbaA(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND wybor(0) AND NOT liczbaB(3) AND liczbaA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT wybor(0) AND liczbaB(3) AND NOT liczbaA(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND liczbaB(3) AND _or0002)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND liczbaA(3) AND _or0010 AND N_PZ_122)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaB(3) AND liczbaA(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	_or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaB(3) AND NOT liczbaA(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaA(3) AND NOT _or0010 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_122)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND N_PZ_32 AND NOT liczbaA(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0002)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT N_PZ_32 AND NOT liczbaB(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	liczbaA(3) AND NOT _or0002)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(4) <= liczbaB(4)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND wybor(0) AND liczbaB(4) AND NOT liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT wybor(0) AND NOT liczbaB(4) AND liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaA(4) AND _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaA(4) AND NOT _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(0) AND N_PZ_93 AND NOT liczbaB(4) AND liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND N_PZ_93 AND NOT liczbaB(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_32)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT N_PZ_93 AND liczbaB(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND liczbaB(4) AND liczbaA(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_32));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(5) <= NOT (((wybor(1) AND wybor(0) AND NOT liczbaB(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND wybor(0) AND NOT liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND N_PZ_33 AND NOT N_PZ_93)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND NOT liczbaA(5) AND _or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT N_PZ_33 AND NOT liczbaB(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT N_PZ_33 AND NOT liczbaA(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND liczbaB(4) AND NOT liczbaA(4) AND _or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND NOT liczbaA(4) AND _or0012 AND NOT _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(0) AND NOT liczbaB(5) AND NOT liczbaA(5) AND N_PZ_93)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaB(5) AND liczbaA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	_or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND liczbaB(5) AND liczbaA(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_93)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT N_PZ_33 AND NOT liczbaB(5) AND liczbaB(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT N_PZ_33 AND NOT liczbaA(5) AND liczbaB(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0010)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND liczbaB(5) AND NOT liczbaA(5) AND liczbaB(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT liczbaA(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(0) AND liczbaB(5) AND NOT liczbaA(5) AND NOT liczbaA(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT _or0010)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(6)_BUFR <= liczbaB(6)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND wybor(0) AND liczbaB(6) AND NOT liczbaA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT wybor(0) AND NOT liczbaB(6) AND liczbaA(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaA(6) AND _or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaA(6) AND NOT _or0012)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND liczbaA(6) AND N_PZ_33)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT liczbaA(6) AND NOT N_PZ_33));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(6) <= wynik(6)_BUFR;
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(7)_BUFR <= liczbaB(7)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((wybor(1) AND liczbaB(7) AND wybor(0) AND NOT liczbaA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (wybor(1) AND NOT liczbaB(7) AND NOT wybor(0) AND liczbaA(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND liczbaA(7) AND NOT N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND wybor(0) AND NOT liczbaA(7) AND N_PZ_40)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND liczbaA(7) AND _or0006)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT wybor(1) AND NOT wybor(0) AND NOT liczbaA(7) AND NOT _or0006));
+</td></tr><tr><td>
+</td></tr><tr><td>
+wynik(7) <= wynik(7)_BUFR;
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>
