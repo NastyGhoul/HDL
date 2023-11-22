@@ -1,0 +1,73 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK0: 3=CLK.p
+GCLK1: 1=start_trans.p
+----------------- B l o c k 0 ------------------
+PLApt(17/56), Fanin(15/38), Clk(2/3), Bct(2/4), Pin(6/6), Mcell(16/16)
+PLApts[17/53] 37 42 61 65 36 2 68 70 44 46 () () () 45 () () () () () () () () 8 () () () () () () () () 43 () () 41 () () 40 () () 39 () () () () () () () () () () () 38
+Fanins[15] CLK2380.n N_PZ_97.n stan<0>.n stan<2>.n stan<3>.n stan_licznika<0>.n stan_licznika<1>.n stan_licznika<2>.n stan_licznika<3>.n stan_licznika<4>.n stan_licznika<5>.n slowo_trans<4>.p slowo_trans<5>.p slowo_trans<6>.p start_trans.p
+clk[2] start_trans CLK 
+CTC: (pt=36) CLK2380 ;
+CTR: (pt=2) start_trans' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[22] [zatrzasniete<1>,slowo_trans<0>(143)] [zatrzasniete<2>,slowo_trans<1>(142)]  
+           [zatrzasniete<3>,slowo_trans<2>(140)] [zatrzasniete<4>,slowo_trans<3>(139)]  
+           [zatrzasniete<5>,slowo_trans<4>(138)] [zatrzasniete<6>,slowo_trans<5>(137)]  
+           [stan_licznika<0>(160)] [stan_licznika<2>(159)] [stan_licznika<3>(155)] [stan_licznika<4>(154)]  
+           [stan_licznika<5>(153)] [CLK2380(152)] [stan_licznika<1>(151)] [zatrzasniete<9>(149)]  
+           [stan<0>(146)] [stan<1>(145)] 
+Signal[22] [ 0: stan<1>(145)  ][ 1: stan<0>(146)  ][ 2: zatrzasniete<1>(147) slowo_trans<0>(143)  ][ 3:  
+           zatrzasniete<2>(148) slowo_trans<1>(142)  ][ 4: zatrzasniete<9>(149)  ][ 5: zatrzasniete<3>(150)  
+           slowo_trans<2>(140)  ][ 6: stan_licznika<1>(151)  ][ 7: CLK2380(152)  ][ 8: stan_licznika<5>(153)  
+            ][ 9: stan_licznika<4>(154)  ][ 10: stan_licznika<3>(155)  ][ 11: zatrzasniete<4>(156)  
+           slowo_trans<3>(139)  ][ 12: zatrzasniete<5>(157) slowo_trans<4>(138)  ][ 13: zatrzasniete<6>(158)  
+           slowo_trans<5>(137)  ][ 14: stan_licznika<2>(159)  ][ 15: stan_licznika<0>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(26/56), Fanin(20/38), Clk(1/3), Bct(2/4), Pin(4/8), Mcell(7/16)
+PLApts[26/56] 45 59 47 51 36 2 52 53 54 55 56 57 58 60 48 49 13 15 18 22 24 28 31 33 () () () () () () () () () () () () () 4 () () () () () () () () () () () () () () () () () 50
+Fanins[20] CLK2380.n stan<0>.n stan<1>.n stan<2>.n stan<3>.n zatrzasniete<1>.n zatrzasniete<2>.n zatrzasniete<3>.n zatrzasniete<4>.n zatrzasniete<5>.n zatrzasniete<6>.n zatrzasniete<7>.n zatrzasniete<8>.n zatrzasniete<9>.n slowo_trans<0>.p slowo_trans<1>.p slowo_trans<2>.p slowo_trans<3>.p slowo_trans<7>.p start_trans.p
+clk[1] start_trans 
+CTC: (pt=36) CLK2380 ;
+CTR: (pt=2) start_trans' ;
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 9] [transmisja(164),transmisja(4)] [wyjscie_trans(165),wyjscie_trans(5)]  
+           [zatrzasniete<7>,slowo_trans<6>(2)] [zatrzasniete<8>,slowo_trans<7>(3)] [stan<3>(176)]  
+           [stan<2>(171)] [N_PZ_97(170)] 
+Signal[ 9] [ 0: zatrzasniete<7>(161) slowo_trans<6>(2)  ][ 1:  ][ 2: zatrzasniete<8>(163) slowo_trans<7>(3)  
+            ][ 3: transmisja(164) transmisja(4)  ][ 4: wyjscie_trans(165) wyjscie_trans(5)  ][ 5:  ][ 6:  ] 
+           [ 7:  ][ 8:  ][ 9: N_PZ_97(170)  ][ 10: stan<2>(171)  ][ 11: (6)  ][ 12: (7)  ][ 13: (9)  ][ 14:  
+           (10)  ][ 15: stan<3>(176)  ]
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/5), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [CLK(30)] [start_trans(32)] 
+Signal[ 2] [ 0:  ][ 1: (33)  ][ 2:  ][ 3: start_trans(32)  ][ 4: (31)  ][ 5: CLK(30)  ][ 6:  ][ 7:  ][ 8:  ] 
+           [ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (28)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

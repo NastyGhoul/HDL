@@ -1,0 +1,44 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+CLK S:PIN30
+slowo_trans<0> S:PIN143
+slowo_trans<1> S:PIN142
+slowo_trans<2> S:PIN140
+slowo_trans<3> S:PIN139
+slowo_trans<4> S:PIN138
+slowo_trans<5> S:PIN137
+slowo_trans<6> S:PIN2
+slowo_trans<7> S:PIN3
+start_trans S:PIN32
+transmisja S:PIN4
+wyjscie_trans S:PIN5
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 stan<1> stan<0> zatrzasniete<1> zatrzasniete<2>
+		 zatrzasniete<9> zatrzasniete<3> stan_licznika<1> CLK2380
+		 stan_licznika<5> stan_licznika<4> stan_licznika<3> zatrzasniete<4>
+		 zatrzasniete<5> zatrzasniete<6> stan_licznika<2> stan_licznika<0>
+		
+PARTITION FB2_1 zatrzasniete<7>
+PARTITION FB2_3 zatrzasniete<8> transmisja wyjscie_trans
+PARTITION FB2_10 N_PZ_97 stan<2>
+PARTITION FB2_16 stan<3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
