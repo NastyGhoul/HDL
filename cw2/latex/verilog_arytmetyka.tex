@@ -1,0 +1,15 @@
+\begin{lstlisting}
+task sumator(input la, lb, p, output wynik, prze);
+	begin
+		prze = (la & lb) | (la & p) | (p & lb);
+		wynik = (la ^ lb) ^ p;
+	end
+endtask
+
+task roznica(input la, lb, p, output wynik, prze);
+	begin
+		prze = (~la & lb) | (lb & p) | (~la & p);
+		wynik = (~la & ~lb & p) | (~la & lb & ~p) | (la & ~lb & ~p) | (la & lb & p);
+	end
+endtask
+\end{lstlisting}

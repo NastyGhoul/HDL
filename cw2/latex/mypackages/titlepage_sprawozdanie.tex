@@ -1,0 +1,119 @@
+
+% \title{Lorem Ipsum dolor}
+% \newcommand{\titlepageSubtitle}{Lorem ipsum dolor sit amet}
+% \newcommand{\titlepageSubsubtitle}{Amet consectetur adipiscing lorem ipsum dolor sit}
+
+% \date{\today}
+% \newcommand{\titlepageDateAnnotation}{Lorem Ipsum}
+
+
+% \newcommand{\titlepageAuthors}{%
+%     John Smith & 112233 \\
+%     Jansdfsdfsdf Kowalski & 345223 \\
+% }
+
+
+
+
+\backgroundsetup{ 
+    scale=1,
+    angle=0,
+    opacity=0,
+}
+
+
+
+\makeatletter
+
+\begin{titlepage}
+    % \vspace{-15cm}
+
+    
+    % \vspace{-15cm}
+
+
+    \fontfamily{phv}\selectfont
+    \centering
+    
+    \vspace*{2\baselineskip}
+    
+    \begingroup
+        \titlefont
+        \@title
+    \endgroup
+    
+    \vspace{0.4cm}
+    
+    % \begin{center}
+    %     \begin{tikzpicture}
+
+    %     \node [
+    %         draw,
+    %         circle,
+    %         fill=black,
+    %         inner sep=1.5pt,
+    %         outer sep=0.4cm,
+    %     ]  (dot) at (0,0) {};
+        
+
+    %     \draw[stealth-, line width=0.35mm] (dot.west) ++ (-6.5cm,0)  -- (dot.west)
+    %     node[above, midway] {};
+
+    %     \draw[stealth-, line width=0.35mm] (dot.east) ++ (6.5cm,0)  -- (dot.east)
+    %     node[above, midway] {};
+
+    %     \end{tikzpicture}
+    % \end{center}
+    
+    \vspace{1.5cm}
+
+    \begingroup
+        \subtitlefont
+        \titlepageSubtitle
+    \endgroup
+    
+    \vspace{1cm}
+    
+    \begingroup
+        \subsubtitlefont
+        \titlepageSubsubtitle
+    \endgroup
+    
+    \vspace{3.5cm}
+    
+
+    \begin{table}[!htb]
+        \fontfamily{phv}\selectfont
+        \setlength{\arrayrulewidth}{0.4mm}
+        \setlength{\tabcolsep}{20pt}
+        \renewcommand{\arraystretch}{1.7}
+        \centering
+        \begin{tikzpicture}
+        \node (table) [inner sep=0pt] {
+            \begin{tabular}{ p{5.5cm}|p{2.5cm}  }
+                \multicolumn{2}{c}{Wykonane przez} \\
+                \hline
+                Imię i Nazwisko& Indeks \\
+                \hline
+                \titlepageAuthors
+                \end{tabular}
+        };
+        \draw [rounded corners=.25em, line width=\arrayrulewidth] (table.north west) rectangle (table.south east);
+        \end{tikzpicture}
+    \end{table}
+    
+    \vfill
+
+
+    \begingroup
+        \Large
+        \subtitlefont
+        \hfill
+        \fontsize{14pt}{17pt}
+        \textsf{\titlepageDateAnnotation \@date}
+    \endgroup
+    
+\end{titlepage}
+
+
+\makeatother

@@ -1,0 +1,303 @@
+% This file contains custom styling rules and package imports
+% Made by:
+%  - https://github.com/NotSirius-A
+%  - https://github.com/CarolineOdair
+
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mypackages/MyStyle}[2023/09/18 My styling]
+
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+ family=mystyle,
+ prefix=mystyle@
+}
+
+
+\DeclareBoolOption{extended}
+\DeclareStringOption[black]{themecolor}[black]
+\DeclareStringOption[single]{titlepage}[single]
+\DeclareBoolOption{titlepagePlaceholder}
+
+\ProcessKeyvalOptions*
+
+\newcommand{\themecolor}{\mystyle@themecolor}
+\newcommand{\titlepageVersion}{\mystyle@titlepage}
+
+
+% === START universal styling ===
+
+
+% ===== Math =====
+\RequirePackage{mathtools}
+\RequirePackage{mathrsfs}
+\RequirePackage{amsfonts, amsmath, amssymb, amsopn, amsthm}
+\RequirePackage{latexsym}
+
+
+% ===== Polish, font, endcoding =====
+\RequirePackage[T1]{fontenc}
+\RequirePackage[polish]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage{lingmacros}
+\RequirePackage{polski}
+\selectlanguage{polish}
+
+% ===== Custom colors =====
+\RequirePackage{xcolor}
+\definecolor{goldenrod}{RGB}{218,165,32}
+\definecolor{royalblue}{RGB}{65,105,225}
+\definecolor{slategrey}{RGB}{112,128,144}
+
+
+% ===== Graphics =====
+\RequirePackage{graphicx}
+
+
+% === Multiple columns ===
+\RequirePackage{multicol}
+
+% === Wrapfig ===
+\RequirePackage{wrapfig}
+
+
+% === Lipsum ===
+\RequirePackage{lipsum}
+
+
+% === START Section formatting ===
+
+% === Titlesec ===
+\RequirePackage{titlesec}
+
+
+
+% === Section style ===
+
+\DeclareFixedFont{\sectionfont}{T1}{ppl}{b}{n}{0.6cm}
+\DeclareFixedFont{\subsectionfont}{T1}{ppl}{b}{n}{0.5cm}
+\DeclareFixedFont{\subsubsectionfont}{T1}{ppl}{b}{n}{0.42cm}
+
+\titleformat{name=\section,numberless}[display]
+  {\bfseries \sffamily \Large}
+  {}
+  {-0.7cm}
+  {\centering\MakeUppercase}[]
+\titlespacing*{\section}{0pt}{30pt}{15pt}
+
+\titleformat
+{\section} % command
+[block] % shape
+{\sectionfont} % format
+{    
+    % \rule{\textwidth}{1pt}    
+    % \vspace{1ex}
+} % label
+{0.1cm} % sep
+{\thesection \hspace{1cm}} % before-code
+[
+\vspace{-0.1cm}\hspace{-0.15cm}%
+\textcolor{\themecolor}{\hspace{0.1cm} \rule{0.95\textwidth}{0.3pt}}
+] % after-code
+
+
+
+% === Sub section style ===
+
+
+\titleformat
+{\subsection} % command
+[block] % shape
+{\subsectionfont} % format
+{} % label
+{0.25cm} % sep
+{\thesubsection \hspace{0.25cm} \textcolor{\themecolor}{|} \hspace{0.4cm}} % before-code
+[] % after-code
+
+\titleformat
+{name=\subsection,numberless} % command
+[block] % shape
+{\subsectionfont} % format
+{} % label
+{0.25cm} % sep
+{\textcolor{\themecolor}{|} \hspace{0.25cm}} % before-code
+[] % after-code
+
+
+\titlespacing{\subsection}{0pt}{15pt}{15pt}
+
+
+% === Sub sub section style ===
+
+
+\titleformat
+{\subsubsection} % command
+[block] % shape
+{\subsubsectionfont} % format
+{} % label
+{0.32cm} % sep
+{\thesubsubsection \hspace{0.35cm}} % before-code
+[] % after-code
+
+\titleformat
+{name=\subsubsection,numberless} % command
+[block] % shape
+{\subsubsectionfont} % format
+{} % label
+{0.32cm} % sep
+{} % before-code
+[] % after-code
+
+
+\titlespacing{\subsubsection}{0pt}{12pt}{10pt}
+
+
+
+% === END Section formatting ===
+
+
+
+
+
+
+
+
+% === To do ===
+\newcommand{\TODO}{\ensureascii{\textcolor{goldenrod}{\\ \vspace{0.1cm} \Huge TODO \\ \rule{15cm}{0.1cm}}}}
+
+% === Spacing ===
+\newcommand{\tsp}{\hspace{0.15cm}} 
+\newcommand{\esp}{\hspace{0.25cm}} 
+\newcommand{\vsp}{\vspace{0.5cm}} 
+
+
+
+% === Blank titlepage ===
+\newcommand{\MyTitlePage}{}
+
+
+
+
+% === Custom math operators ===
+  % Logarithms
+\DeclareMathOperator{\log10}{lg}
+\renewcommand{\lg}[1]{\log10\left( #1 \right)}
+  % Transforms and inverse transforms
+\newcommand{\Ltr}[1]{\ensuremath{\mathscr{L}\left\lbrace #1 \right\rbrace}}
+\newcommand{\Linv}[1]{\ensuremath{\mathscr{L}^{-1}\left\lbrace #1 \right\rbrace}}
+\newcommand{\Ztr}[1]{\ensuremath{\mathscr{Z}\left\lbrace #1 \right\rbrace}}
+\newcommand{\Zinv}[1]{\ensuremath{\mathscr{Z}^{-1}\left\lbrace #1 \right\rbrace}}
+  % Limit, integral, quantifiers in display style
+\newcommand{\Lim}{\displaystyle\mathop{\lim}}
+\newcommand{\Int}{\displaystyle\mathop{\int}}
+\newcommand{\Forall}{\displaystyle\mathop{\forall}}
+\newcommand{\Exists}{\displaystyle\mathop{\exists}}
+  % Numbers sets
+\newcommand{\R}{\mathbb{R}}  % real numbers
+\newcommand{\N}{\mathbb{N}}  % natural numbers
+\newcommand{\C}{\mathbb{C}}  % complex numbers
+
+
+
+
+% ==== Array formatting ===
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+
+
+
+% === END universal styling ===
+
+
+
+\ifmystyle@extended
+% === START Extended ===
+
+  % ===== Hyperref =====
+  \RequirePackage{hyperref}
+  \hypersetup{
+      colorlinks,
+      citecolor=black,
+      filecolor=black,
+      linkcolor=black,
+      urlcolor=black
+  }
+
+  % === Tikz ===
+  \RequirePackage{tikz}
+
+  % === PGFplot ===
+  \RequirePackage{pgfplots}
+  \RequirePackage{pgfplotstable}
+  \pgfplotsset{compat=1.5}
+
+  % === Fancy header ===
+  \RequirePackage{fancyhdr}
+
+  % === Code listings ===
+  \RequirePackage{listings}
+
+  % ===== Other packages =====
+  %\RequirePackage{tree-dvips}
+  \RequirePackage{xparse}
+  \RequirePackage{physics}
+  \RequirePackage{enumitem}
+  
+
+  % ===== Custom figure caption =====
+  \RequirePackage{caption}
+  \DeclareCaptionFormat{myformat}{\small{#1#2#3}}
+  \DeclareCaptionLabelSeparator{mysep}{:\space}
+
+  \captionsetup[figure]{name={Ilustracja},labelsep=mysep, format=myformat}
+
+
+  % === Titlepage ===
+  
+  \title{Lorem Ipsum \textbackslash title}
+  \newcommand{\titlepageSubtitle}{renewcomands to replace me}
+  \newcommand{\titlepageSubsubtitle}{\textbackslash title, \textbackslash titlepageSubtitle, \textbackslash titlepageSubsubtitle}
+  
+  \date{\today}
+  \newcommand{\titlepageDateAnnotation}{edit \textbackslash titlepageDateAnnotation }
+
+  \author{edit \textbackslash author}
+  
+  \newcommand{\titlepageAuthors}{%
+      replace & \textbackslash titlepageAuthors \\
+      use \& and \textbackslash\textbackslash \ to format & 345223 \\
+  }
+
+
+  \DeclareFixedFont{\titlefont}{T1}{phv}{b}{n}{1cm}
+  \DeclareFixedFont{\subtitlefont}{T1}{phv}{m}{n}{0.7cm}
+  \DeclareFixedFont{\subsubtitlefont}{T1}{phv}{m}{n}{0.55cm}
+
+  \usepackage[firstpage=true]{background}
+
+  
+  \backgroundsetup{scale=1, angle=0, opacity=0.85,
+      contents={\includegraphics[width=\paperwidth,height=\paperheight]{./mypackages/titlepage_background_black.png}}
+  }
+  
+  
+  \ifmystyle@titlepagePlaceholder
+    \renewcommand{\MyTitlePage}{\backgroundsetup{scale=4,angle=45,opacity=0.7, contents={Placeholder title page}} \begin{titlepage} \quad\end{titlepage}}  
+  \else
+    \renewcommand{\MyTitlePage}{\input{./mypackages/titlepage_\titlepageVersion.tex}}
+  \fi
+
+
+% === END Extended ===
+\else
+% === START Simple ===
+
+
+% === END Simple ===
+\fi
+
+
+

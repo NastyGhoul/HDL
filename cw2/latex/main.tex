@@ -1,0 +1,48 @@
+\tableofcontents
+\clearpage
+
+\section{Treść zadania}
+
+Utworzyć moduł z czterema sygnałami wejściowymi: 8-bitową liczbą $A$, 8-bitową liczbą $B$, dwubitowym wyboru operacji oraz bitem $C$ (przeniesienie/pożyczka) oraz z dwoma sygnałami wyjściowymi: 8-bitową liczbą wyniku oraz 4-bitowym słowem statusowym w, którym mają się znaleźć bity: $C$- (przeniesienie/pożyczka), bit parzystości typu EVEN wyniku, bit $Z$ - znacznik wartości zero, bit-OV overflow określający przekroczenie zakresu dla arytmetyki liczb ze znakiem.
+
+\vspace{0.5cm}
+
+Zaprojektować cztery podukłady, dwa w formie TASK-u , mają one stanowić iteracyjny blok dla poszczególnych zadań, a dwa w formie wyrażeń logicznych:
+
+\begin{enumerate}
+    \item arytmetyczna suma z przeniesieniem (wejścia: przeniesienie, bit liczby $A$, bit liczby $B$, wyjścia: bit sumy, bit przeniesienia)
+    \item arytmetyczna różnica ($A-B$) z pożyczką (wejścia: pożyczka, bit liczby A, bit liczby B, wyjścia: bit sumy, bit pożyczki)
+    \item logiczna suma dwóch liczb 8-bitowych
+    \item logiczny iloczyn dwóch liczb 8-bitowych
+\end{enumerate}
+
+\vspace{0.5cm}
+
+Następnie zaprojektować układ  wykorzystując utworzone wcześniej podukłady.  
+
+\vspace{0.5cm}
+
+Układ w zależności od sygnału wyboru 1=0, ma realizować zadania arytmetyczne (wybor0=zero) sumę liczb z  bitem C jako przeniesienie lub (wybor 0 = jeden) różnicę liczb (A-B) z bitem $C$ jako pożyczka. Uzupełnić układ elementami kombinacyjnym wyznaczającymi sygnały $Z$ i OV oraz bit parzystości typu EVEN.
+
+\vspace{0.5cm}
+
+Układ dla sygnału wyboru 1 = 1, ma realizować zadania logiczne (wybor0=zero) sumę logiczną wyrażeń, (wybor0=jeden) iloczyn logiczny wyrażeń. Uzupełnić układ elementami kombinacyjnym wyznaczającymi sygnały $Z$ oraz bit parzystości typu EVEN. Pozostałe dwa bity wynikowego słowa statusowego należy ustawić na zero.
+\clearpage
+
+\section{Arytmetyczna suma i różnica dwóch liczb}
+Do działan arytmetycznych stworzyliśmy osobny ''task'', przy pomocy którego obliczane jest równanie, z elementem przeniesienia/pożyczenia
+
+\input{verilog_arytmetyka.tex}
+
+\section{Logiczna suma i iloczyn dwóch liczb}
+Z powodu tego jak funkcjonuje oprogramowanie, wystarczyła jednolinikowa definicja logiki dla obydwu przypatków. Została ona umieszczona w funkcji wyboru, przełączanej później switch'ami.
+
+\input{verilog_logika.tex}
+
+\section{Całość kodu}
+
+\input{verilog_main.tex}
+
+\section{przypisanie przycisków}
+
+\input{verilog_przypisania.tex}
