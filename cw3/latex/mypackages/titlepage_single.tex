@@ -1,0 +1,136 @@
+
+% \title{Lorem Ipsum dolor}
+% \newcommand{\titlepageSubtitle}{Lorem ipsum dolor sit amet}
+% \newcommand{\titlepageSubsubtitle}{Amet consectetur adipiscing lorem ipsum dolor sit}
+
+% \date{\today}
+% \newcommand{\titlepageDateAnnotation}{Lorem Ipsum}
+
+% \author{Jan Kowalski - 212212}
+
+
+
+\makeatletter
+
+\begin{titlepage}
+
+    \fontfamily{phv}\selectfont
+    \centering
+    
+    \vspace*{4\baselineskip}
+    
+    \begingroup
+        \titlefont
+        \@title
+    \endgroup
+
+    \vspace{0.4cm}
+    
+    \begin{center}
+        \begin{tikzpicture}
+
+        \node [
+            draw,
+            circle,
+            fill=black,
+            inner sep=1.5pt,
+            outer sep=0.4cm,
+        ]  (dot) at (0,0) {};
+        
+
+        \draw[-, line width=0.4mm, color=\themecolor] (dot.west) ++ (-6.75cm,0)  -- (dot.west)
+        node[above, midway] {};
+
+        \draw[-, line width=0.4mm, color=\themecolor] (dot.east) ++ (6.75cm,0)  -- (dot.east)
+        node[above, midway] {};
+
+        \end{tikzpicture}
+    \end{center}
+    
+    \vspace{1cm}
+
+    \begingroup
+        \subtitlefont
+        \titlepageSubtitle
+    \endgroup
+    
+    \vspace{1.1cm}
+    
+    \begingroup
+        \subsubtitlefont
+        \titlepageSubsubtitle
+    \endgroup
+    
+    \vspace{3cm}
+    
+
+    % \begin{center}
+    %     \begin{tikzpicture}
+
+    %     \node [
+    %         draw,
+    %         circle,
+    %         fill=black,
+    %         inner sep=0.8pt,
+    %         outer sep=0.2cm,
+    %     ]  (dot) at (0,0) {};
+        
+
+    %     \draw[line width=0.15mm] (dot.west) ++ (-4cm,0)  -- (dot.west)
+    %     node[above, midway] {};
+
+    %     \draw[ line width=0.15mm] (dot.east) ++ (4cm,0)  -- (dot.east)
+    %     node[above, midway] {};
+
+    %     \end{tikzpicture}
+    % \end{center}
+
+    % \vspace{0.2cm}
+
+    \begingroup
+        \Large
+        \subtitlefont
+        \textsf{\@author}
+    \endgroup
+
+    \vspace{1cm}
+
+
+    % \begin{center}
+    %     \begin{tikzpicture}
+
+    %     \node [
+    %         draw,
+    %         circle,
+    %         fill=black,
+    %         inner sep=0.8pt,
+    %         outer sep=0.2cm,
+    %     ]  (dot) at (0,0) {};
+        
+
+    %     \draw[line width=0.15mm] (dot.west) ++ (-4cm,0)  -- (dot.west)
+    %     node[above, midway] {};
+
+    %     \draw[line width=0.15mm] (dot.east) ++ (4cm,0)  -- (dot.east)
+    %     node[above, midway] {};
+
+    %     \end{tikzpicture}
+    % \end{center}
+    
+    \vfill
+
+    \begin{flushleft}
+        \begingroup
+            \raggedleft
+            \large
+            \subtitlefont
+            \textsf{\@date \titlepageDateAnnotation}
+        \endgroup
+    \end{flushleft}
+
+
+    
+\end{titlepage}
+
+
+\makeatother
