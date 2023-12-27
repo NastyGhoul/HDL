@@ -1,0 +1,349 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "main";
+      var device = "XC2C256";
+      signals = new Array("CLK2380","N_PZ_79","N_PZ_96","stan0_SPECSIG","stan1_SPECSIG","stan2_SPECSIG","stan3_SPECSIG","stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","stan_licznika2_SPECSIG","stan_licznika3_SPECSIG","stan_licznika4_SPECSIG","stan_licznika5_SPECSIG","transmisja","wyjscie_trans","zatrzasniete1_SPECSIG","zatrzasniete2_SPECSIG","zatrzasniete3_SPECSIG","zatrzasniete4_SPECSIG","zatrzasniete5_SPECSIG","zatrzasniete6_SPECSIG","zatrzasniete7_SPECSIG","zatrzasniete8_SPECSIG","zatrzasniete9_SPECSIG");
+      sigNegs = new Array("OFF","OFF","OFF","ON","OFF","OFF","OFF","ON","OFF","OFF","OFF","OFF","OFF","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("DFF","","","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","","","LATCH","LATCH","LATCH","LATCH","LATCH","LATCH","LATCH","LATCH","LATCH");
+
+      
+           iostyle["start_trans"]=new Array("KPR");
+        
+           iostyle["slowo_trans0_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans4_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans1_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans5_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans2_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans6_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans3_SPECSIG"]=new Array("KPR");
+        
+           iostyle["slowo_trans7_SPECSIG"]=new Array("KPR");
+        
+           iostyle["CLK"]=new Array("KPR");
+        
+           iostyle["czy_parz"]=new Array("KPR");
+        
+           iostyle["jaki_parz"]=new Array("KPR");
+        
+        specSig["slowo_trans4_SPECSIG"]=new Array("slowo_trans<4>");
+      
+        specSig["slowo_trans5_SPECSIG"]=new Array("slowo_trans<5>");
+      
+        specSig["slowo_trans6_SPECSIG"]=new Array("slowo_trans<6>");
+      
+        specSig["slowo_trans3_SPECSIG"]=new Array("slowo_trans<3>");
+      
+        specSig["slowo_trans7_SPECSIG"]=new Array("slowo_trans<7>");
+      
+        specSig["slowo_trans0_SPECSIG"]=new Array("slowo_trans<0>");
+      
+        specSig["slowo_trans1_SPECSIG"]=new Array("slowo_trans<1>");
+      
+        specSig["slowo_trans2_SPECSIG"]=new Array("slowo_trans<2>");
+      
+        specSig["GSRI_SPECSIG"]=new Array("GSR/I");
+      
+        specSig["b_SPECSIG"]=new Array("(b)");
+      
+        specSig["zatrzasniete9_SPECSIG"]=new Array("zatrzasniete<9>");
+      
+        specSig["stan0_SPECSIG"]=new Array("stan<0>");
+      
+        specSig["stan2_SPECSIG"]=new Array("stan<2>");
+      
+        specSig["stan3_SPECSIG"]=new Array("stan<3>");
+      
+        specSig["stan1_SPECSIG"]=new Array("stan<1>");
+      
+        specSig["stan_licznika1_SPECSIG"]=new Array("stan_licznika<1>");
+      
+        specSig["stan_licznika5_SPECSIG"]=new Array("stan_licznika<5>");
+      
+        specSig["stan_licznika3_SPECSIG"]=new Array("stan_licznika<3>");
+      
+        specSig["stan_licznika0_SPECSIG"]=new Array("stan_licznika<0>");
+      
+        specSig["stan_licznika4_SPECSIG"]=new Array("stan_licznika<4>");
+      
+        specSig["stan_licznika2_SPECSIG"]=new Array("stan_licznika<2>");
+      
+        specSig["zatrzasniete1_SPECSIG"]=new Array("zatrzasniete<1>");
+      
+        specSig["zatrzasniete5_SPECSIG"]=new Array("zatrzasniete<5>");
+      
+        specSig["zatrzasniete2_SPECSIG"]=new Array("zatrzasniete<2>");
+      
+        specSig["zatrzasniete6_SPECSIG"]=new Array("zatrzasniete<6>");
+      
+        specSig["zatrzasniete3_SPECSIG"]=new Array("zatrzasniete<3>");
+      
+        specSig["zatrzasniete7_SPECSIG"]=new Array("zatrzasniete<7>");
+      
+        specSig["zatrzasniete4_SPECSIG"]=new Array("zatrzasniete<4>");
+      
+        specSig["zatrzasniete8_SPECSIG"]=new Array("zatrzasniete<8>");
+      
+            pterms["FB1_0"]=new Array("stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","stan_licznika2_SPECSIG");
+          
+            pterms["FB1_1"]=new Array("stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","stan_licznika2_SPECSIG","stan_licznika3_SPECSIG","stan_licznika4_SPECSIG");
+          
+            pterms["FB1_2"]=new Array("stan_licznika0_SPECSIG");
+          
+            pterms["FB1_3"]=new Array("stan_licznika1_SPECSIG","/stan_licznika2_SPECSIG","stan_licznika3_SPECSIG","/stan_licznika4_SPECSIG","stan_licznika5_SPECSIG");
+          
+            pterms["FB1_4"]=new Array("CLK2380");
+          
+            pterms["FB1_5"]=new Array("/stan2_SPECSIG","stan0_SPECSIG");
+          
+            pterms["FB1_6"]=new Array("stan0_SPECSIG","/stan3_SPECSIG");
+          
+            pterms["FB1_7"]=new Array("/stan2_SPECSIG","stan1_SPECSIG","stan0_SPECSIG");
+          
+            pterms["FB1_8"]=new Array("stan1_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG");
+          
+            pterms["FB1_9"]=new Array("stan2_SPECSIG","stan3_SPECSIG");
+          
+            pterms["FB1_10"]=new Array("/stan1_SPECSIG","stan0_SPECSIG","stan3_SPECSIG","/czy_parz");
+          
+            pterms["FB1_11"]=new Array("slowo_trans1_SPECSIG","slowo_trans2_SPECSIG");
+          
+            pterms["FB1_12"]=new Array("/slowo_trans1_SPECSIG","/slowo_trans2_SPECSIG");
+          
+            pterms["FB1_13"]=new Array("stan2_SPECSIG","stan1_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG");
+          
+            pterms["FB1_14"]=new Array("/slowo_trans7_SPECSIG","jaki_parz","N_PZ_79");
+          
+            pterms["FB1_15"]=new Array("slowo_trans7_SPECSIG","/jaki_parz","N_PZ_79");
+          
+            pterms["FB1_16"]=new Array("slowo_trans7_SPECSIG","jaki_parz","/N_PZ_79");
+          
+            pterms["FB1_17"]=new Array("/slowo_trans7_SPECSIG","/jaki_parz","/N_PZ_79");
+          
+            pterms["FB1_18"]=new Array("/slowo_trans4_SPECSIG","slowo_trans5_SPECSIG","slowo_trans6_SPECSIG","N_PZ_96");
+          
+            pterms["FB1_19"]=new Array("slowo_trans4_SPECSIG","/slowo_trans5_SPECSIG","slowo_trans6_SPECSIG","N_PZ_96");
+          
+            pterms["FB1_20"]=new Array("slowo_trans4_SPECSIG","slowo_trans5_SPECSIG","/slowo_trans6_SPECSIG","N_PZ_96");
+          
+            pterms["FB1_21"]=new Array("/slowo_trans4_SPECSIG","/slowo_trans5_SPECSIG","/slowo_trans6_SPECSIG","N_PZ_96");
+          
+            pterms["FB1_22"]=new Array("slowo_trans4_SPECSIG","slowo_trans5_SPECSIG","slowo_trans6_SPECSIG","/N_PZ_96");
+          
+            pterms["FB1_23"]=new Array("/slowo_trans4_SPECSIG","/slowo_trans5_SPECSIG","slowo_trans6_SPECSIG","/N_PZ_96");
+          
+            pterms["FB1_24"]=new Array("/slowo_trans4_SPECSIG","slowo_trans5_SPECSIG","/slowo_trans6_SPECSIG","/N_PZ_96");
+          
+            pterms["FB1_25"]=new Array("start_trans");
+          
+            pterms["FB1_26"]=new Array("slowo_trans4_SPECSIG","/slowo_trans5_SPECSIG","/slowo_trans6_SPECSIG","/N_PZ_96");
+          
+            pterms["FB1_37"]=new Array("/stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","/stan_licznika2_SPECSIG","stan_licznika3_SPECSIG","/stan_licznika4_SPECSIG","stan_licznika5_SPECSIG");
+          
+            pterms["FB1_40"]=new Array("/stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","/stan_licznika2_SPECSIG","stan_licznika3_SPECSIG","/stan_licznika4_SPECSIG","stan_licznika5_SPECSIG");
+          
+            pterms["FB1_43"]=new Array("slowo_trans3_SPECSIG");
+          
+            pterms["FB1_46"]=new Array("slowo_trans0_SPECSIG");
+          
+            pterms["FB1_52"]=new Array("stan_licznika0_SPECSIG","stan_licznika1_SPECSIG","stan_licznika2_SPECSIG","stan_licznika3_SPECSIG");
+          
+            pterms["FB1_55"]=new Array("stan_licznika0_SPECSIG","stan_licznika1_SPECSIG");
+          
+            pterms["FB2_4"]=new Array("start_trans");
+          
+            pterms["FB9_0"]=new Array("/stan2_SPECSIG","/stan1_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG");
+          
+            pterms["FB9_1"]=new Array("/stan2_SPECSIG","stan1_SPECSIG","/stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete1_SPECSIG");
+          
+            pterms["FB9_2"]=new Array("/stan2_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete2_SPECSIG");
+          
+            pterms["FB9_3"]=new Array("stan2_SPECSIG","/stan1_SPECSIG","/stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete3_SPECSIG");
+          
+            pterms["FB9_4"]=new Array("/stan1_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete4_SPECSIG");
+          
+            pterms["FB9_5"]=new Array("stan2_SPECSIG","stan1_SPECSIG","/stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete5_SPECSIG");
+          
+            pterms["FB9_6"]=new Array("stan2_SPECSIG","stan1_SPECSIG","stan0_SPECSIG","/stan3_SPECSIG","/zatrzasniete6_SPECSIG");
+          
+            pterms["FB9_7"]=new Array("/stan2_SPECSIG","/stan1_SPECSIG","/stan0_SPECSIG","stan3_SPECSIG","/zatrzasniete7_SPECSIG");
+          
+            pterms["FB9_8"]=new Array("/stan2_SPECSIG","/stan1_SPECSIG","stan0_SPECSIG","/zatrzasniete8_SPECSIG");
+          
+            pterms["FB9_9"]=new Array("/stan2_SPECSIG","stan1_SPECSIG","/stan0_SPECSIG","stan3_SPECSIG","/zatrzasniete9_SPECSIG");
+          
+            pterms["FB9_10"]=new Array("stan2_SPECSIG","stan3_SPECSIG");
+          
+            pterms["FB9_11"]=new Array("/stan2_SPECSIG","/stan1_SPECSIG","/stan0_SPECSIG","/stan3_SPECSIG");
+          
+          d2["stan2_SPECSIG"]=new Array("FB1_7","FB1_8");
+          
+              clk["stan2_SPECSIG"]=new Array("FB1_4");
+              rstNegs["stan2_SPECSIG"]=1;
+              gblrst["stan2_SPECSIG"]=new Array("start_trans");
+            prld["stan2_SPECSIG"]="GND";
+          d1["stan3_SPECSIG"]=new Array("FB1_13");
+          
+              clk["stan3_SPECSIG"]=new Array("FB1_4");
+              rstNegs["stan3_SPECSIG"]=1;
+              gblrst["stan3_SPECSIG"]=new Array("start_trans");
+            prld["stan3_SPECSIG"]="GND";
+          d2["stan1_SPECSIG"]=new Array("FB1_5","FB1_6");
+          
+              clk["stan1_SPECSIG"]=new Array("FB1_4");
+              rstNegs["stan1_SPECSIG"]=1;
+              gblrst["stan1_SPECSIG"]=new Array("start_trans");
+            prld["stan1_SPECSIG"]="GND";
+          d2["zatrzasniete9_SPECSIG"]=new Array("FB1_22","FB1_20","FB1_19","FB1_26","FB1_18","FB1_24","FB1_23","FB1_21");
+          clkNegs["zatrzasniete9_SPECSIG"]=1;
+              clk["zatrzasniete9_SPECSIG"]=new Array("FB1_25");
+              prld["zatrzasniete9_SPECSIG"]="GND";
+          d2["stan_licznika1_SPECSIG"]=new Array("FB1_2","FB1_3");
+          
+              gblclk["stan_licznika1_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika1_SPECSIG"]="GND";
+          d2["stan_licznika5_SPECSIG"]=new Array("FB1_1","FB1_37");
+          
+              gblclk["stan_licznika5_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika5_SPECSIG"]="GND";
+          d2["stan_licznika3_SPECSIG"]=new Array("FB1_0","FB1_37");
+          
+              gblclk["stan_licznika3_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika3_SPECSIG"]="GND";
+          d1["stan_licznika0_SPECSIG"]=new Array("FB1_37");
+          
+              gblclk["stan_licznika0_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika0_SPECSIG"]="GND";
+          d1["CLK2380"]=new Array("FB1_37");
+          
+              gblclk["CLK2380"]=new Array("CLK");
+            prld["CLK2380"]="GND";
+          d1["N_PZ_96"]=new Array("FB1_43");
+          
+          d2["N_PZ_96"]=new Array("FB1_16","FB1_15","FB1_14","FB1_17");
+          
+          d1["N_PZ_79"]=new Array("FB1_46");
+          
+          d2["N_PZ_79"]=new Array("FB1_11","FB1_12");
+          
+          d2["stan0_SPECSIG"]=new Array("FB1_9","FB1_10");
+          
+              clk["stan0_SPECSIG"]=new Array("FB1_4");
+              rstNegs["stan0_SPECSIG"]=1;
+              gblrst["stan0_SPECSIG"]=new Array("start_trans");
+            prld["stan0_SPECSIG"]="GND";
+          d1["stan_licznika4_SPECSIG"]=new Array("FB1_52");
+          
+              gblclk["stan_licznika4_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika4_SPECSIG"]="GND";
+          d1["stan_licznika2_SPECSIG"]=new Array("FB1_55");
+          
+              gblclk["stan_licznika2_SPECSIG"]=new Array("CLK");
+            prld["stan_licznika2_SPECSIG"]="GND";clkNegs["zatrzasniete1_SPECSIG"]=1;
+              clk["zatrzasniete1_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete1_SPECSIG"]="GND";
+          inreg["zatrzasniete1_SPECSIG"]=new Array("slowo_trans0_SPECSIG");
+        clkNegs["zatrzasniete5_SPECSIG"]=1;
+              clk["zatrzasniete5_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete5_SPECSIG"]="GND";
+          inreg["zatrzasniete5_SPECSIG"]=new Array("slowo_trans4_SPECSIG");
+        clkNegs["zatrzasniete2_SPECSIG"]=1;
+              clk["zatrzasniete2_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete2_SPECSIG"]="GND";
+          inreg["zatrzasniete2_SPECSIG"]=new Array("slowo_trans1_SPECSIG");
+        clkNegs["zatrzasniete6_SPECSIG"]=1;
+              clk["zatrzasniete6_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete6_SPECSIG"]="GND";
+          inreg["zatrzasniete6_SPECSIG"]=new Array("slowo_trans5_SPECSIG");
+        clkNegs["zatrzasniete3_SPECSIG"]=1;
+              clk["zatrzasniete3_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete3_SPECSIG"]="GND";
+          inreg["zatrzasniete3_SPECSIG"]=new Array("slowo_trans2_SPECSIG");
+        clkNegs["zatrzasniete7_SPECSIG"]=1;
+              clk["zatrzasniete7_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete7_SPECSIG"]="GND";
+          inreg["zatrzasniete7_SPECSIG"]=new Array("slowo_trans6_SPECSIG");
+        clkNegs["zatrzasniete4_SPECSIG"]=1;
+              clk["zatrzasniete4_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete4_SPECSIG"]="GND";
+          inreg["zatrzasniete4_SPECSIG"]=new Array("slowo_trans3_SPECSIG");
+        clkNegs["zatrzasniete8_SPECSIG"]=1;
+              clk["zatrzasniete8_SPECSIG"]=new Array("FB2_4");
+              prld["zatrzasniete8_SPECSIG"]="GND";
+          inreg["zatrzasniete8_SPECSIG"]=new Array("slowo_trans7_SPECSIG");
+        
+          d2["transmisja"]=new Array("FB9_10","FB9_11");
+          
+          d2["wyjscie_trans"]=new Array("FB9_0","FB9_8","FB9_2","FB9_4","FB9_6","FB9_5","FB9_3","FB9_9","FB9_1","FB9_7");
+          
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

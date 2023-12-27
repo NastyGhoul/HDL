@@ -1,0 +1,98 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 2=CLK.p
+GSET: 1=!start_trans.p
+GRST: 1=!start_trans.p
+----------------- B l o c k 0 ------------------
+PLApt(33/56), Fanin(24/38), Clk(1/3), Bct(1/4), Pin(1/6), Mcell(14/16)
+PLApts[33/56] 29 31 27 32 26 18 19 20 21 17 23 6 10 22 44 46 49 53 56 57 58 60 61 63 65 0 66 () () () () () () () () () () 33 () () 33 () () 12 () () 3 () () () () () 30 () () 28
+Fanins[24] CLK2380.n N_PZ_79.n N_PZ_96.n stan<0>.n stan<1>.n stan<2>.n stan<3>.n stan_licznika<0>.n stan_licznika<1>.n stan_licznika<2>.n stan_licznika<3>.n stan_licznika<4>.n stan_licznika<5>.n czy_parz.p jaki_parz.p slowo_trans<0>.p slowo_trans<1>.p slowo_trans<2>.p slowo_trans<3>.p slowo_trans<4>.p slowo_trans<5>.p slowo_trans<6>.p slowo_trans<7>.p start_trans.p
+clk[1] CLK 
+CTC: (pt=26) CLK2380 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [start_trans(143)] [stan_licznika<2>(160)] [stan_licznika<4>(159)] [CLK2380(155)]  
+           [stan_licznika<0>(154)] [stan_licznika<3>(153)] [stan_licznika<5>(152)] [stan_licznika<1>(151)]  
+           [stan<1>(149)] [stan<3>(146)] [stan<2>(145)] [stan<0>(158)] [N_PZ_79(157)] [N_PZ_96(156)]  
+           [zatrzasniete<9>(150)] 
+Signal[15] [ 0: stan<2>(145)  ][ 1: stan<3>(146)  ][ 2: start_trans(143)  ][ 3: (142)  ][ 4: stan<1>(149)  ] 
+           [ 5: zatrzasniete<9>(150) (140)  ][ 6: stan_licznika<1>(151)  ][ 7: stan_licznika<5>(152)  ][ 8:  
+           stan_licznika<3>(153)  ][ 9: stan_licznika<0>(154)  ][ 10: CLK2380(155)  ][ 11: N_PZ_96(156)  
+           (139)  ][ 12: N_PZ_79(157) (138)  ][ 13: stan<0>(158) (137)  ][ 14: stan_licznika<4>(159)  ][ 15:  
+           stan_licznika<2>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(1/56), Fanin(1/38), Clk(0/3), Bct(1/4), Pin(8/8), Mcell(8/16)
+PLApts[1/5] () () () () 0
+Fanins[ 1] start_trans.p
+clk[0] 
+CTC: (pt=0) start_trans ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [zatrzasniete<1>,slowo_trans<0>(2)] [zatrzasniete<2>,slowo_trans<1>(4)]  
+           [zatrzasniete<3>,slowo_trans<2>(6)] [zatrzasniete<4>,slowo_trans<3>(9)]  
+           [zatrzasniete<5>,slowo_trans<4>(3)] [zatrzasniete<6>,slowo_trans<5>(5)]  
+           [zatrzasniete<7>,slowo_trans<6>(7)] [zatrzasniete<8>,slowo_trans<7>(10)] 
+Signal[16] [ 0: zatrzasniete<1>(161) slowo_trans<0>(2)  ][ 1:  ][ 2: zatrzasniete<5>(163) slowo_trans<4>(3)  
+            ][ 3: zatrzasniete<2>(164) slowo_trans<1>(4)  ][ 4: zatrzasniete<6>(165) slowo_trans<5>(5)  ] 
+           [ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: zatrzasniete<3>(172) slowo_trans<2>(6)  ][ 12:  
+           zatrzasniete<7>(173) slowo_trans<6>(7)  ][ 13: zatrzasniete<4>(174) slowo_trans<3>(9)  ][ 14:  
+           zatrzasniete<8>(175) slowo_trans<7>(10)  ][ 15:  ]
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [CLK(38)] [czy_parz(39)] 
+Signal[ 2] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: CLK(38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: czy_parz(39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+PLApt(12/56), Fanin(13/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(2/16)
+PLApts[12/12] 24 34 35 36 37 38 39 40 41 42 17 25
+Fanins[13] stan<0>.n stan<1>.n stan<2>.n stan<3>.n zatrzasniete<1>.n zatrzasniete<2>.n zatrzasniete<3>.n zatrzasniete<4>.n zatrzasniete<5>.n zatrzasniete<6>.n zatrzasniete<7>.n zatrzasniete<8>.n zatrzasniete<9>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [wyjscie_trans(287),wyjscie_trans(119)] [transmisja(286),transmisja(118)] 
+Signal[ 2] [ 0: (112)  ][ 1: (113)  ][ 2:  ][ 3: (114)  ][ 4:  ][ 5: (115)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11: (116)  ][ 12: (117)  ][ 13: transmisja(286) transmisja(118)  ][ 14:  
+           wyjscie_trans(287) wyjscie_trans(119)  ][ 15:  ]
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [jaki_parz(124)] 
+Signal[ 1] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  
+           jaki_parz(124)  ][ 11: (125)  ][ 12: (126)  ][ 13: (128)  ][ 14: (129)  ][ 15: (130)  ]
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
