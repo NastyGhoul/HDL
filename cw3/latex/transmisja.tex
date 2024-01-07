@@ -1,0 +1,29 @@
+\begin{lstlisting}
+	always @(posedge CLK2380 or negedge start_trans)
+	begin
+		if(start_trans == 0)
+			stan <= 0;
+		else if (stan == 4'b1001 && czy_parz == 0)
+			stan <= stan + 2;
+		else if (stan < 12)
+			stan <= stan + 1;
+	end
+	
+	always @(stan or zatrzasniete)
+	begin
+		case (stan)
+			4'b0000 : wyjscie = 1;
+			4'b0001 : wyjscie = zatrzasniete[0];
+			4'b0010 : wyjscie = zatrzasniete[1];
+			4'b0011 : wyjscie = zatrzasniete[2];
+			4'b0100 : wyjscie = zatrzasniete[3];
+			4'b0101 : wyjscie = zatrzasniete[4];
+			4'b0110 : wyjscie = zatrzasniete[5];
+			4'b0111 : wyjscie = zatrzasniete[6];
+			4'b1000 : wyjscie = zatrzasniete[7];
+			4'b1001 : wyjscie = zatrzasniete[8];
+			4'b1010 : wyjscie = zatrzasniete[9];
+			default : wyjscie = zatrzasniete[10];
+		endcase
+	end
+\end{lstlisting}

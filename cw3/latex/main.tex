@@ -1,12 +1,47 @@
-\section*{treść zadania}
+\section{Zasada działania układu i wyjaśnienie sygnałów}
+Zaprojektowany układ jest asynchroniczny z prędkością transmisji $2400$Hz. Po rozpoczęciu transmisji nie można jej przerwać. Transmitowany jest ciąg 11 bitów w tym i każdy bit jest przesyłany co cykl zegarowy.\\
+Na ciąg przesyłanych bitów (''zatrzasniete'') składa się:
 
+\begin{itemize}
+    \item jeden bit rozpoczęcia i jeden bit zakończenia transmisji
+    \item osiem bitów treści (slowo-trans)
+    \item jeden bit parzystości, sprawdzajacy czy transmisja była poprawna (w programie jest możliwość zmienienia bitu na ''Even'' lub ''Odd'')
+\end{itemize}
 
+Po zakończeniu transmisji zmienna ''transmisja'' spowrotem przyjmuje wartość $0$ i układ jest gotowy na przesłanie kolejnego ciągu znaków.
 
-\section{Całość kodu}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=18cm]{./Images/Symulacja.png}
+    \caption*{Test układu przy pomocy symulacji}
+\end{figure}
 
+\section{Schemat blokowy}
+Wstaw zdjęcie
+
+\section{Kod VerilogMain}
+\subsection{Całość kodu}
 \input{Verilog_main.tex}
+
+\subsection{Wyjasnienie poszczególnych elementów kodu}
+Pierwszym elementem jest dzielnik sygnału zegarowego. Zmiana w ''CLK2380'' następuje co 42 cykle sygnału zegarowego, dzięki czemu wewnętrzny sygnał zegarowy wynosi dokładnie 2380 Hz.
+\input{licznik.tex}
+
+Drugim elementem jest przypisanie odpowiednich bitów do później transmitowanej sekwencji (z możliwością wyboru czy posługujemy się bitem parzystości ''Odd'', czy ''Even'')
+\input{Zatrzasniete.tex}
+
+kolejnym elementem jest przesyłanie bit po bicie transmisji, po zmianie stanu. Stan jest zależny od CLK2380. Możliwe jest równierz określenie czy zostanie przesłany bit parzystości czy nie.
+\input{transmisja.tex}
+
+\section{Test układu}
+\subsection{symulacja w programie}
+\input{Verilog_symulacja.tex}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=18cm]{./Images/Symulacja.png}
+    \caption*{Test układu przy pomocy symulacji}
+\end{figure}
 \clearpage
 
-\section{Przypis wejść/wyjść}
-
-\input{Verilog_symulacja.tex}
+\subsection{Zdjęcia z testu na oscyloskopie}
+FILIP WSTAW ZDJĘCIA PROSZĘ

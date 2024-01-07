@@ -2,7 +2,6 @@
     `timescale 1ns / 1ps
 
     module symulacja;
-    
         // Inputs
         reg [7:0] slowo_trans;
         reg start_trans;
@@ -45,13 +44,17 @@
             CLK = 1;
             #50
             CLK = 0;
-            #50 ...
-            ... #50
-            CLK = 0;
             #50
             CLK = 1;
             #50
             CLK = 0;
+            #50
+            CLK = 1;
+            
+            ...
+
+            #50
+            CLK = 0;
         end
-    endmodule    
+    endmodule        
 \end{lstlisting}

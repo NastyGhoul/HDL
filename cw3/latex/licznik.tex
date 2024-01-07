@@ -1,0 +1,17 @@
+\begin{lstlisting}
+	always @(posedge CLK)
+	begin
+		stan_licznika <= stan_licznika + 1;
+		begin
+	
+		//if (stan_licznika == 6'b000001) //1
+		if (stan_licznika == 6'b101010) //42
+		begin
+			stan_licznika <= 0;
+			CLK2380 = 1'b1;
+		end
+		else
+			CLK2380 = 1'b0;
+		end
+	end
+\end{lstlisting}

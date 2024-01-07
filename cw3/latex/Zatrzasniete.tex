@@ -1,0 +1,17 @@
+\begin{lstlisting}
+	always @(slowo_trans or start_trans)
+	begin
+		if(start_trans == 0)
+		begin
+			zatrzasniete[0] <= 0;
+			zatrzasniete[8:1] <= slowo_trans[7:0];
+			
+			if (jaki_parz == 0)
+				zatrzasniete[9] <= (^slowo_trans[7:0]);
+			else
+				zatrzasniete[9] <= (~^slowo_trans[7:0]);
+			
+			zatrzasniete[10] <= 1;
+		end
+	end
+\end{lstlisting}
