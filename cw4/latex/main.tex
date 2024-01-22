@@ -1,0 +1,90 @@
+\tableofcontents\clearpage
+
+\section{Wstęp}
+\subsection{Cel ćwiczenia}
+\hspace*{0.5cm}Celem ćwiczenia było stworzenie układu realizującego funkcje licznika, wyświetlającego cyfry na wyświetlaczu siedmio segmentowym. Układ ma posiadać funkcję dwóch przycisków: Reset i Stop, a ich sposób implementacji jest dowolny. \\ \hspace*{0.5cm}Układ również powinien być zaprojektowany segmentowo, czyli każda funkcjonalność powinna być osobnym elementem. Napisane oczywiście w języku VHDL.
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}W późniejszych pod-działach poszczególnych elementów ,,Działanie'' zostanie krótko opisana ich funkcjonalność. 
+
+\subsection{Graficzne przedstawienie schematu}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=18.4cm]{./Kod/schemat.png}
+    \caption*{schemat układu VHDL}
+\end{figure}
+
+\subsection{Połączenie elementów przy pomocy kodu}
+\input{Kod/schemat.tex}
+
+\section{Elementy układu}
+\subsection{Dzielnik częstotliwości na 1Hz}
+\subsubsection{Działanie}
+\hspace*{0.5cm}Sygnałem wejściowym i wyjściowym jest odpowiednio sygnał CLK i CLK 1Hz w formacie std logic. Zmienną pomocniczą jest ,,liczenie'' zdefiniowaną w zagresie do 14 bitów danych.
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}Funkcjonalność dzielnika sprowadza się do czekania, aż główny sygnał zegarowy przeliczy do wybranej wartości. W przypadku dzielnika na częstotliwość 1Hz i częstotliwości zegara 100kHz, dzielnik czeka dokładnie 100k zdarzeń po czym zmienia wartość logiczna z $0$ na $1$ i resetuje się.
+\subsubsection{Kod}
+\input{Kod/czestotliwosc_1hz.tex}
+
+\clearpage\subsection{Dzielnik częstotliwości na 400Hz}
+\subsubsection{Działanie}
+\hspace*{0.5cm}Dzielnik częstotliwości 400Hz działa dokładnie tak jak poprzedni dzielnik 1Hz z tą różnicą, że wartość przez którą jest dzielona częstotliwość zegara wynosi 250 i zakres sygnału ,,liczenie'' jest zdefiniowany do 8bitów.
+\subsubsection{Kod}
+\input{Kod/czestotliwosc_400hz.tex}
+
+\subsection{Licznik}
+\subsubsection{Działanie}
+\hspace*{0.5cm}Sygnałami wejściowymi są: zegar, reset, stop w formacie std logic. Wyjściowymi sygnałami są kolejno: wyjscie1, wyjscie2, wyjscie3, wyjscie4 w formacie std logic vector (3 downto 0). Pomocniczymi sygnałami są: liczba1, liczba2, liczba3, liczba4 również w formacie std logic vector (3 downto 0), zdefiniowane początkowo jako zero.
+
+\vspace*{0.2cm}
+
+\hspace*{0.5cm}Co zmiane zegara na wartość $1$, zmienia się wartość zegara nadrzędnego również o $1$. Po osiągnięciu przez zegar wartości 9 (binarnie: 1001) w następnym cyklu jest zerowany i dodawana jest wartość $1$ do zegara podrzędnego. Na bierząco wartość zmiennej pomocniczej przekazywana jest do wyjścia.
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}Zdecydowaliśmy się na implementacje licznika w postaci jednego modułu zamiast 4 osobnych, ze względu na prostotę i szybkość implementacji takiego rozwiązania (oczywiście kosztem przejrzystości).
+\subsubsection{Kod}
+\input{Kod/licznik.tex}
+
+\subsection{Licznik modulo 4}
+\subsubsection{Działanie}
+\hspace*{0.5cm}sygnałem wejściowym jest CLK 400Hz w formacie std logic, a wyjściowym kanal w formacie integer range 0 to 3. Sygnałem pomocniczym jest liczenie w formacie integer range 0 to 3.
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}Licznik modulo 4 wybiera który z kanałów będzie rejestrowany i wyświetlany na wyświetlaczu siedmio segmentowym. Robi to w częstotliwości 400Hz. 
+\subsubsection{Kod}
+\input{Kod/licznik4.tex}
+
+\subsection{Multiplekser}
+\subsubsection{Działanie}
+\hspace*{0.5cm}Sygnałami wejściowymi są: liczba1, liczba2, liczba3, liczba4 w formacie std logic vector (3 downto 0) i kanal w formacie std logic vector (1 downto 0). Wyjściowym sygnałem jest wyjscie w formacie std logic vector (3 downto 0).
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}W zależności od wyrbanego kanału multiplekser przekazuje odpowiadającą mu liczbę do transkodera.
+\subsubsection{Kod}
+\input{Kod/multiplekser.tex}
+
+\subsection{Demultiplekser}
+\subsubsection{Działanie}
+\hspace*{0.5cm}sygnałem wejściowym jest kanal w formacie std logic vector (1 downto 0), a wyjściowym anody w formacie std logic vector (3 downto 0).
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}W zależności od wybranego kanału, aktywowane są odpowiadające im binarnie anody.
+\subsubsection{Kod}
+\input{Kod/demultiplekser.tex}
+
+\subsection{Transkoder}
+\subsubsection{Działanie}
+\hspace*{0.5cm}sygnałem wejściowym jest liczba w formacie std logic vector (3 downto 0), a wyjściowym liczba 7seg w formacie std logic vector (6 downto 0).
+
+\vspace*{0.5cm}
+
+\hspace*{0.5cm}W zależności od podanej liczby binarnej wysyła $0$ do odpowiednich katod by wyświetlić liczbę w systemie dziesiętnym.
+\subsubsection{Kod}
+\input{Kod/transkoder.tex}
