@@ -1,0 +1,50 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mypackages/proofpackage}[2023/04/26]
+
+
+% -------------------------- Proof related elements - environments/commands -------------------------- 
+
+\RequirePackage[most]{tcolorbox}
+
+% colors
+\definecolor{mygraybackground}{RGB}{247,247,247}
+\definecolor{mygrayframe}{RGB}{207,207,207}
+
+
+% title style command
+\newcommand{\prooftitle}[1]{\subsection*{#1}}
+
+% proof box style environment
+\newenvironment{myproof}
+    {
+        \begin{center}
+            \begin{tcolorbox}[
+                width=1\textwidth,
+                boxrule=0.7mm,
+                arc=1pt,
+                breakable,
+                enhanced,
+                colframe=mygrayframe,
+                colback=mygraybackground,
+                boxsep=5pt,
+                auto outer arc,
+                % coltitle=mygrayframe,  
+                % title= More Test
+                ]
+    }
+    {
+            \end{tcolorbox}
+        \end{center}
+    }
+
+
+% proof part/step/case environment
+\newenvironment{proofcase}[1]
+{
+    \medbreak
+    {\subsubsection*{#1}}
+}
+{
+    \medbreak
+}
+
