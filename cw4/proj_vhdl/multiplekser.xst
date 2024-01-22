@@ -1,0 +1,5 @@
+set -tmpdir "C:/students_ulic/mf/proj_vhdl/xst/projnav.tmp"
+set -xsthdpdir "C:/students_ulic/mf/proj_vhdl/xst"
+elaborate
+-ifn multiplekser.prj
+-ifmt mixed

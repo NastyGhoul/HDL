@@ -1,0 +1,8 @@
+vhdl work "transkoder.vhd"
+vhdl work "multiplekser.vhd"
+vhdl work "licznik4.vhd"
+vhdl work "licznik.vhd"
+vhdl work "demultiplekser.vhd"
+vhdl work "czestotliwosc_1hz.vhd"
+vhdl work "czestotliwosc400hz.vhd"
+vhdl work "schemat.vhf"

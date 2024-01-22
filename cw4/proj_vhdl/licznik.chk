@@ -1,0 +1,85 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK1: 0=zegar.p
+GSET: 1=!reset.p
+GRST: 1=!reset.p
+----------------- B l o c k 0 ------------------
+PLApt(5/56), Fanin(5/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(5/16)
+PLApts[5/47] 6 () () () () () () () () () () () () () () () () () () 2 () () () () () 4 () () () () () () () () () () () () () () () () () 3 () () 7
+Fanins[ 5] wyjscie1<0>.n wyjscie1<1>.n wyjscie1<2>.n wyjscie1<3>.n stop.p
+clk[1] zegar 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [wyjscie1<0>(148),wyjscie1<0>(142)] [wyjscie1<1>(156),wyjscie1<1>(139)]  
+           [wyjscie1<2>(150),wyjscie1<2>(140)] [wyjscie1<3>(158),wyjscie1<3>(137)]  
+           [wyjscie2<0>(157),wyjscie2<0>(138)] [reset(143)] 
+Signal[ 6] [ 0:  ][ 1:  ][ 2: reset(143)  ][ 3: wyjscie1<0>(148) wyjscie1<0>(142)  ][ 4:  ][ 5:  
+           wyjscie1<2>(150) wyjscie1<2>(140)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: wyjscie1<1>(156)  
+           wyjscie1<1>(139)  ][ 12: wyjscie2<0>(157) wyjscie2<0>(138)  ][ 13: wyjscie1<3>(158)  
+           wyjscie1<3>(137)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 1 ------------------
+PLApt(11/56), Fanin(17/38), Clk(1/3), Bct(0/4), Pin(8/8), Mcell(8/16)
+PLApts[11/53] 15 19 16 20 23 21 22 () () () () () () () () () () () () 18 () () 17 () () () () () () () () () () () () () () () () () () () () () () () () () () 13 () () 12
+Fanins[17] wyjscie1<0>.n wyjscie1<1>.n wyjscie1<2>.n wyjscie1<3>.n wyjscie2<0>.n wyjscie2<1>.n wyjscie2<2>.n wyjscie2<3>.n wyjscie3<0>.n wyjscie3<1>.n wyjscie3<2>.n wyjscie3<3>.n wyjscie4<0>.n wyjscie4<1>.n wyjscie4<2>.n wyjscie4<3>.n stop.p
+clk[1] zegar 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 8] [wyjscie3<0>(175),wyjscie3<0>(10)] [wyjscie3<1>(173),wyjscie3<1>(7)]  
+           [wyjscie3<2>(174),wyjscie3<2>(9)] [wyjscie3<3>(172),wyjscie3<3>(6)]  
+           [wyjscie4<0>(165),wyjscie4<0>(5)] [wyjscie4<1>(161),wyjscie4<1>(2)]  
+           [wyjscie4<2>(164),wyjscie4<2>(4)] [wyjscie4<3>(163),wyjscie4<3>(3)] 
+Signal[ 8] [ 0: wyjscie4<1>(161) wyjscie4<1>(2)  ][ 1:  ][ 2: wyjscie4<3>(163) wyjscie4<3>(3)  ][ 3:  
+           wyjscie4<2>(164) wyjscie4<2>(4)  ][ 4: wyjscie4<0>(165) wyjscie4<0>(5)  ][ 5:  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10:  ][ 11: wyjscie3<3>(172) wyjscie3<3>(6)  ][ 12: wyjscie3<1>(173)  
+           wyjscie3<1>(7)  ][ 13: wyjscie3<2>(174) wyjscie3<2>(9)  ][ 14: wyjscie3<0>(175) wyjscie3<0>(10)  ] 
+           [ 15:  ]
+----------------- B l o c k 2 ------------------
+PLApt(5/56), Fanin(9/38), Clk(1/3), Bct(0/4), Pin(4/6), Mcell(3/16)
+PLApts[5/17] 10 14 11 12 () () () () () () () () () () () () 8
+Fanins[ 9] wyjscie1<0>.n wyjscie1<1>.n wyjscie1<2>.n wyjscie1<3>.n wyjscie2<0>.n wyjscie2<1>.n wyjscie2<2>.n wyjscie2<3>.n stop.p
+clk[1] zegar 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [wyjscie2<1>(177),wyjscie2<1>(136)] [wyjscie2<2>(179),wyjscie2<2>(134)]  
+           [wyjscie2<3>(178),wyjscie2<3>(135)] [stop(133)] 
+Signal[ 4] [ 0: wyjscie2<1>(177) wyjscie2<1>(136)  ][ 1: wyjscie2<3>(178) wyjscie2<3>(135)  ][ 2:  
+           wyjscie2<2>(179) wyjscie2<2>(134)  ][ 3:  ][ 4: stop(133)  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11:  ][ 12:  ][ 13: (132)  ][ 14:  ][ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/5), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [zegar(32)] 
+Signal[ 1] [ 0:  ][ 1: (33)  ][ 2:  ][ 3: zegar(32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11:  ][ 12:  ][ 13: (28)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

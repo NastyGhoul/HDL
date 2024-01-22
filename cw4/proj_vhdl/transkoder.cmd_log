@@ -1,0 +1,9 @@
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder.spl -module transkoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder.spl C:/students_ulic/mf/proj_vhdl/transkoder.sym 
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder.spl -module transkoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder.spl C:/students_ulic/mf/proj_vhdl/transkoder.sym 
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder.spl -module transkoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder.spl C:/students_ulic/mf/proj_vhdl/transkoder.sym 
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder.spl -module transkoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder.spl C:/students_ulic/mf/proj_vhdl/transkoder.sym 
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder.spl -module transkoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

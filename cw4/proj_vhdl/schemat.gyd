@@ -1,0 +1,56 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+CLK S:PIN38
+RESET S:PIN143
+STOP S:PIN94
+anody<0> S:PIN126
+anody<1> S:PIN128
+anody<2> S:PIN129
+anody<3> S:PIN130
+liczba_7seg<0> S:PIN56
+liczba_7seg<1> S:PIN53
+liczba_7seg<2> S:PIN60
+liczba_7seg<3> S:PIN58
+liczba_7seg<4> S:PIN57
+liczba_7seg<5> S:PIN54
+liczba_7seg<6> S:PIN61
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 XLXI_6/liczenie<14> XLXI_6/liczenie<13> XLXI_6/liczenie<7> XLXI_6/liczenie<5>
+		 XLXI_6/liczenie<12> XLXI_6/liczenie<16> XLXI_6/liczenie<11> XLXI_6/liczenie<8>
+		 XLXI_6/liczenie<6> XLXI_6/liczenie<4> XLXI_6/liczenie<3> XLXI_6/liczenie<15>
+		 XLXI_6/liczenie<10> XLXI_6/liczenie<0> XLXI_6/liczenie<2> XLXI_6/liczenie<1>
+		
+PARTITION FB2_1 XLXI_6/liczenie<9> XLXN_7<0> XLXN_3<2> XLXN_3<3>
+		 XLXN_4<0> XLXN_7<2> XLXN_7<1> XLXN_7<3>
+		 XLXN_6<0> XLXN_6<2> XLXN_6<3> XLXN_3<1>
+		 XLXN_4<2> XLXN_4<1> XLXN_4<3> XLXN_6<1>
+		
+PARTITION FB3_4 XLXI_7/liczenie<2>
+PARTITION FB3_6 XLXN_9<0> XLXI_7/liczenie<1> XLXI_7/liczenie<7> XLXI_7/liczenie<6>
+		 XLXI_7/liczenie<5> XLXI_7/liczenie<4> XLXI_7/liczenie<3> XLXI_7/liczenie<0>
+		
+PARTITION FB3_15 XLXN_9<1>
+
+
+
+
+
+
+
+
+PARTITION FB11_13 anody<0> anody<1> anody<2> anody<3>
+		
+PARTITION FB12_15 XLXN_3<0>
+
+
+PARTITION FB14_16 liczba_7seg<6>
+
+PARTITION FB16_5 liczba_7seg<2>
+PARTITION FB16_11 liczba_7seg<3> liczba_7seg<4> liczba_7seg<0>
+PARTITION FB16_15 liczba_7seg<5> liczba_7seg<1>
+

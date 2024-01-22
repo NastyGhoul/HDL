@@ -1,0 +1,9 @@
+[Inputs]
+=liczba1[3:0]=
+=liczba2[3:0]=
+=liczba3[3:0]=
+=liczba4[3:0]=
+=kanal[1:0]=
+[Outputs]
+=wyjscie[3:0]=
+[BiDir]

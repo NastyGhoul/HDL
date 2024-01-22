@@ -1,0 +1,10 @@
+[Inputs]
+zegar
+reset
+stop
+[Outputs]
+=wyjscie1[3:0]=
+=wyjscie2[3:0]=
+=wyjscie3[3:0]=
+=wyjscie4[3:0]=
+[BiDir]

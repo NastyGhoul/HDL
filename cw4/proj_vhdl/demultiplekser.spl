@@ -1,0 +1,5 @@
+[Inputs]
+=kanal[1:0]=
+[Outputs]
+=anody[3:0]=
+[BiDir]

@@ -1,0 +1,49 @@
+V3 34
+FL C:/students_ulic/mf/proj_vhdl/czestotliwosc400hz.vhd 2023/12/19.12:58:03 P.20131013
+EN work/czestotliwosc_400Hz 1704800758 \
+      FL C:/students_ulic/mf/proj_vhdl/czestotliwosc400hz.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/czestotliwosc_400Hz/Behavioral 1704800759 \
+      FL C:/students_ulic/mf/proj_vhdl/czestotliwosc400hz.vhd \
+      EN work/czestotliwosc_400Hz 1704800758
+FL C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.vhd 2023/12/19.12:54:39 P.20131013
+EN work/czestotliwosc_1hz 1704800756 \
+      FL C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/czestotliwosc_1hz/Behavioral 1704800757 \
+      FL C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.vhd \
+      EN work/czestotliwosc_1hz 1704800756
+FL C:/students_ulic/mf/proj_vhdl/demultiplekser.vhd 2023/12/19.13:30:20 P.20131013
+EN work/demultiplekser 1704800752 \
+      FL C:/students_ulic/mf/proj_vhdl/demultiplekser.vhd PB ieee/std_logic_1164 1381692176
+AR work/demultiplekser/Behavioral 1704800753 \
+      FL C:/students_ulic/mf/proj_vhdl/demultiplekser.vhd EN work/demultiplekser 1704800752
+FL C:/students_ulic/mf/proj_vhdl/licznik.vhd 2023/12/19.13:27:46 P.20131013
+EN work/licznik 1704800748 FL C:/students_ulic/mf/proj_vhdl/licznik.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/licznik/Behavioral 1704800749 \
+      FL C:/students_ulic/mf/proj_vhdl/licznik.vhd EN work/licznik 1704800748
+FL C:/students_ulic/mf/proj_vhdl/licznik4.vhd 2023/12/19.13:32:47 P.20131013
+EN work/licznik4 1704800754 FL C:/students_ulic/mf/proj_vhdl/licznik4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/licznik4/Behavioral 1704800755 \
+      FL C:/students_ulic/mf/proj_vhdl/licznik4.vhd EN work/licznik4 1704800754
+FL C:/students_ulic/mf/proj_vhdl/multiplekser.vhd 2023/12/19.13:37:02 P.20131013
+EN work/multiplekser 1704800750 FL C:/students_ulic/mf/proj_vhdl/multiplekser.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/multiplekser/Behavioral 1704800751 \
+      FL C:/students_ulic/mf/proj_vhdl/multiplekser.vhd EN work/multiplekser 1704800750
+FL C:/students_ulic/mf/proj_vhdl/schemat.vhf 2024/01/09.12:45:44 P.20131013
+EN work/schemat 1704800762 FL C:/students_ulic/mf/proj_vhdl/schemat.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/schemat/BEHAVIORAL 1704800763 \
+      FL C:/students_ulic/mf/proj_vhdl/schemat.vhf EN work/schemat 1704800762 \
+      CP licznik CP multiplekser CP demultiplekser CP licznik4 CP czestotliwosc_1hz \
+      CP czestotliwosc_400Hz CP transkoder_a
+FL C:/students_ulic/mf/proj_vhdl/transkoder.vhd 2024/01/09.12:41:46 P.20131013
+EN work/transkoder_a 1704800760 FL C:/students_ulic/mf/proj_vhdl/transkoder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/transkoder_a/Behavioral 1704800761 \
+      FL C:/students_ulic/mf/proj_vhdl/transkoder.vhd EN work/transkoder_a 1704800760

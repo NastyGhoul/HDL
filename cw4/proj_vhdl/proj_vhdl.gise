@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="proj_vhdl.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="czestotliwosc_1hz.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="czestotliwosc_1hz.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="czestotliwosc_1hz.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="czestotliwosc_1hz.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="czestotliwosc_1hz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="czestotliwosc_400Hz.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="czestotliwosc_400Hz.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="czestotliwosc_400Hz.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="czestotliwosc_400Hz.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="czestotliwosc_400Hz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="demultiplekser.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="demultiplekser.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="demultiplekser.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="demultiplekser.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="demultiplekser.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="licznik.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="licznik.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="licznik.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="licznik.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="licznik.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="licznik.jed"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="licznik.lfp"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="licznik.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="licznik.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="licznik.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="licznik.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="licznik.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="licznik.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="licznik.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="licznik.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="licznik.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="licznik.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="licznik.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="licznik.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="licznik.vm6"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="licznik.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="licznik4.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="licznik4.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="licznik4.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="licznik4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="licznik4.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="licznik4_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="licznik_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="licznik_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="licznik_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="multiplekser.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="multiplekser.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="multiplekser.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="multiplekser.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="multiplekser.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="schemat.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="schemat.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="schemat.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="schemat.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="schemat.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="schemat.jed"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="schemat.jhd"/>
+    <file xil_pn:fileType="FILE_LFP" xil_pn:name="schemat.lfp"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="schemat.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="schemat.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="schemat.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="schemat.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="schemat.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="schemat.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="schemat.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="schemat.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="schemat.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="schemat.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="schemat.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="schemat.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="schemat.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="schemat.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="schemat.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="schemat.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="schemat.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="schemat.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="schemat_build.xml"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="schemat_drc.vhf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="schemat_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="schemat_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="schemat_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="schemat_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="schemat_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="schemat_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="transkoder.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="transkoder.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="transkoder.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="transkoder.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="transkoder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="transkoder_a.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="transkoder_a.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="transkoder_a.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="transkoder_a.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="transkoder_a.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1704800254" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1704800254">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1704800998" xil_pn:in_ck="180877035925733009" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8361081442552092301" xil_pn:start_ts="1704800996">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="schemat.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1704800762" xil_pn:in_ck="1835337196217678349" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="586142730299365103" xil_pn:start_ts="1704800745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="licznik.ngr"/>
+      <outfile xil_pn:name="schemat.jhd"/>
+      <outfile xil_pn:name="schemat.lso"/>
+      <outfile xil_pn:name="schemat.ngc"/>
+      <outfile xil_pn:name="schemat.ngr"/>
+      <outfile xil_pn:name="schemat.prj"/>
+      <outfile xil_pn:name="schemat.stx"/>
+      <outfile xil_pn:name="schemat.syr"/>
+      <outfile xil_pn:name="schemat.xst"/>
+      <outfile xil_pn:name="schemat_vhdl.prj"/>
+      <outfile xil_pn:name="schemat_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1704801333" xil_pn:in_ck="170428316473384896" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981282465441159" xil_pn:start_ts="1704801333">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1704801344" xil_pn:in_ck="-6985899487463384187" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1704801333">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="schemat.bld"/>
+      <outfile xil_pn:name="schemat.ngd"/>
+      <outfile xil_pn:name="schemat_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1704801358" xil_pn:in_ck="-5648243857944360601" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="1769578534966448183" xil_pn:start_ts="1704801344">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="schemat.chk"/>
+      <outfile xil_pn:name="schemat.cxt"/>
+      <outfile xil_pn:name="schemat.gyd"/>
+      <outfile xil_pn:name="schemat.log"/>
+      <outfile xil_pn:name="schemat.mfd"/>
+      <outfile xil_pn:name="schemat.nga"/>
+      <outfile xil_pn:name="schemat.pad"/>
+      <outfile xil_pn:name="schemat.pnx"/>
+      <outfile xil_pn:name="schemat.rpt"/>
+      <outfile xil_pn:name="schemat.vm6"/>
+      <outfile xil_pn:name="schemat.xml"/>
+      <outfile xil_pn:name="schemat_build.xml"/>
+      <outfile xil_pn:name="schemat_html"/>
+      <outfile xil_pn:name="schemat_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1704801361" xil_pn:in_ck="-364869489299084633" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1704801358">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="schemat.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1704801378" xil_pn:in_ck="-7784509977129730405" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-3223234765801749484" xil_pn:start_ts="1704801376">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1704800592" xil_pn:in_ck="170428316473386267" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1704800589">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

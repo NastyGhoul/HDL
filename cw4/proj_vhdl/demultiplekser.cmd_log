@@ -1,0 +1,2 @@
+vhdtdtfi -lib work demultiplekser.vhd -prj proj_vhdl -o demultiplekser.spl -module demultiplekser -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr demultiplekser.spl C:/students_ulic/mf/proj_vhdl/demultiplekser.sym 

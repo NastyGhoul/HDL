@@ -1,0 +1,17 @@
+sch2sym -intstyle ise -family xbr -refsym schemat C:/students_ulic/mf/proj_vhdl/schemat.sch C:/students_ulic/mf/proj_vhdl/schemat.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl schemat_drc.vhf -w C:/students_ulic/mf/proj_vhdl/schemat.sch 
+sch2sym -intstyle ise -family xbr -refsym schemat C:/students_ulic/mf/proj_vhdl/schemat.sch C:/students_ulic/mf/proj_vhdl/schemat.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl schemat_drc.vhf -w C:/students_ulic/mf/proj_vhdl/schemat.sch 
+xst -intstyle ise -ifn "C:/students_ulic/mf/proj_vhdl/schemat.xst" -ofn "C:/students_ulic/mf/proj_vhdl/schemat.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc licznik.ucf -p xc2c256-TQ144-6 schemat.ngc schemat.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 schemat.ngd 
+tsim -intstyle ise schemat schemat.nga 
+hprep6 -s IEEE1149 -i schemat 
+ngdbuild -intstyle ise -dd _ngo -uc licznik.ucf -p xc2c256-TQ144-6 schemat.ngc schemat.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 schemat.ngd 
+tsim -intstyle ise schemat schemat.nga 
+hprep6 -s IEEE1149 -i schemat 
+ngdbuild -intstyle ise -dd _ngo -uc licznik.ucf -p xc2c256-TQ144-6 schemat.ngc schemat.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 schemat.ngd 
+tsim -intstyle ise schemat schemat.nga 
+hprep6 -s IEEE1149 -i schemat 

@@ -1,0 +1,15 @@
+MODULE schemat
+	SUBMODULE licznik
+		INSTANCE XLXI_1
+	SUBMODULE multiplekser
+		INSTANCE XLXI_2
+	SUBMODULE demultiplekser
+		INSTANCE XLXI_4
+	SUBMODULE licznik4
+		INSTANCE XLXI_5
+	SUBMODULE czestotliwosc_1hz
+		INSTANCE XLXI_6
+	SUBMODULE czestotliwosc_400Hz
+		INSTANCE XLXI_7
+	SUBMODULE transkoder_a
+		INSTANCE XLXI_9

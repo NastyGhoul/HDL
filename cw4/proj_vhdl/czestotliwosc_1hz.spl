@@ -1,0 +1,5 @@
+[Inputs]
+CLK
+[Outputs]
+CLK_1Hz
+[BiDir]

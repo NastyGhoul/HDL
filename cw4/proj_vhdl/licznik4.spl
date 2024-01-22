@@ -1,0 +1,5 @@
+[Inputs]
+CLK_400Hz
+[Outputs]
+=kanal[0:1]=
+[BiDir]

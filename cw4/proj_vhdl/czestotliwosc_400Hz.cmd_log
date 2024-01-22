@@ -1,0 +1,2 @@
+vhdtdtfi -lib work czestotliwosc400hz.vhd -prj proj_vhdl -o czestotliwosc_400Hz.spl -module czestotliwosc_400Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr czestotliwosc_400Hz.spl C:/students_ulic/mf/proj_vhdl/czestotliwosc_400Hz.sym 

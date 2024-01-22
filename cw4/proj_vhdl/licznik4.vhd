@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity licznik4 is
+    Port ( CLK_400Hz : in  STD_LOGIC;
+           kanal : out integer range 0 to 3);
+end licznik4;
+
+architecture Behavioral of licznik4 is
+
+signal liczenie : integer range 0 to 3 := 0;
+begin
+process(CLK_400Hz)
+begin
+	if CLK_400Hz'event and CLK_400Hz = '1' then
+		if liczenie = 3 then
+			liczenie <= 0;
+		else
+			liczenie <= liczenie + 1;
+		end if;
+	end if;
+end process;
+
+kanal <= liczenie;
+
+end Behavioral;

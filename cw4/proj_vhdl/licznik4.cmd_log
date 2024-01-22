@@ -1,0 +1,2 @@
+vhdtdtfi -lib work licznik4.vhd -prj proj_vhdl -o licznik4.spl -module licznik4 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr licznik4.spl C:/students_ulic/mf/proj_vhdl/licznik4.sym 

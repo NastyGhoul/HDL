@@ -1,0 +1,374 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: schemat.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "schemat.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "schemat"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : schemat
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/licznik.vhd" in Library work.
+Architecture behavioral of Entity licznik is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/multiplekser.vhd" in Library work.
+Architecture behavioral of Entity multiplekser is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/demultiplekser.vhd" in Library work.
+Architecture behavioral of Entity demultiplekser is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/licznik4.vhd" in Library work.
+Architecture behavioral of Entity licznik4 is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.vhd" in Library work.
+Architecture behavioral of Entity czestotliwosc_1hz is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/czestotliwosc400hz.vhd" in Library work.
+Architecture behavioral of Entity czestotliwosc_400hz is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" in Library work.
+Architecture behavioral of Entity transkoder_a is up to date.
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/schemat.vhf" in Library work.
+Entity <schemat> compiled.
+Entity <schemat> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <schemat> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <licznik> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <multiplekser> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <demultiplekser> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <licznik4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <czestotliwosc_1hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <czestotliwosc_400Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <transkoder_a> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <schemat> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:1541 - "C:/students_ulic/mf/proj_vhdl/schemat.vhf" line 111: Different binding for component: <licznik4>. Port <kanal> does not match.
+Entity <schemat> analyzed. Unit <schemat> generated.
+
+Analyzing Entity <licznik> in library <work> (Architecture <behavioral>).
+Entity <licznik> analyzed. Unit <licznik> generated.
+
+Analyzing Entity <multiplekser> in library <work> (Architecture <behavioral>).
+Entity <multiplekser> analyzed. Unit <multiplekser> generated.
+
+Analyzing Entity <demultiplekser> in library <work> (Architecture <behavioral>).
+Entity <demultiplekser> analyzed. Unit <demultiplekser> generated.
+
+Analyzing Entity <licznik4> in library <work> (Architecture <behavioral>).
+Entity <licznik4> analyzed. Unit <licznik4> generated.
+
+Analyzing Entity <czestotliwosc_1hz> in library <work> (Architecture <behavioral>).
+Entity <czestotliwosc_1hz> analyzed. Unit <czestotliwosc_1hz> generated.
+
+Analyzing Entity <czestotliwosc_400Hz> in library <work> (Architecture <behavioral>).
+Entity <czestotliwosc_400Hz> analyzed. Unit <czestotliwosc_400Hz> generated.
+
+Analyzing Entity <transkoder_a> in library <work> (Architecture <behavioral>).
+Entity <transkoder_a> analyzed. Unit <transkoder_a> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <licznik>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/licznik.vhd".
+    Found 4-bit up counter for signal <liczba1>.
+    Found 4-bit up counter for signal <liczba2>.
+    Found 4-bit up counter for signal <liczba3>.
+    Found 4-bit up counter for signal <liczba4>.
+    Summary:
+	inferred   4 Counter(s).
+Unit <licznik> synthesized.
+
+
+Synthesizing Unit <multiplekser>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/multiplekser.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <wyjscie>.
+Unit <multiplekser> synthesized.
+
+
+Synthesizing Unit <demultiplekser>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/demultiplekser.vhd".
+    Found 1-of-4 decoder for signal <anody>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <demultiplekser> synthesized.
+
+
+Synthesizing Unit <licznik4>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/licznik4.vhd".
+    Found 2-bit up counter for signal <liczenie>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <licznik4> synthesized.
+
+
+Synthesizing Unit <czestotliwosc_1hz>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.vhd".
+    Found 17-bit up counter for signal <liczenie>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <czestotliwosc_1hz> synthesized.
+
+
+Synthesizing Unit <czestotliwosc_400Hz>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/czestotliwosc400hz.vhd".
+    Found 8-bit up counter for signal <liczenie>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <czestotliwosc_400Hz> synthesized.
+
+
+Synthesizing Unit <transkoder_a>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/transkoder.vhd".
+    Found 16x7-bit ROM for signal <liczba_7seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <transkoder_a> synthesized.
+
+
+Synthesizing Unit <schemat>.
+    Related source file is "C:/students_ulic/mf/proj_vhdl/schemat.vhf".
+Unit <schemat> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <schemat> ...
+
+Optimizing unit <transkoder_a> ...
+
+Optimizing unit <multiplekser> ...
+
+Optimizing unit <demultiplekser> ...
+
+Optimizing unit <licznik> ...
+  implementation constraint: INIT=r	 : liczba2_3
+  implementation constraint: INIT=r	 : liczba2_2
+  implementation constraint: INIT=r	 : liczba2_1
+  implementation constraint: INIT=r	 : liczba2_0
+  implementation constraint: INIT=r	 : liczba1_3
+  implementation constraint: INIT=r	 : liczba3_3
+  implementation constraint: INIT=r	 : liczba3_2
+  implementation constraint: INIT=r	 : liczba3_1
+  implementation constraint: INIT=r	 : liczba3_0
+  implementation constraint: INIT=r	 : liczba1_2
+  implementation constraint: INIT=r	 : liczba4_3
+  implementation constraint: INIT=r	 : liczba4_2
+  implementation constraint: INIT=r	 : liczba4_1
+  implementation constraint: INIT=r	 : liczba4_0
+  implementation constraint: INIT=r	 : liczba1_1
+  implementation constraint: INIT=r	 : liczba1_0
+
+Optimizing unit <licznik4> ...
+  implementation constraint: INIT=r	 : liczenie_1
+  implementation constraint: INIT=r	 : liczenie_0
+
+Optimizing unit <czestotliwosc_1hz> ...
+  implementation constraint: INIT=r	 : liczenie_16
+  implementation constraint: INIT=r	 : liczenie_15
+  implementation constraint: INIT=r	 : liczenie_0
+  implementation constraint: INIT=r	 : liczenie_1
+  implementation constraint: INIT=r	 : liczenie_2
+  implementation constraint: INIT=r	 : liczenie_3
+  implementation constraint: INIT=r	 : liczenie_4
+  implementation constraint: INIT=r	 : liczenie_5
+  implementation constraint: INIT=r	 : liczenie_6
+  implementation constraint: INIT=r	 : liczenie_7
+  implementation constraint: INIT=r	 : liczenie_8
+  implementation constraint: INIT=r	 : liczenie_9
+  implementation constraint: INIT=r	 : liczenie_10
+  implementation constraint: INIT=r	 : liczenie_11
+  implementation constraint: INIT=r	 : liczenie_12
+  implementation constraint: INIT=r	 : liczenie_13
+  implementation constraint: INIT=r	 : liczenie_14
+
+Optimizing unit <czestotliwosc_400Hz> ...
+  implementation constraint: INIT=r	 : liczenie_7
+  implementation constraint: INIT=r	 : liczenie_6
+  implementation constraint: INIT=r	 : liczenie_0
+  implementation constraint: INIT=r	 : liczenie_1
+  implementation constraint: INIT=r	 : liczenie_2
+  implementation constraint: INIT=r	 : liczenie_3
+  implementation constraint: INIT=r	 : liczenie_4
+  implementation constraint: INIT=r	 : liczenie_5
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : schemat.ngr
+Top Level Output File Name         : schemat
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 308
+#      AND2                        : 128
+#      AND3                        : 6
+#      AND4                        : 4
+#      AND8                        : 1
+#      INV                         : 106
+#      OR2                         : 25
+#      XOR2                        : 38
+# FlipFlops/Latches                : 43
+#      FD                          : 27
+#      FDCE                        : 16
+# IO Buffers                       : 14
+#      IBUF                        : 3
+#      OBUF                        : 11
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.95 secs
+ 
+--> 
+
+Total memory usage is 4530800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

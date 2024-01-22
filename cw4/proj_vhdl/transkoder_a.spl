@@ -1,0 +1,5 @@
+[Inputs]
+=liczba[3:0]=
+[Outputs]
+=liczba_7seg[6:0]=
+[BiDir]

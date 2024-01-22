@@ -1,0 +1,38 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/students_ulic/mf/proj_vhdl/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to C:/students_ulic/mf/proj_vhdl/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" in Library work.
+Entity <transkoder_a> compiled.
+ERROR:HDLParsers:3010 - "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" Line 8. Entity transkoder does not exist.
+ERROR:HDLParsers:3312 - "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" Line 11. Undefined symbol 'liczba'.
+ERROR:HDLParsers:1209 - "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" Line 11. liczba: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/students_ulic/mf/proj_vhdl/transkoder.vhd" Line 12. Undefined symbol 'liczba_7seg'.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> 
+
+Total memory usage is 4468116 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

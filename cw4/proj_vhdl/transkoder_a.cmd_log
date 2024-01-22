@@ -1,0 +1,2 @@
+vhdtdtfi -lib work transkoder.vhd -prj proj_vhdl -o transkoder_a.spl -module transkoder_a -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr transkoder_a.spl C:/students_ulic/mf/proj_vhdl/transkoder_a.sym 

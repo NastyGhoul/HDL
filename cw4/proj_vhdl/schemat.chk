@@ -1,0 +1,147 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 3=CLK.p
+GSET: 1=!RESET.p
+GRST: 1=!RESET.p
+----------------- B l o c k 0 ------------------
+PLApt(16/56), Fanin(17/38), Clk(1/3), Bct(0/4), Pin(1/6), Mcell(16/16)
+PLApts[16/56] 84 89 90 79 81 () () () () () 88 () () 87 () () () () () () () () 86 () () () () () 85 () () 82 () () 80 () () 78 () () 77 () () () () () () () () 97 () () 76 () () 74
+Fanins[17] XLXI_6/liczenie<0>.n XLXI_6/liczenie<10>.n XLXI_6/liczenie<11>.n XLXI_6/liczenie<12>.n XLXI_6/liczenie<13>.n XLXI_6/liczenie<14>.n XLXI_6/liczenie<15>.n XLXI_6/liczenie<16>.n XLXI_6/liczenie<1>.n XLXI_6/liczenie<2>.n XLXI_6/liczenie<3>.n XLXI_6/liczenie<4>.n XLXI_6/liczenie<5>.n XLXI_6/liczenie<6>.n XLXI_6/liczenie<7>.n XLXI_6/liczenie<8>.n XLXI_6/liczenie<9>.n
+clk[1] CLK 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[17] [RESET(143)] [XLXI_6/liczenie<1>(160)] [XLXI_6/liczenie<2>(159)] [XLXI_6/liczenie<3>(155)]  
+           [XLXI_6/liczenie<4>(154)] [XLXI_6/liczenie<6>(153)] [XLXI_6/liczenie<8>(152)]  
+           [XLXI_6/liczenie<11>(151)] [XLXI_6/liczenie<12>(149)] [XLXI_6/liczenie<13>(146)]  
+           [XLXI_6/liczenie<14>(145)] [XLXI_6/liczenie<0>(158)] [XLXI_6/liczenie<10>(157)]  
+           [XLXI_6/liczenie<15>(156)] [XLXI_6/liczenie<16>(150)] [XLXI_6/liczenie<5>(148)]  
+           [XLXI_6/liczenie<7>(147)] 
+Signal[17] [ 0: XLXI_6/liczenie<14>(145)  ][ 1: XLXI_6/liczenie<13>(146)  ][ 2: XLXI_6/liczenie<7>(147)  
+           RESET(143)  ][ 3: XLXI_6/liczenie<5>(148) (142)  ][ 4: XLXI_6/liczenie<12>(149)  ][ 5:  
+           XLXI_6/liczenie<16>(150) (140)  ][ 6: XLXI_6/liczenie<11>(151)  ][ 7: XLXI_6/liczenie<8>(152)  ] 
+           [ 8: XLXI_6/liczenie<6>(153)  ][ 9: XLXI_6/liczenie<4>(154)  ][ 10: XLXI_6/liczenie<3>(155)  ] 
+           [ 11: XLXI_6/liczenie<15>(156) (139)  ][ 12: XLXI_6/liczenie<10>(157) (138)  ][ 13:  
+           XLXI_6/liczenie<0>(158) (137)  ][ 14: XLXI_6/liczenie<2>(159)  ][ 15: XLXI_6/liczenie<1>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(21/56), Fanin(34/38), Clk(1/3), Bct(1/4), Pin(0/8), Mcell(16/16)
+PLApts[21/47] 20 23 21 22 97 16 15 24 11 10 17 7 83 13 () () 5 () () () () () 8 () () 14 () () () () () () () () 18 () () 19 () () () () () 4 () () 9
+Fanins[34] XLXI_6/liczenie<0>.n XLXI_6/liczenie<10>.n XLXI_6/liczenie<11>.n XLXI_6/liczenie<12>.n XLXI_6/liczenie<13>.n XLXI_6/liczenie<14>.n XLXI_6/liczenie<15>.n XLXI_6/liczenie<16>.n XLXI_6/liczenie<1>.n XLXI_6/liczenie<2>.n XLXI_6/liczenie<3>.n XLXI_6/liczenie<4>.n XLXI_6/liczenie<5>.n XLXI_6/liczenie<6>.n XLXI_6/liczenie<7>.n XLXI_6/liczenie<8>.n XLXI_6/liczenie<9>.n XLXN_3<0>.n XLXN_3<1>.n XLXN_3<2>.n XLXN_3<3>.n XLXN_4<0>.n XLXN_4<1>.n XLXN_4<2>.n XLXN_4<3>.n XLXN_6<0>.n XLXN_6<1>.n XLXN_6<2>.n XLXN_6<3>.n XLXN_7<0>.n XLXN_7<1>.n XLXN_7<2>.n XLXN_7<3>.n STOP.p
+clk[1] CLK 
+CTC: (pt=97) XLXI_6/liczenie<0>' XLXI_6/liczenie<10> XLXI_6/liczenie<11>' XLXI_6/liczenie<12>' XLXI_6/liczenie<13>' XLXI_6/liczenie<14>' XLXI_6/liczenie<15> XLXI_6/liczenie<1>' XLXI_6/liczenie<2>' XLXI_6/liczenie<3>' XLXI_6/liczenie<4>' XLXI_6/liczenie<5> XLXI_6/liczenie<6>' XLXI_6/liczenie<7> XLXI_6/liczenie<8>' XLXI_6/liczenie<9> XLXI_6/liczenie<16> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [XLXN_6<1>(176)] [XLXN_6<3>(171)] [XLXN_6<2>(170)] [XLXN_6<0>(169)] [XLXN_7<3>(168)]  
+           [XLXN_7<1>(167)] [XLXN_7<2>(166)] [XLXN_7<0>(162)] [XLXN_4<3>(175)] [XLXN_4<1>(174)]  
+           [XLXN_4<2>(173)] [XLXN_3<1>(172)] [XLXN_4<0>(165)] [XLXN_3<3>(164)] [XLXN_3<2>(163)]  
+           [XLXI_6/liczenie<9>(161)] 
+Signal[16] [ 0: XLXI_6/liczenie<9>(161) (2)  ][ 1: XLXN_7<0>(162)  ][ 2: XLXN_3<2>(163) (3)  ][ 3:  
+           XLXN_3<3>(164) (4)  ][ 4: XLXN_4<0>(165) (5)  ][ 5: XLXN_7<2>(166)  ][ 6: XLXN_7<1>(167)  ][ 7:  
+           XLXN_7<3>(168)  ][ 8: XLXN_6<0>(169)  ][ 9: XLXN_6<2>(170)  ][ 10: XLXN_6<3>(171)  ][ 11:  
+           XLXN_3<1>(172) (6)  ][ 12: XLXN_4<2>(173) (7)  ][ 13: XLXN_4<1>(174) (9)  ][ 14: XLXN_4<3>(175)  
+           (10)  ][ 15: XLXN_6<1>(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(11/56), Fanin(9/38), Clk(1/3), Bct(1/4), Pin(0/6), Mcell(10/16)
+PLApts[11/53] 92 93 94 95 99 96 75 98 () () () () () () () () () () () 91 () () () () () () () () () () () () () () () () () () () () () () () () () () 99 () () () () () 25
+Fanins[ 9] XLXI_7/liczenie<0>.n XLXI_7/liczenie<1>.n XLXI_7/liczenie<2>.n XLXI_7/liczenie<3>.n XLXI_7/liczenie<4>.n XLXI_7/liczenie<5>.n XLXI_7/liczenie<6>.n XLXI_7/liczenie<7>.n XLXN_9<0>.n
+clk[1] CLK 
+CTC: (pt=99) XLXI_7/liczenie<0>' XLXI_7/liczenie<1> XLXI_7/liczenie<2>' XLXI_7/liczenie<3> XLXI_7/liczenie<4> XLXI_7/liczenie<5> XLXI_7/liczenie<6> XLXI_7/liczenie<7> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [XLXN_9<1>(191)] [XLXI_7/liczenie<0>(189)] [XLXI_7/liczenie<3>(188)] [XLXI_7/liczenie<4>(187)]  
+           [XLXI_7/liczenie<5>(186)] [XLXI_7/liczenie<6>(185)] [XLXI_7/liczenie<7>(184)]  
+           [XLXI_7/liczenie<1>(183)] [XLXN_9<0>(182)] [XLXI_7/liczenie<2>(180)] 
+Signal[10] [ 0: (136)  ][ 1: (135)  ][ 2: (134)  ][ 3: XLXI_7/liczenie<2>(180)  ][ 4: (133)  ][ 5:  
+           XLXN_9<0>(182)  ][ 6: XLXI_7/liczenie<1>(183)  ][ 7: XLXI_7/liczenie<7>(184)  ][ 8:  
+           XLXI_7/liczenie<6>(185)  ][ 9: XLXI_7/liczenie<5>(186)  ][ 10: XLXI_7/liczenie<4>(187)  ][ 11:  
+           XLXI_7/liczenie<3>(188)  ][ 12: XLXI_7/liczenie<0>(189)  ][ 13: (132)  ][ 14: XLXN_9<1>(191)  ] 
+           [ 15: (131)  ]
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [CLK(38)] 
+Signal[ 1] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: CLK(38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: (39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+PLApt(4/56), Fanin(2/38), Clk(0/3), Bct(0/4), Pin(4/8), Mcell(4/16)
+PLApts[4/56] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 61 () () 39 () () 50 () () 26
+Fanins[ 2] XLXN_9<0>.n XLXN_9<1>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 4] [anody<0>(317),anody<0>(126)] [anody<1>(318),anody<1>(128)] [anody<2>(319),anody<2>(129)]  
+           [anody<3>(320),anody<3>(130)] 
+Signal[ 4] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: (120)  ][ 5: (121)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (124)  ] 
+           [ 11: (125)  ][ 12: anody<0>(317) anody<0>(126)  ][ 13: anody<1>(318) anody<1>(128)  ][ 14:  
+           anody<2>(319) anody<2>(129)  ][ 15: anody<3>(320) anody<3>(130)  ]
+----------------- B l o c k 11 ------------------
+PLApt(1/56), Fanin(17/38), Clk(0/3), Bct(1/4), Pin(1/6), Mcell(1/16)
+PLApts[1/5] () () () () 97
+Fanins[17] XLXI_6/liczenie<0>.n XLXI_6/liczenie<10>.n XLXI_6/liczenie<11>.n XLXI_6/liczenie<12>.n XLXI_6/liczenie<13>.n XLXI_6/liczenie<14>.n XLXI_6/liczenie<15>.n XLXI_6/liczenie<16>.n XLXI_6/liczenie<1>.n XLXI_6/liczenie<2>.n XLXI_6/liczenie<3>.n XLXI_6/liczenie<4>.n XLXI_6/liczenie<5>.n XLXI_6/liczenie<6>.n XLXI_6/liczenie<7>.n XLXI_6/liczenie<8>.n XLXI_6/liczenie<9>.n
+clk[0] 
+CTC: (pt=97) XLXI_6/liczenie<0>' XLXI_6/liczenie<10> XLXI_6/liczenie<11>' XLXI_6/liczenie<12>' XLXI_6/liczenie<13>' XLXI_6/liczenie<14>' XLXI_6/liczenie<15> XLXI_6/liczenie<1>' XLXI_6/liczenie<2>' XLXI_6/liczenie<3>' XLXI_6/liczenie<4>' XLXI_6/liczenie<5> XLXI_6/liczenie<6>' XLXI_6/liczenie<7> XLXI_6/liczenie<8>' XLXI_6/liczenie<9> XLXI_6/liczenie<16> ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [XLXN_3<0>,STOP(94)] 
+Signal[ 2] [ 0:  ][ 1: (100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: (98)  ][ 11:  
+           (97)  ][ 12: (96)  ][ 13: (95)  ][ 14: XLXN_3<0>(335) STOP(94)  ][ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(8/56), Fanin(18/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(1/16)
+PLApts[8/8] 30 37 42 48 53 59 65 72
+Fanins[18] XLXN_3<0>.n XLXN_3<1>.n XLXN_3<2>.n XLXN_3<3>.n XLXN_4<0>.n XLXN_4<1>.n XLXN_4<2>.n XLXN_4<3>.n XLXN_6<0>.n XLXN_6<1>.n XLXN_6<2>.n XLXN_6<3>.n XLXN_7<0>.n XLXN_7<1>.n XLXN_7<2>.n XLXN_7<3>.n XLXN_9<0>.n XLXN_9<1>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [liczba_7seg<6>(368),liczba_7seg<6>(61)] 
+Signal[ 1] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: (69)  ][ 4:  ][ 5: (68)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11:  ][ 12: (66)  ][ 13: (64)  ][ 14:  ][ 15: liczba_7seg<6>(368) liczba_7seg<6>(61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------
+PLApt(40/56), Fanin(18/38), Clk(0/3), Bct(0/4), Pin(6/7), Mcell(6/16)
+PLApts[40/40] 30 33 38 42 45 49 53 56 60 65 68 73 28 34 35 46 57 63 69 70 31 32 43 44 54 55 66 67 27 29 40 41 51 52 62 64 36 47 58 71
+Fanins[18] XLXN_3<0>.n XLXN_3<1>.n XLXN_3<2>.n XLXN_3<3>.n XLXN_4<0>.n XLXN_4<1>.n XLXN_4<2>.n XLXN_4<3>.n XLXN_6<0>.n XLXN_6<1>.n XLXN_6<2>.n XLXN_6<3>.n XLXN_7<0>.n XLXN_7<1>.n XLXN_7<2>.n XLXN_7<3>.n XLXN_9<0>.n XLXN_9<1>.n
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [liczba_7seg<3>(395),liczba_7seg<3>(58)] [liczba_7seg<5>(399),liczba_7seg<5>(54)]  
+           [liczba_7seg<0>(397),liczba_7seg<0>(56)] [liczba_7seg<1>(400),liczba_7seg<1>(53)]  
+           [liczba_7seg<4>(396),liczba_7seg<4>(57)] [liczba_7seg<2>(389),liczba_7seg<2>(60)] 
+Signal[ 6] [ 0:  ][ 1:  ][ 2:  ][ 3:  ][ 4: liczba_7seg<2>(389) liczba_7seg<2>(60)  ][ 5: (59)  ][ 6:  ][ 7:  
+            ][ 8:  ][ 9:  ][ 10: liczba_7seg<3>(395) liczba_7seg<3>(58)  ][ 11: liczba_7seg<4>(396)  
+           liczba_7seg<4>(57)  ][ 12: liczba_7seg<0>(397) liczba_7seg<0>(56)  ][ 13:  ][ 14:  
+           liczba_7seg<5>(399) liczba_7seg<5>(54)  ][ 15: liczba_7seg<1>(400) liczba_7seg<1>(53)  ]

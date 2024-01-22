@@ -1,0 +1,928 @@
+MDF Database:  version 1.0
+MDF_INFO | schemat | XC2C256-6-TQ144
+MACROCELL | 10 | 12 | anody<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | XLXN_9<1>  | XLXN_9<0>
+INPUTMC | 2 | 2 | 14 | 2 | 5
+EQ | 1 | 
+   !anody<0> = !XLXN_9<1> & !XLXN_9<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 2 | 14 | XLXN_9<1>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 11 | 10 | 12 | 10 | 13 | 10 | 14 | 10 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 1 | XLXN_9<0>
+INPUTMC | 1 | 2 | 5
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   XLXN_9<1>.T := XLXN_9<0>;	// (1 pt, 1 inp)
+    XLXN_9<1>.CLK = !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// CTC	(1 pt, 8 inp)
+
+MACROCELL | 2 | 5 | XLXN_9<0>_MC
+ATTRIBUTES | 2285896448 | 0
+OUTPUTMC | 12 | 2 | 14 | 10 | 12 | 10 | 13 | 10 | 14 | 10 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 0
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   !XLXN_9<0>.T := Gnd;	// (0 pt, 0 inp)
+    XLXN_9<0>.CLK = !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// CTC	(1 pt, 8 inp)
+
+MACROCELL | 2 | 12 | XLXI_7/liczenie<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 8 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 4 | 
+   !XLXI_7/liczenie<0>.T := !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (1 pt, 8 inp)
+   XLXI_7/liczenie<0>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 6 | XLXI_7/liczenie<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 8 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 5 | 
+   XLXI_7/liczenie<1>.T := XLXI_7/liczenie<0>
+	# XLXI_7/liczenie<1> & !XLXI_7/liczenie<2> & 
+	XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & XLXI_7/liczenie<5> & 
+	XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<1>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 3 | XLXI_7/liczenie<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 2 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>
+INPUTMC | 2 | 2 | 12 | 2 | 6
+EQ | 2 | 
+   XLXI_7/liczenie<2>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1>;	// (1 pt, 2 inp)
+   XLXI_7/liczenie<2>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 11 | XLXI_7/liczenie<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 6 | 
+   XLXI_7/liczenie<3>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	XLXI_7/liczenie<2>
+	# !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<3>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 10 | XLXI_7/liczenie<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 6 | 
+   XLXI_7/liczenie<4>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	XLXI_7/liczenie<2> & XLXI_7/liczenie<3>
+	# !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<4>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 9 | XLXI_7/liczenie<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 6 | 
+   XLXI_7/liczenie<5>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4>
+	# !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<5>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 8 | XLXI_7/liczenie<6>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 7 | 
+   XLXI_7/liczenie<6>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5>
+	# !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<6>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 2 | 7 | XLXI_7/liczenie<7>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12
+INPUTS | 8 | XLXI_7/liczenie<0>  | XLXI_7/liczenie<1>  | XLXI_7/liczenie<2>  | XLXI_7/liczenie<3>  | XLXI_7/liczenie<4>  | XLXI_7/liczenie<5>  | XLXI_7/liczenie<6>  | XLXI_7/liczenie<7>
+INPUTMC | 8 | 2 | 12 | 2 | 6 | 2 | 3 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7
+EQ | 7 | 
+   XLXI_7/liczenie<7>.T := XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6>
+	# !XLXI_7/liczenie<0> & XLXI_7/liczenie<1> & 
+	!XLXI_7/liczenie<2> & XLXI_7/liczenie<3> & XLXI_7/liczenie<4> & 
+	XLXI_7/liczenie<5> & XLXI_7/liczenie<6> & XLXI_7/liczenie<7>;	// (2 pt, 8 inp)
+   XLXI_7/liczenie<7>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 10 | 13 | anody<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | XLXN_9<1>  | XLXN_9<0>
+INPUTMC | 2 | 2 | 14 | 2 | 5
+EQ | 1 | 
+   !anody<1> = !XLXN_9<1> & XLXN_9<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 14 | anody<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | XLXN_9<1>  | XLXN_9<0>
+INPUTMC | 2 | 2 | 14 | 2 | 5
+EQ | 1 | 
+   !anody<2> = XLXN_9<1> & !XLXN_9<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 10 | 15 | anody<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | XLXN_9<1>  | XLXN_9<0>
+INPUTMC | 2 | 2 | 14 | 2 | 5
+EQ | 1 | 
+   !anody<3> = XLXN_9<1> & XLXN_9<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 15 | 12 | liczba_7seg<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>  | XLXN_7<0>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 9 | 1 | 10 | 1 | 1 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 4 | 1 | 13 | 1 | 12 | 1 | 14 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+EQ | 16 | 
+   liczba_7seg<0> = XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & !XLXN_6<1> & 
+	!XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & !XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & !XLXN_7<1> & 
+	!XLXN_7<2> & !XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & !XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & !XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & !XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & !XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>;	// (8 pt, 18 inp)
+
+MACROCELL | 1 | 8 | XLXN_6<0>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 10 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 13 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>
+INPUTMC | 12 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   XLXN_6<0>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3>;	// (1 pt, 13 inp)
+    XLXN_6<0>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_6<0>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 11 | 14 | XLXN_3<0>_MC
+ATTRIBUTES | 2319450112 | 4
+OUTPUTMC | 22 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   
+// Direct Input Register
+XLXN_3<0>.T := STOP;	// (0 pt, 0 inp)
+    XLXN_3<0>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_3<0>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 0 | 13 | XLXI_6/liczenie<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 7 | 
+   !XLXI_6/liczenie<0>.T := !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (1 pt, 17 inp)
+   XLXI_6/liczenie<0>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 12 | XLXI_6/liczenie<10>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 8 | 0 | 2 | 0 | 7 | 1 | 0 | 0 | 12 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 11 | 
+   XLXI_6/liczenie<10>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4> & 
+	XLXI_6/liczenie<5> & XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & 
+	XLXI_6/liczenie<8> & XLXI_6/liczenie<9>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<10>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 15 | XLXI_6/liczenie<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 1 | XLXI_6/liczenie<0>
+INPUTMC | 1 | 0 | 13
+EQ | 2 | 
+   XLXI_6/liczenie<1>.T := XLXI_6/liczenie<0>;	// (1 pt, 1 inp)
+   XLXI_6/liczenie<1>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 14 | XLXI_6/liczenie<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 2 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>
+INPUTMC | 2 | 0 | 13 | 0 | 15
+EQ | 2 | 
+   XLXI_6/liczenie<2>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1>;	// (1 pt, 2 inp)
+   XLXI_6/liczenie<2>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 10 | XLXI_6/liczenie<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 3 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>
+INPUTMC | 3 | 0 | 13 | 0 | 15 | 0 | 14
+EQ | 3 | 
+   XLXI_6/liczenie<3>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2>;	// (1 pt, 3 inp)
+   XLXI_6/liczenie<3>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 9 | XLXI_6/liczenie<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 4 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>
+INPUTMC | 4 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10
+EQ | 3 | 
+   XLXI_6/liczenie<4>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3>;	// (1 pt, 4 inp)
+   XLXI_6/liczenie<4>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 3 | XLXI_6/liczenie<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 12 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 9 | 
+   XLXI_6/liczenie<5>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<5>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 6 | XLXI_6/liczenie<11>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 10 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 11 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>
+INPUTMC | 11 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 8 | 0 | 2 | 0 | 7 | 1 | 0
+EQ | 5 | 
+   XLXI_6/liczenie<11>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<6> & 
+	XLXI_6/liczenie<7> & XLXI_6/liczenie<8> & XLXI_6/liczenie<9>;	// (1 pt, 11 inp)
+   XLXI_6/liczenie<11>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 8 | XLXI_6/liczenie<6>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 6 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>
+INPUTMC | 6 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3
+EQ | 4 | 
+   XLXI_6/liczenie<6>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4> & 
+	XLXI_6/liczenie<5>;	// (1 pt, 6 inp)
+   XLXI_6/liczenie<6>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 2 | XLXI_6/liczenie<7>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 8 | 0 | 12 | 0 | 6 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 10 | 
+   XLXI_6/liczenie<7>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4> & 
+	XLXI_6/liczenie<5> & XLXI_6/liczenie<6>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<7>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 4 | XLXI_6/liczenie<12>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 9 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 12 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>
+INPUTMC | 12 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 7 | 1 | 0
+EQ | 6 | 
+   XLXI_6/liczenie<12>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<11> & 
+	XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & XLXI_6/liczenie<8> & 
+	XLXI_6/liczenie<9>;	// (1 pt, 12 inp)
+   XLXI_6/liczenie<12>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 7 | XLXI_6/liczenie<8>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 8 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>
+INPUTMC | 8 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 8 | 0 | 2
+EQ | 4 | 
+   XLXI_6/liczenie<8>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4> & 
+	XLXI_6/liczenie<5> & XLXI_6/liczenie<6> & XLXI_6/liczenie<7>;	// (1 pt, 8 inp)
+   XLXI_6/liczenie<8>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 0 | XLXI_6/liczenie<9>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 8 | 0 | 2 | 0 | 7 | 0 | 12 | 0 | 6 | 0 | 4 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 11 | 
+   XLXI_6/liczenie<9>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<1> & 
+	XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & XLXI_6/liczenie<4> & 
+	XLXI_6/liczenie<5> & XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & 
+	XLXI_6/liczenie<8>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<9>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 1 | XLXI_6/liczenie<13>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 8 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 13 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>
+INPUTMC | 13 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0
+EQ | 6 | 
+   XLXI_6/liczenie<13>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<11> & 
+	XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & XLXI_6/liczenie<12> & 
+	XLXI_6/liczenie<8> & XLXI_6/liczenie<9>;	// (1 pt, 13 inp)
+   XLXI_6/liczenie<13>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 0 | XLXI_6/liczenie<14>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 14 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>
+INPUTMC | 14 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1
+EQ | 6 | 
+   XLXI_6/liczenie<14>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<11> & 
+	XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & XLXI_6/liczenie<12> & 
+	XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & XLXI_6/liczenie<13>;	// (1 pt, 14 inp)
+   XLXI_6/liczenie<14>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 11 | XLXI_6/liczenie<15>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 13 | 
+   XLXI_6/liczenie<15>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<11> & 
+	XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & XLXI_6/liczenie<12> & 
+	XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & XLXI_6/liczenie<13> & 
+	XLXI_6/liczenie<14>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<15>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 0 | 5 | XLXI_6/liczenie<16>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 2 | 0 | 3 | 0 | 12 | 0 | 13
+INPUTS | 17 | XLXI_6/liczenie<0>  | XLXI_6/liczenie<10>  | XLXI_6/liczenie<1>  | XLXI_6/liczenie<2>  | XLXI_6/liczenie<3>  | XLXI_6/liczenie<4>  | XLXI_6/liczenie<5>  | XLXI_6/liczenie<11>  | XLXI_6/liczenie<6>  | XLXI_6/liczenie<7>  | XLXI_6/liczenie<12>  | XLXI_6/liczenie<8>  | XLXI_6/liczenie<9>  | XLXI_6/liczenie<13>  | XLXI_6/liczenie<14>  | XLXI_6/liczenie<15>  | XLXI_6/liczenie<16>
+INPUTMC | 17 | 0 | 13 | 0 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 3 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 4 | 0 | 7 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 11 | 0 | 5
+EQ | 13 | 
+   XLXI_6/liczenie<16>.T := XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	XLXI_6/liczenie<1> & XLXI_6/liczenie<2> & XLXI_6/liczenie<3> & 
+	XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & XLXI_6/liczenie<11> & 
+	XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & XLXI_6/liczenie<12> & 
+	XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & XLXI_6/liczenie<13> & 
+	XLXI_6/liczenie<14> & XLXI_6/liczenie<15>
+	# !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// (2 pt, 17 inp)
+   XLXI_6/liczenie<16>.CLK  =  CLK;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK
+
+MACROCELL | 1 | 4 | XLXN_4<0>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 18 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 5 | STOP  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 4 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 9 | 
+   XLXN_4<0>.T := STOP & XLXN_3<0> & !XLXN_3<1> & !XLXN_3<2> & 
+	XLXN_3<3>;	// (1 pt, 5 inp)
+    XLXN_4<0>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_4<0>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 11 | XLXN_3<1>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 22 | 1 | 2 | 1 | 3 | 1 | 11 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 5 | STOP  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 4 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   XLXN_3<1>.T := STOP & XLXN_3<0>
+	$ STOP & XLXN_3<0> & !XLXN_3<1> & !XLXN_3<2> & 
+	XLXN_3<3>;	// (2 pt, 5 inp)
+    XLXN_3<1>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_3<1>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 2 | XLXN_3<2>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 21 | 1 | 3 | 1 | 11 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 3 | STOP  | XLXN_3<0>  | XLXN_3<1>
+INPUTMC | 2 | 11 | 14 | 1 | 11
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 8 | 
+   XLXN_3<2>.T := STOP & XLXN_3<0> & XLXN_3<1>;	// (1 pt, 3 inp)
+    XLXN_3<2>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_3<2>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 3 | XLXN_3<3>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 21 | 1 | 3 | 1 | 11 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 5 | STOP  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 4 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   XLXN_3<3>.T := STOP & XLXN_3<0> & XLXN_3<1> & XLXN_3<2>
+	# STOP & XLXN_3<0> & !XLXN_3<1> & !XLXN_3<2> & 
+	XLXN_3<3>;	// (2 pt, 5 inp)
+    XLXN_3<3>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_3<3>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 1 | XLXN_7<0>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 14 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 9 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>
+INPUTMC | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 13 | 1 | 12 | 1 | 14
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 9 | 
+   XLXN_7<0>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & !XLXN_4<1> & !XLXN_4<2> & XLXN_4<3>;	// (1 pt, 9 inp)
+    XLXN_7<0>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_7<0>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 13 | XLXN_4<1>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 18 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 9 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>
+INPUTMC | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 13 | 1 | 12 | 1 | 14
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 13 | 
+   XLXN_4<1>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_4<1>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_4<2>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & !XLXN_4<3>;	// (3 pt, 9 inp)
+    XLXN_4<1>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_4<1>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 12 | XLXN_4<2>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 17 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 7 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_4<1>
+INPUTMC | 6 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 13
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 9 | 
+   XLXN_4<2>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_4<1>;	// (1 pt, 7 inp)
+    XLXN_4<2>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_4<2>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 14 | XLXN_4<3>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 17 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 9 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>
+INPUTMC | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 13 | 1 | 12 | 1 | 14
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 11 | 
+   XLXN_4<3>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_4<1> & XLXN_4<2>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & !XLXN_4<1> & !XLXN_4<2> & XLXN_4<3>;	// (2 pt, 9 inp)
+    XLXN_4<3>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_4<3>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 6 | XLXN_7<1>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 14 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 13 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>
+INPUTMC | 12 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 16 | 
+   XLXN_7<1>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & XLXN_7<1>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & XLXN_7<2>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & !XLXN_7<3>;	// (3 pt, 13 inp)
+    XLXN_7<1>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_7<1>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 5 | XLXN_7<2>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 13 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 11 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>
+INPUTMC | 10 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 10 | 
+   XLXN_7<2>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & XLXN_7<1>;	// (1 pt, 11 inp)
+    XLXN_7<2>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_7<2>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 7 | XLXN_7<3>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 13 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 13 | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>
+INPUTMC | 12 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 13 | 
+   XLXN_7<3>.T := STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & XLXN_7<1> & XLXN_7<2>
+	# STOP & XLXN_3<0> & XLXN_4<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3>;	// (2 pt, 13 inp)
+    XLXN_7<3>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_7<3>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 15 | XLXN_6<1>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 10 | 1 | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 17 | XLXN_6<0>  | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>
+INPUTMC | 16 | 1 | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 15 | 1 | 9 | 1 | 10
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 19 | 
+   XLXN_6<1>.T := XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	XLXN_6<1>
+	# XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	XLXN_6<2>
+	# XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	!XLXN_6<3>;	// (3 pt, 17 inp)
+    XLXN_6<1>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_6<1>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 9 | XLXN_6<2>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 15 | XLXN_6<0>  | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_6<1>
+INPUTMC | 14 | 1 | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 15
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 11 | 
+   XLXN_6<2>.T := XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	XLXN_6<1>;	// (1 pt, 15 inp)
+    XLXN_6<2>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_6<2>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 1 | 10 | XLXN_6<3>_MC
+ATTRIBUTES | 2319450880 | 0
+OUTPUTMC | 9 | 1 | 10 | 1 | 15 | 15 | 12 | 15 | 15 | 15 | 4 | 15 | 10 | 15 | 11 | 15 | 14 | 13 | 15
+INPUTS | 17 | XLXN_6<0>  | STOP  | XLXN_3<0>  | XLXN_4<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_7<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>
+INPUTMC | 16 | 1 | 8 | 11 | 14 | 1 | 4 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 1 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 15 | 1 | 9 | 1 | 10
+INPUTP | 1 | 142
+LCT | 1 | 2 | Internal_Name
+EQ | 15 | 
+   XLXN_6<3>.T := XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	XLXN_6<1> & XLXN_6<2>
+	# XLXN_6<0> & STOP & XLXN_3<0> & XLXN_4<0> & 
+	!XLXN_3<1> & !XLXN_3<2> & XLXN_3<3> & XLXN_7<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & XLXN_4<3> & !XLXN_7<1> & !XLXN_7<2> & XLXN_7<3> & 
+	!XLXN_6<1> & !XLXN_6<2> & XLXN_6<3>;	// (2 pt, 17 inp)
+    XLXN_6<3>.CLK = !XLXI_6/liczenie<0> & XLXI_6/liczenie<10> & 
+	!XLXI_6/liczenie<1> & !XLXI_6/liczenie<2> & !XLXI_6/liczenie<3> & 
+	!XLXI_6/liczenie<4> & XLXI_6/liczenie<5> & !XLXI_6/liczenie<11> & 
+	!XLXI_6/liczenie<6> & XLXI_6/liczenie<7> & !XLXI_6/liczenie<12> & 
+	!XLXI_6/liczenie<8> & XLXI_6/liczenie<9> & !XLXI_6/liczenie<13> & 
+	!XLXI_6/liczenie<14> & XLXI_6/liczenie<15> & XLXI_6/liczenie<16>;	// CTC	(1 pt, 17 inp)
+   XLXN_6<3>.AR = !RESET;	// GSR	(0 pt, 0 inp)
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 15 | 15 | liczba_7seg<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>  | XLXN_7<0>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 9 | 1 | 10 | 1 | 1 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 4 | 1 | 13 | 1 | 12 | 1 | 14 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+EQ | 16 | 
+   liczba_7seg<1> = XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & !XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & !XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & !XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & !XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>;	// (8 pt, 18 inp)
+
+MACROCELL | 15 | 4 | liczba_7seg<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>  | XLXN_7<0>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 9 | 1 | 10 | 1 | 1 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 4 | 1 | 13 | 1 | 12 | 1 | 14 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+EQ | 8 | 
+   liczba_7seg<2> = XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & XLXN_6<1> & 
+	!XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & XLXN_7<1> & 
+	!XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & XLXN_4<1> & 
+	!XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & XLXN_3<1> & 
+	!XLXN_3<2> & !XLXN_3<3>;	// (4 pt, 18 inp)
+
+MACROCELL | 15 | 10 | liczba_7seg<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>  | XLXN_7<0>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<0>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 9 | 1 | 10 | 1 | 1 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 4 | 1 | 13 | 1 | 12 | 1 | 14 | 11 | 14 | 1 | 11 | 1 | 2 | 1 | 3
+EQ | 24 | 
+   liczba_7seg<3> = XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & !XLXN_6<1> & 
+	!XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & !XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & !XLXN_7<1> & 
+	!XLXN_7<2> & !XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & !XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & !XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & !XLXN_3<1> & 
+	!XLXN_3<2> & !XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & !XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>;	// (12 pt, 18 inp)
+
+MACROCELL | 15 | 11 | liczba_7seg<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<3>  | XLXN_6<2>  | XLXN_7<0>  | XLXN_7<1>  | XLXN_7<3>  | XLXN_7<2>  | XLXN_4<0>  | XLXN_4<1>  | XLXN_4<3>  | XLXN_4<2>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<3>  | XLXN_3<2>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 1 | 1 | 6 | 1 | 7 | 1 | 5 | 1 | 4 | 1 | 13 | 1 | 14 | 1 | 12 | 11 | 14 | 1 | 11 | 1 | 3 | 1 | 2
+EQ | 16 | 
+   !liczba_7seg<4> = XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & XLXN_6<1> & 
+	!XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & !XLXN_6<0> & !XLXN_6<1> & 
+	!XLXN_6<2>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & XLXN_7<1> & 
+	!XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<0> & !XLXN_7<1> & 
+	!XLXN_7<2>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & XLXN_4<1> & 
+	!XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<0> & !XLXN_4<1> & 
+	!XLXN_4<2>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & XLXN_3<1> & 
+	!XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<0> & !XLXN_3<1> & 
+	!XLXN_3<2>;	// (8 pt, 18 inp)
+
+MACROCELL | 15 | 14 | liczba_7seg<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<0>  | XLXN_6<1>  | XLXN_6<3>  | XLXN_6<2>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<0>  | XLXN_3<1>  | XLXN_3<3>  | XLXN_3<2>  | XLXN_7<0>  | XLXN_4<0>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 8 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 13 | 1 | 12 | 1 | 14 | 11 | 14 | 1 | 11 | 1 | 3 | 1 | 2 | 1 | 1 | 1 | 4
+EQ | 24 | 
+   liczba_7seg<5> = XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & XLXN_6<1> & 
+	!XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & !XLXN_6<2> & 
+	!XLXN_6<3>
+	# XLXN_9<1> & XLXN_9<0> & XLXN_6<1> & !XLXN_6<2> & 
+	!XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<1> & !XLXN_7<2> & 
+	!XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<1> & !XLXN_4<2> & 
+	!XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & XLXN_3<1> & 
+	!XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & !XLXN_3<2> & 
+	!XLXN_3<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<1> & !XLXN_3<2> & 
+	!XLXN_3<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & !XLXN_7<1> & 
+	!XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & !XLXN_4<1> & 
+	!XLXN_4<2> & !XLXN_4<3>;	// (12 pt, 18 inp)
+
+MACROCELL | 13 | 15 | liczba_7seg<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | XLXN_9<1>  | XLXN_9<0>  | XLXN_6<1>  | XLXN_6<2>  | XLXN_6<3>  | XLXN_7<1>  | XLXN_7<2>  | XLXN_7<3>  | XLXN_4<1>  | XLXN_4<2>  | XLXN_4<3>  | XLXN_3<1>  | XLXN_3<2>  | XLXN_3<3>  | XLXN_6<0>  | XLXN_7<0>  | XLXN_4<0>  | XLXN_3<0>
+INPUTMC | 18 | 2 | 14 | 2 | 5 | 1 | 15 | 1 | 9 | 1 | 10 | 1 | 6 | 1 | 5 | 1 | 7 | 1 | 13 | 1 | 12 | 1 | 14 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 8 | 1 | 1 | 1 | 4 | 11 | 14
+EQ | 16 | 
+   liczba_7seg<6> = XLXN_9<1> & XLXN_9<0> & !XLXN_6<1> & !XLXN_6<2> & 
+	!XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & !XLXN_7<1> & !XLXN_7<2> & 
+	!XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & !XLXN_4<1> & !XLXN_4<2> & 
+	!XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & !XLXN_3<1> & !XLXN_3<2> & 
+	!XLXN_3<3>
+	# XLXN_9<1> & XLXN_9<0> & XLXN_6<0> & XLXN_6<1> & 
+	XLXN_6<2> & !XLXN_6<3>
+	# XLXN_9<1> & !XLXN_9<0> & XLXN_7<0> & XLXN_7<1> & 
+	XLXN_7<2> & !XLXN_7<3>
+	# !XLXN_9<1> & XLXN_9<0> & XLXN_4<0> & XLXN_4<1> & 
+	XLXN_4<2> & !XLXN_4<3>
+	# !XLXN_9<1> & !XLXN_9<0> & XLXN_3<0> & XLXN_3<1> & 
+	XLXN_3<2> & !XLXN_3<3>;	// (8 pt, 18 inp)
+
+PIN | CLK | 16384 | 16 | LVCMOS18 | 59 | 25 | 2 | 3 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 6 | 2 | 12 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 1 | 0 | 0 | 0 | 5 | 0 | 11 | 1 | 0 | 0 | 4 | 0 | 2 | 0 | 6 | 0 | 3 | 0 | 12 | 0 | 13
+PIN | RESET | 65536 | 16 | LVCMOS18 | 218 | 16 | 11 | 14 | 1 | 2 | 1 | 3 | 1 | 11 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15
+PIN | STOP | 64 | 16 | LVCMOS18 | 142 | 16 | 1 | 11 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 12 | 1 | 14 | 1 | 13 | 1 | 1 | 1 | 5 | 1 | 7 | 1 | 6 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 11 | 14
+PIN | anody<0> | 536871040 | 0 | LVCMOS18 | 192
+PIN | anody<1> | 536871040 | 0 | LVCMOS18 | 194
+PIN | anody<2> | 536871040 | 0 | LVCMOS18 | 195
+PIN | anody<3> | 536871040 | 0 | LVCMOS18 | 196
+PIN | liczba_7seg<0> | 536871040 | 0 | LVCMOS18 | 86
+PIN | liczba_7seg<1> | 536871040 | 0 | LVCMOS18 | 81
+PIN | liczba_7seg<2> | 536871040 | 0 | LVCMOS18 | 90
+PIN | liczba_7seg<3> | 536871040 | 0 | LVCMOS18 | 88
+PIN | liczba_7seg<4> | 536871040 | 0 | LVCMOS18 | 87
+PIN | liczba_7seg<5> | 536871040 | 0 | LVCMOS18 | 82
+PIN | liczba_7seg<6> | 536871040 | 0 | LVCMOS18 | 95

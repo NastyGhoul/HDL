@@ -1,0 +1,2 @@
+vhdtdtfi -lib work czestotliwosc_1hz.vhd -prj proj_vhdl -o czestotliwosc_1hz.spl -module czestotliwosc_1hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr czestotliwosc_1hz.spl C:/students_ulic/mf/proj_vhdl/czestotliwosc_1hz.sym 
