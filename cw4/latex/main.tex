@@ -51,7 +51,7 @@
 
 \subsection{Licznik modulo 4}
 \subsubsection{Działanie}
-\hspace*{0.5cm}sygnałem wejściowym jest CLK 400Hz w formacie std logic, a wyjściowym kanal w formacie integer range 0 to 3. Sygnałem pomocniczym jest liczenie w formacie integer range 0 to 3.
+\hspace*{0.5cm}Sygnałem wejściowym jest CLK 400Hz w formacie std logic, a wyjściowym kanal w formacie integer range 0 to 3. Sygnałem pomocniczym jest liczenie w formacie integer range 0 to 3.
 
 \vspace*{0.5cm}
 
@@ -65,13 +65,13 @@
 
 \vspace*{0.5cm}
 
-\hspace*{0.5cm}W zależności od wyrbanego kanału multiplekser przekazuje odpowiadającą mu liczbę do transkodera.
+\hspace*{0.5cm}W zależności od wybranego kanału multiplekser przekazuje odpowiadającą mu liczbę do transkodera.
 \subsubsection{Kod}
 \input{Kod/multiplekser.tex}
 
 \subsection{Demultiplekser}
 \subsubsection{Działanie}
-\hspace*{0.5cm}sygnałem wejściowym jest kanal w formacie std logic vector (1 downto 0), a wyjściowym anody w formacie std logic vector (3 downto 0).
+\hspace*{0.5cm}Sygnałem wejściowym jest kanal w formacie std logic vector (1 downto 0), a wyjściowym anody w formacie std logic vector (3 downto 0).
 
 \vspace*{0.5cm}
 
@@ -81,7 +81,7 @@
 
 \subsection{Transkoder}
 \subsubsection{Działanie}
-\hspace*{0.5cm}sygnałem wejściowym jest liczba w formacie std logic vector (3 downto 0), a wyjściowym liczba 7seg w formacie std logic vector (6 downto 0).
+\hspace*{0.5cm}Sygnałem wejściowym jest liczba w formacie std logic vector (3 downto 0), a wyjściowym liczba 7seg w formacie std logic vector (6 downto 0).
 
 \vspace*{0.5cm}
 
